@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9E76BFF8-D163-4E86-A23E-00E8E9432F70</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Coinvert</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6F42BDDFC40AA21EE807EDEC35B8BE9B6211CED2</key>
+		<string>https://github.com/jhend11/Coinvert.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Coinvert/Coinvert.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6F42BDDFC40AA21EE807EDEC35B8BE9B6211CED2</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jhend11/Coinvert.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6F42BDDFC40AA21EE807EDEC35B8BE9B6211CED2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6F42BDDFC40AA21EE807EDEC35B8BE9B6211CED2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Coinvert</string>
+		</dict>
+	</array>
+</dict>
+</plist>

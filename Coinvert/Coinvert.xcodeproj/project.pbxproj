@@ -13,6 +13,19 @@
 		B41CB01F1A19565E004A5908 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B41CB01E1A19565E004A5908 /* Images.xcassets */; };
 		B41CB0221A19565E004A5908 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B41CB0201A19565E004A5908 /* LaunchScreen.xib */; };
 		B41CB02E1A19565E004A5908 /* CoinvertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB02D1A19565E004A5908 /* CoinvertTests.swift */; };
+		B41CB0381A1A5046004A5908 /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB0371A1A5046004A5908 /* MenuTransitionManager.swift */; };
+		B41CB03A1A1A5059004A5908 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB0391A1A5059004A5908 /* TransitionManager.swift */; };
+		B41CB0441A1A5442004A5908 /* bitcoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B41CB03C1A1A5442004A5908 /* bitcoin.png */; };
+		B41CB0451A1A5442004A5908 /* blackcoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B41CB03D1A1A5442004A5908 /* blackcoin.png */; };
+		B41CB0461A1A5442004A5908 /* darkcoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B41CB03E1A1A5442004A5908 /* darkcoin.png */; };
+		B41CB0471A1A5442004A5908 /* dogecoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B41CB03F1A1A5442004A5908 /* dogecoin.png */; };
+		B41CB0481A1A5442004A5908 /* feathercoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B41CB0401A1A5442004A5908 /* feathercoin.png */; };
+		B41CB0491A1A5442004A5908 /* litecoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B41CB0411A1A5442004A5908 /* litecoin.png */; };
+		B41CB04A1A1A5442004A5908 /* namecoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B41CB0421A1A5442004A5908 /* namecoin.png */; };
+		B41CB04B1A1A5442004A5908 /* peercoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B41CB0431A1A5442004A5908 /* peercoin.png */; };
+		B41CB04D1A1A5BE9004A5908 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB04C1A1A5BE9004A5908 /* MenuViewController.swift */; };
+		B41CB04F1A1A9934004A5908 /* MenuViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB04E1A1A9934004A5908 /* MenuViewController2.swift */; };
+		B41CB0511A1A9C18004A5908 /* MenuTransitionManager2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB0501A1A9C18004A5908 /* MenuTransitionManager2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +49,19 @@
 		B41CB0271A19565E004A5908 /* CoinvertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinvertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41CB02C1A19565E004A5908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B41CB02D1A19565E004A5908 /* CoinvertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinvertTests.swift; sourceTree = "<group>"; };
+		B41CB0371A1A5046004A5908 /* MenuTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager.swift; sourceTree = "<group>"; };
+		B41CB0391A1A5059004A5908 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		B41CB03C1A1A5442004A5908 /* bitcoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitcoin.png; sourceTree = "<group>"; };
+		B41CB03D1A1A5442004A5908 /* blackcoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackcoin.png; sourceTree = "<group>"; };
+		B41CB03E1A1A5442004A5908 /* darkcoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkcoin.png; sourceTree = "<group>"; };
+		B41CB03F1A1A5442004A5908 /* dogecoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dogecoin.png; sourceTree = "<group>"; };
+		B41CB0401A1A5442004A5908 /* feathercoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feathercoin.png; sourceTree = "<group>"; };
+		B41CB0411A1A5442004A5908 /* litecoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = litecoin.png; sourceTree = "<group>"; };
+		B41CB0421A1A5442004A5908 /* namecoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = namecoin.png; sourceTree = "<group>"; };
+		B41CB0431A1A5442004A5908 /* peercoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peercoin.png; sourceTree = "<group>"; };
+		B41CB04C1A1A5BE9004A5908 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B41CB04E1A1A9934004A5908 /* MenuViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController2.swift; sourceTree = "<group>"; };
+		B41CB0501A1A9C18004A5908 /* MenuTransitionManager2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +85,7 @@
 		B41CB0091A19565E004A5908 = {
 			isa = PBXGroup;
 			children = (
+				B41CB03B1A1A5442004A5908 /* Images */,
 				B41CB0141A19565E004A5908 /* Coinvert */,
 				B41CB02A1A19565E004A5908 /* CoinvertTests */,
 				B41CB0131A19565E004A5908 /* Products */,
@@ -78,6 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				B41CB0171A19565E004A5908 /* AppDelegate.swift */,
+				B41CB0391A1A5059004A5908 /* TransitionManager.swift */,
+				B41CB0371A1A5046004A5908 /* MenuTransitionManager.swift */,
+				B41CB04C1A1A5BE9004A5908 /* MenuViewController.swift */,
+				B41CB04E1A1A9934004A5908 /* MenuViewController2.swift */,
+				B41CB0501A1A9C18004A5908 /* MenuTransitionManager2.swift */,
 				B41CB0191A19565E004A5908 /* ViewController.swift */,
 				B41CB01B1A19565E004A5908 /* Main.storyboard */,
 				B41CB01E1A19565E004A5908 /* Images.xcassets */,
@@ -110,6 +142,21 @@
 				B41CB02C1A19565E004A5908 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B41CB03B1A1A5442004A5908 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B41CB03C1A1A5442004A5908 /* bitcoin.png */,
+				B41CB03D1A1A5442004A5908 /* blackcoin.png */,
+				B41CB03E1A1A5442004A5908 /* darkcoin.png */,
+				B41CB03F1A1A5442004A5908 /* dogecoin.png */,
+				B41CB0401A1A5442004A5908 /* feathercoin.png */,
+				B41CB0411A1A5442004A5908 /* litecoin.png */,
+				B41CB0421A1A5442004A5908 /* namecoin.png */,
+				B41CB0431A1A5442004A5908 /* peercoin.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,8 +240,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B41CB0491A1A5442004A5908 /* litecoin.png in Resources */,
 				B41CB01D1A19565E004A5908 /* Main.storyboard in Resources */,
 				B41CB0221A19565E004A5908 /* LaunchScreen.xib in Resources */,
+				B41CB0481A1A5442004A5908 /* feathercoin.png in Resources */,
+				B41CB0471A1A5442004A5908 /* dogecoin.png in Resources */,
+				B41CB04A1A1A5442004A5908 /* namecoin.png in Resources */,
+				B41CB04B1A1A5442004A5908 /* peercoin.png in Resources */,
+				B41CB0461A1A5442004A5908 /* darkcoin.png in Resources */,
+				B41CB0441A1A5442004A5908 /* bitcoin.png in Resources */,
+				B41CB0451A1A5442004A5908 /* blackcoin.png in Resources */,
 				B41CB01F1A19565E004A5908 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B41CB03A1A1A5059004A5908 /* TransitionManager.swift in Sources */,
+				B41CB04D1A1A5BE9004A5908 /* MenuViewController.swift in Sources */,
+				B41CB0511A1A9C18004A5908 /* MenuTransitionManager2.swift in Sources */,
+				B41CB04F1A1A9934004A5908 /* MenuViewController2.swift in Sources */,
 				B41CB01A1A19565E004A5908 /* ViewController.swift in Sources */,
+				B41CB0381A1A5046004A5908 /* MenuTransitionManager.swift in Sources */,
 				B41CB0181A19565E004A5908 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +468,7 @@
 				B41CB0331A19565E004A5908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B41CB0341A19565E004A5908 /* Build configuration list for PBXNativeTarget "CoinvertTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +477,7 @@
 				B41CB0361A19565E004A5908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
