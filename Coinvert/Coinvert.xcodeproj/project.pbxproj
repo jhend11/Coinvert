@@ -26,6 +26,19 @@
 		B41CB04D1A1A5BE9004A5908 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB04C1A1A5BE9004A5908 /* MenuViewController.swift */; };
 		B41CB04F1A1A9934004A5908 /* MenuViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB04E1A1A9934004A5908 /* MenuViewController2.swift */; };
 		B41CB0511A1A9C18004A5908 /* MenuTransitionManager2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB0501A1A9C18004A5908 /* MenuTransitionManager2.swift */; };
+		B44E72C61A1BCBA700B3F5EC /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44E72C31A1BCBA700B3F5EC /* QRCodeReader.swift */; };
+		B44E72C71A1BCBA700B3F5EC /* ReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44E72C41A1BCBA700B3F5EC /* ReaderView.swift */; };
+		B44E72C81A1BCBA700B3F5EC /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44E72C51A1BCBA700B3F5EC /* SwitchCameraButton.swift */; };
+		B48DB7C91A1B8216002FBD16 /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7B91A1B8216002FBD16 /* bitstream.c */; };
+		B48DB7CA1A1B8216002FBD16 /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7BB1A1B8216002FBD16 /* mask.c */; };
+		B48DB7CB1A1B8216002FBD16 /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7BD1A1B8216002FBD16 /* qrencode.c */; };
+		B48DB7CC1A1B8216002FBD16 /* qrinput.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7BF1A1B8216002FBD16 /* qrinput.c */; };
+		B48DB7CD1A1B8216002FBD16 /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7C11A1B8216002FBD16 /* qrspec.c */; };
+		B48DB7CE1A1B8216002FBD16 /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7C31A1B8216002FBD16 /* rscode.c */; };
+		B48DB7CF1A1B8216002FBD16 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7C51A1B8216002FBD16 /* split.c */; };
+		B48DB7D01A1B8216002FBD16 /* UIImage+MDQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7C81A1B8216002FBD16 /* UIImage+MDQRCode.m */; };
+		B48DB7D91A1B8401002FBD16 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7D81A1B8401002FBD16 /* SendViewController.swift */; };
+		B48DB7DB1A1B8848002FBD16 /* QR.png in Resources */ = {isa = PBXBuildFile; fileRef = B48DB7DA1A1B8848002FBD16 /* QR.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +75,28 @@
 		B41CB04C1A1A5BE9004A5908 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B41CB04E1A1A9934004A5908 /* MenuViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController2.swift; sourceTree = "<group>"; };
 		B41CB0501A1A9C18004A5908 /* MenuTransitionManager2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager2.swift; sourceTree = "<group>"; };
+		B44E72C31A1BCBA700B3F5EC /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
+		B44E72C41A1BCBA700B3F5EC /* ReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
+		B44E72C51A1BCBA700B3F5EC /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
+		B48DB7B91A1B8216002FBD16 /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
+		B48DB7BA1A1B8216002FBD16 /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		B48DB7BB1A1B8216002FBD16 /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
+		B48DB7BC1A1B8216002FBD16 /* mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
+		B48DB7BD1A1B8216002FBD16 /* qrencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrencode.c; sourceTree = "<group>"; };
+		B48DB7BE1A1B8216002FBD16 /* qrencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
+		B48DB7BF1A1B8216002FBD16 /* qrinput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrinput.c; sourceTree = "<group>"; };
+		B48DB7C01A1B8216002FBD16 /* qrinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
+		B48DB7C11A1B8216002FBD16 /* qrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrspec.c; sourceTree = "<group>"; };
+		B48DB7C21A1B8216002FBD16 /* qrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
+		B48DB7C31A1B8216002FBD16 /* rscode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rscode.c; sourceTree = "<group>"; };
+		B48DB7C41A1B8216002FBD16 /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		B48DB7C51A1B8216002FBD16 /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
+		B48DB7C61A1B8216002FBD16 /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		B48DB7C71A1B8216002FBD16 /* UIImage+MDQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MDQRCode.h"; sourceTree = "<group>"; };
+		B48DB7C81A1B8216002FBD16 /* UIImage+MDQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MDQRCode.m"; sourceTree = "<group>"; };
+		B48DB7D71A1B82D2002FBD16 /* Coinvert-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Coinvert-Bridging-Header.h"; sourceTree = "<group>"; };
+		B48DB7D81A1B8401002FBD16 /* SendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
+		B48DB7DA1A1B8848002FBD16 /* QR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QR.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +120,9 @@
 		B41CB0091A19565E004A5908 = {
 			isa = PBXGroup;
 			children = (
+				B48DB7D71A1B82D2002FBD16 /* Coinvert-Bridging-Header.h */,
+				B44E72C21A1BCBA700B3F5EC /* QRCodeReader */,
+				B48DB7B71A1B8216002FBD16 /* QR */,
 				B41CB03B1A1A5442004A5908 /* Images */,
 				B41CB0141A19565E004A5908 /* Coinvert */,
 				B41CB02A1A19565E004A5908 /* CoinvertTests */,
@@ -111,6 +149,7 @@
 				B41CB04E1A1A9934004A5908 /* MenuViewController2.swift */,
 				B41CB0501A1A9C18004A5908 /* MenuTransitionManager2.swift */,
 				B41CB0191A19565E004A5908 /* ViewController.swift */,
+				B48DB7D81A1B8401002FBD16 /* SendViewController.swift */,
 				B41CB01B1A19565E004A5908 /* Main.storyboard */,
 				B41CB01E1A19565E004A5908 /* Images.xcassets */,
 				B41CB0201A19565E004A5908 /* LaunchScreen.xib */,
@@ -147,6 +186,7 @@
 		B41CB03B1A1A5442004A5908 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B48DB7DA1A1B8848002FBD16 /* QR.png */,
 				B41CB03C1A1A5442004A5908 /* bitcoin.png */,
 				B41CB03D1A1A5442004A5908 /* blackcoin.png */,
 				B41CB03E1A1A5442004A5908 /* darkcoin.png */,
@@ -157,6 +197,47 @@
 				B41CB0431A1A5442004A5908 /* peercoin.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		B44E72C21A1BCBA700B3F5EC /* QRCodeReader */ = {
+			isa = PBXGroup;
+			children = (
+				B44E72C31A1BCBA700B3F5EC /* QRCodeReader.swift */,
+				B44E72C41A1BCBA700B3F5EC /* ReaderView.swift */,
+				B44E72C51A1BCBA700B3F5EC /* SwitchCameraButton.swift */,
+			);
+			path = QRCodeReader;
+			sourceTree = "<group>";
+		};
+		B48DB7B71A1B8216002FBD16 /* QR */ = {
+			isa = PBXGroup;
+			children = (
+				B48DB7B81A1B8216002FBD16 /* libqrencode */,
+				B48DB7C71A1B8216002FBD16 /* UIImage+MDQRCode.h */,
+				B48DB7C81A1B8216002FBD16 /* UIImage+MDQRCode.m */,
+			);
+			path = QR;
+			sourceTree = "<group>";
+		};
+		B48DB7B81A1B8216002FBD16 /* libqrencode */ = {
+			isa = PBXGroup;
+			children = (
+				B48DB7B91A1B8216002FBD16 /* bitstream.c */,
+				B48DB7BA1A1B8216002FBD16 /* bitstream.h */,
+				B48DB7BB1A1B8216002FBD16 /* mask.c */,
+				B48DB7BC1A1B8216002FBD16 /* mask.h */,
+				B48DB7BD1A1B8216002FBD16 /* qrencode.c */,
+				B48DB7BE1A1B8216002FBD16 /* qrencode.h */,
+				B48DB7BF1A1B8216002FBD16 /* qrinput.c */,
+				B48DB7C01A1B8216002FBD16 /* qrinput.h */,
+				B48DB7C11A1B8216002FBD16 /* qrspec.c */,
+				B48DB7C21A1B8216002FBD16 /* qrspec.h */,
+				B48DB7C31A1B8216002FBD16 /* rscode.c */,
+				B48DB7C41A1B8216002FBD16 /* rscode.h */,
+				B48DB7C51A1B8216002FBD16 /* split.c */,
+				B48DB7C61A1B8216002FBD16 /* split.h */,
+			);
+			path = libqrencode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B48DB7DB1A1B8848002FBD16 /* QR.png in Resources */,
 				B41CB0491A1A5442004A5908 /* litecoin.png in Resources */,
 				B41CB01D1A19565E004A5908 /* Main.storyboard in Resources */,
 				B41CB0221A19565E004A5908 /* LaunchScreen.xib in Resources */,
@@ -269,12 +351,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				B41CB03A1A1A5059004A5908 /* TransitionManager.swift in Sources */,
+				B44E72C71A1BCBA700B3F5EC /* ReaderView.swift in Sources */,
+				B48DB7CE1A1B8216002FBD16 /* rscode.c in Sources */,
+				B44E72C61A1BCBA700B3F5EC /* QRCodeReader.swift in Sources */,
 				B41CB04D1A1A5BE9004A5908 /* MenuViewController.swift in Sources */,
+				B48DB7CB1A1B8216002FBD16 /* qrencode.c in Sources */,
 				B41CB0511A1A9C18004A5908 /* MenuTransitionManager2.swift in Sources */,
 				B41CB04F1A1A9934004A5908 /* MenuViewController2.swift in Sources */,
+				B48DB7D01A1B8216002FBD16 /* UIImage+MDQRCode.m in Sources */,
 				B41CB01A1A19565E004A5908 /* ViewController.swift in Sources */,
+				B44E72C81A1BCBA700B3F5EC /* SwitchCameraButton.swift in Sources */,
 				B41CB0381A1A5046004A5908 /* MenuTransitionManager.swift in Sources */,
+				B48DB7CD1A1B8216002FBD16 /* qrspec.c in Sources */,
+				B48DB7CA1A1B8216002FBD16 /* mask.c in Sources */,
 				B41CB0181A19565E004A5908 /* AppDelegate.swift in Sources */,
+				B48DB7D91A1B8401002FBD16 /* SendViewController.swift in Sources */,
+				B48DB7CC1A1B8216002FBD16 /* qrinput.c in Sources */,
+				B48DB7CF1A1B8216002FBD16 /* split.c in Sources */,
+				B48DB7C91A1B8216002FBD16 /* bitstream.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +495,7 @@
 				INFOPLIST_FILE = Coinvert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/midniteslide/_github/Coinvert/Coinvert/Coinvert-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -412,6 +507,7 @@
 				INFOPLIST_FILE = Coinvert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/midniteslide/_github/Coinvert/Coinvert/Coinvert-Bridging-Header.h";
 			};
 			name = Release;
 		};

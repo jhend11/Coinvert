@@ -9,7 +9,8 @@
 import UIKit
 let SCREEN_WIDTH = UIScreen.mainScreen().bounds.size.width
 let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.size.height
-class ViewController: UIViewController {
+class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegate {
+    
     var timer = NSTimer?()
     var fromCoinChoice: Int!
     var fromCoinString: String!
@@ -19,7 +20,10 @@ class ViewController: UIViewController {
     var toSwitchNumber: Int!
     var fromSwitchString: String!
     var toSwitchString: String!
-    
+    lazy var reader: QRCodeReader = QRCodeReader(cancelButtonTitle: "Cancel")
+
+    @IBOutlet weak var returnCoinAddress: UITextField!
+    @IBOutlet weak var yourPaymentAddress: UITextField!
     @IBOutlet weak var currentRateLabel: UILabel!
     @IBOutlet weak var timerBar: UIView!
     @IBOutlet weak var fromCoinImage: UIImageView!
@@ -41,6 +45,9 @@ class ViewController: UIViewController {
         fromCoinString = "btc"
         toCoinString = "ltc"
         
+        yourPaymentAddress.delegate = self
+        returnCoinAddress.delegate = self
+        yourPaymentAddress.text = "LNsJKWYhz3tswFrEzDddwYALAtmpCQdX2A"
         timerBar.backgroundColor = UIColor.blueColor()
         timerBar.frame = CGRectMake(0, 0, 0, 20)
         self.view.addSubview(timerBar)
@@ -214,6 +221,27 @@ self.resetTimerwithSpeed(30)
         
     }
     
+    @IBAction func qrCameraWasClicked(sender: AnyObject) {
+        
+        reader.delegate = self
+        
+        reader.completionBlock = { (result: String?) in
+            println(result)
+            self.yourPaymentAddress.text = result
+        }
+        
+        reader.modalPresentationStyle = .FormSheet
+        presentViewController(reader, animated: true, completion: nil)
+    
+    }
+    func reader(reader: QRCodeReader, didScanResult result: String) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func readerDidCancel(reader: QRCodeReader) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "showToCoin") {
@@ -226,6 +254,19 @@ self.resetTimerwithSpeed(30)
             var svc = segue.destinationViewController as MenuViewController
             
             svc.toCoinSelected = toCoinChoice
+            
+        }
+        if (segue.identifier == "showSendScreen") {
+            var svc = segue.destinationViewController as SendViewController
+            if yourPaymentAddress.text == "" {
+                
+            } else {
+                println(yourPaymentAddress.text)
+                
+                svc.withDrawalString = yourPaymentAddress.text
+svc.toCoinString2 = toCoinString
+                svc.fromCoinString2 = fromCoinString
+}
             
         }
     }
@@ -422,6 +463,11 @@ self.resetTimerwithSpeed(30)
         
         jsonQuery.resume()
         
+    }
+    func textFieldShouldReturn(textField: UITextField!) -> Bool // called when 'return' key pressed. return NO to ignore.
+    {
+        self.view.endEditing(true);
+        return false;
     }
 }
 
