@@ -12,7 +12,7 @@ class MenuViewController: UIViewController {
     let transitionManager = MenuTransitionManager()
     let transitionManger2 = TransitionManager()
     var toCoinSelected: Int!
-
+    var VC: ViewController!
     var nc = NSNotificationCenter.defaultCenter()
     
     @IBOutlet weak var bitcoinIcon: UIButton!

@@ -10,7 +10,6 @@ import UIKit
 let SCREEN_WIDTH = UIScreen.mainScreen().bounds.size.width
 let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.size.height
 class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegate {
-    
     var timer = NSTimer?()
     var fromCoinChoice: Int!
     var fromCoinString: String!
@@ -47,14 +46,11 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
         
         yourPaymentAddress.delegate = self
         returnCoinAddress.delegate = self
-        yourPaymentAddress.text = "LNsJKWYhz3tswFrEzDddwYALAtmpCQdX2A"
+//        yourPaymentAddress.text = "LNsJKWYhz3tswFrEzDddwYALAtmpCQdX2A"
         timerBar.backgroundColor = UIColor.blueColor()
         timerBar.frame = CGRectMake(0, 0, 0, 20)
         self.view.addSubview(timerBar)
-        resetTimerwithSpeed(0)
-    }
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(true)
+//        resetTimerwithSpeed(0)
         
         ///// INTO COINS  ///////
         
@@ -62,19 +58,20 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             self.fromCoinChoice = 0
             self.fromCoinString = "btc"
             self.checkFromCoins()
-            self.checkDepositLimit()
-            self.checkCurrentRate()
-self.resetTimerwithSpeed(30)
+            println("test")
+            //            self.checkDepositLimit()
+            //            self.checkCurrentRate()
+            self.resetTimerwithSpeed(30)
         })
         
         nc.addObserverForName("litecointo", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
             self.fromCoinChoice = 1
             self.fromCoinString = "ltc"
             self.checkFromCoins()
-            self.checkDepositLimit()
-            self.checkCurrentRate()
+            //            self.checkDepositLimit()
+            //            self.checkCurrentRate()
             self.resetTimerwithSpeed(30)
-
+            
         })
         
         nc.addObserverForName("darkcointo", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
@@ -84,7 +81,7 @@ self.resetTimerwithSpeed(30)
             self.checkDepositLimit()
             self.checkCurrentRate()
             self.resetTimerwithSpeed(30)
-
+            
         })
         
         nc.addObserverForName("dogecointo", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
@@ -94,7 +91,7 @@ self.resetTimerwithSpeed(30)
             self.checkDepositLimit()
             self.checkCurrentRate()
             self.resetTimerwithSpeed(30)
-
+            
         })
         
         nc.addObserverForName("feathercointo", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
@@ -104,7 +101,7 @@ self.resetTimerwithSpeed(30)
             self.checkDepositLimit()
             self.checkCurrentRate()
             self.resetTimerwithSpeed(30)
-
+            
         })
         
         nc.addObserverForName("namecointo", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
@@ -114,7 +111,7 @@ self.resetTimerwithSpeed(30)
             self.checkDepositLimit()
             self.checkCurrentRate()
             self.resetTimerwithSpeed(30)
-
+            
         })
         
         nc.addObserverForName("peercointo", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
@@ -124,7 +121,7 @@ self.resetTimerwithSpeed(30)
             self.checkDepositLimit()
             self.checkCurrentRate()
             self.resetTimerwithSpeed(30)
-
+            
         })
         
         nc.addObserverForName("blackcointo", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
@@ -134,7 +131,7 @@ self.resetTimerwithSpeed(30)
             self.checkDepositLimit()
             self.checkCurrentRate()
             self.resetTimerwithSpeed(30)
-
+            
         })
         
         ////////// FROM COINS //////////
@@ -155,7 +152,7 @@ self.resetTimerwithSpeed(30)
             self.checkDepositLimit()
             self.checkCurrentRate()
             self.resetTimerwithSpeed(30)
-
+            
         })
         
         nc.addObserverForName("darkcoin", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
@@ -165,7 +162,7 @@ self.resetTimerwithSpeed(30)
             self.checkDepositLimit()
             self.checkCurrentRate()
             self.resetTimerwithSpeed(30)
-
+            
         })
         
         nc.addObserverForName("dogecoin", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
@@ -175,7 +172,7 @@ self.resetTimerwithSpeed(30)
             self.checkDepositLimit()
             self.checkCurrentRate()
             self.resetTimerwithSpeed(30)
-
+            
         })
         
         nc.addObserverForName("feathercoin", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
@@ -185,7 +182,7 @@ self.resetTimerwithSpeed(30)
             self.checkDepositLimit()
             self.checkCurrentRate()
             self.resetTimerwithSpeed(30)
-
+            
         })
         
         nc.addObserverForName("namecoin", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
@@ -195,7 +192,7 @@ self.resetTimerwithSpeed(30)
             self.checkDepositLimit()
             self.checkCurrentRate()
             self.resetTimerwithSpeed(30)
-
+            
         })
         
         nc.addObserverForName("peercoin", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
@@ -205,7 +202,7 @@ self.resetTimerwithSpeed(30)
             self.checkDepositLimit()
             self.checkCurrentRate()
             self.resetTimerwithSpeed(30)
-
+            
         })
         
         nc.addObserverForName("blackcoin", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
@@ -215,13 +212,21 @@ self.resetTimerwithSpeed(30)
             self.checkDepositLimit()
             self.checkCurrentRate()
             self.resetTimerwithSpeed(30)
-
+            
         })
+        
+
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
         
         
     }
     
     @IBAction func qrCameraWasClicked(sender: AnyObject) {
+        
+        
+        
         
         reader.delegate = self
         
@@ -421,7 +426,6 @@ svc.toCoinString2 = toCoinString
         }
     }
     func timerDone() {
-        println("Game Over")
         resetTimerwithSpeed(30)
         checkCurrentRate()
     }
@@ -464,10 +468,16 @@ svc.toCoinString2 = toCoinString
         jsonQuery.resume()
         
     }
-    func textFieldShouldReturn(textField: UITextField!) -> Bool // called when 'return' key pressed. return NO to ignore.
+    
+    func textFieldShouldReturn(textField: UITextField!) -> Bool
     {
         self.view.endEditing(true);
         return false;
     }
+    
+    
+
+    
+    
 }
 

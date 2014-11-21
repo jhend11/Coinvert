@@ -365,6 +365,18 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KSW-cL-wdt">
                                 <rect key="frame" x="73" y="209" width="250" height="250"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tx Status:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="537-w6-5HY">
+                                <rect key="frame" x="44" y="38" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yII-rz-cgk">
+                                <rect key="frame" x="136" y="38" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -372,6 +384,7 @@
                     <connections>
                         <outlet property="depositAddressLabel" destination="wfv-r5-j9O" id="RNL-3c-lnp"/>
                         <outlet property="qrCodeImageView" destination="KSW-cL-wdt" id="eSg-d5-CVm"/>
+                        <outlet property="transactionStatusLabel" destination="yII-rz-cgk" id="eiM-0Y-wDg"/>
                         <outlet property="withdrawalAddressLabel" destination="6Vo-Af-J3W" id="O3J-Y5-o10"/>
                     </connections>
                 </viewController>
