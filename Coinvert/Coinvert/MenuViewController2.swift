@@ -117,5 +117,7 @@ class MenuViewController2: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
         
     }
-    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
 }

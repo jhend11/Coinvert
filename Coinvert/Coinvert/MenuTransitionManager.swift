@@ -74,22 +74,35 @@ class MenuTransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UI
         menuViewController.view.alpha = 0
         
         // setup paramaters for 2D transitions for animations
-        let topRowOffset  :CGFloat = 50
-        let middleRowOffset :CGFloat = 150
-        let bottomRowOffset  :CGFloat = 300
+        let topRowOffset  :CGFloat = 111
+        let middle1RowOffset :CGFloat = 223
+        let middle2RowOffset :CGFloat = 334
+        let bottomRowOffset  :CGFloat = 446
+        
         
         menuViewController.bitcoinIcon.transform = self.offStage(-topRowOffset)
         menuViewController.bitcoinLabel.transform = self.offStage(-topRowOffset)
         
-        menuViewController.litecoinIcon.transform = self.offStage(-middleRowOffset)
-        menuViewController.litecoinLabel.transform = self.offStage(-middleRowOffset)
+        menuViewController.litecoinIcon.transform = self.offStage(topRowOffset)
+        menuViewController.litecoinLabel.transform = self.offStage(topRowOffset)
         
-        menuViewController.darcoinIcon.transform = self.offStage(topRowOffset)
-        menuViewController.darkcoinLabel.transform = self.offStage(topRowOffset)
+        menuViewController.darcoinIcon.transform = self.offStage(-middle1RowOffset)
+        menuViewController.darkcoinLabel.transform = self.offStage(-middle1RowOffset)
         
-        menuViewController.dogecoinIcon.transform = self.offStage(middleRowOffset)
-        menuViewController.dogecoinLabel.transform = self.offStage(middleRowOffset)
+        menuViewController.dogecoinIcon.transform = self.offStage(middle1RowOffset)
+        menuViewController.dogecoinLabel.transform = self.offStage(middle1RowOffset)
        
+        menuViewController.feathercoinIcon.transform = self.offStage(-middle2RowOffset)
+        menuViewController.feathercoinLabel.transform = self.offStage(-middle2RowOffset)
+        
+        menuViewController.namecoinIcon.transform = self.offStage(middle2RowOffset)
+        menuViewController.namecoinLabel.transform = self.offStage(middle2RowOffset)
+        
+        menuViewController.peercoinIcon.transform = self.offStage(-bottomRowOffset)
+        menuViewController.peercoinLabel.transform = self.offStage(-bottomRowOffset)
+        
+        menuViewController.blackcoinIcon.transform = self.offStage(bottomRowOffset)
+        menuViewController.blackcoinLabel.transform = self.offStage(bottomRowOffset)
         
         
     }
@@ -111,6 +124,17 @@ class MenuTransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UI
         menuViewController.dogecoinIcon.transform = CGAffineTransformIdentity
         menuViewController.dogecoinLabel.transform = CGAffineTransformIdentity
 
+        menuViewController.feathercoinIcon.transform = CGAffineTransformIdentity
+        menuViewController.feathercoinLabel.transform = CGAffineTransformIdentity
+        
+        menuViewController.namecoinIcon.transform = CGAffineTransformIdentity
+        menuViewController.namecoinLabel.transform = CGAffineTransformIdentity
+        
+        menuViewController.peercoinIcon.transform = CGAffineTransformIdentity
+        menuViewController.peercoinLabel.transform = CGAffineTransformIdentity
+        
+        menuViewController.blackcoinIcon.transform = CGAffineTransformIdentity
+        menuViewController.blackcoinLabel.transform = CGAffineTransformIdentity
         
     }
     

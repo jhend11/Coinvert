@@ -167,7 +167,7 @@ import UIKit
   }
   
   // MARK: - UIResponder Methods
-  
+    
   override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
     super.touchesBegan(touches, withEvent: event)
     

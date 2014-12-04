@@ -75,4 +75,5 @@ class ReaderView: UIView {
     overlay.path  = UIBezierPath(roundedRect: offsetRect
       , cornerRadius: 5).CGPath
   }
+     
 }

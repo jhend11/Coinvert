@@ -26,9 +26,21 @@
 		B41CB04D1A1A5BE9004A5908 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB04C1A1A5BE9004A5908 /* MenuViewController.swift */; };
 		B41CB04F1A1A9934004A5908 /* MenuViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB04E1A1A9934004A5908 /* MenuViewController2.swift */; };
 		B41CB0511A1A9C18004A5908 /* MenuTransitionManager2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB0501A1A9C18004A5908 /* MenuTransitionManager2.swift */; };
+		B42B52B81A2FEDAB002CBA91 /* RacingSansOne-Regular copy.otf in Resources */ = {isa = PBXBuildFile; fileRef = B42B52B51A2FD71D002CBA91 /* RacingSansOne-Regular copy.otf */; };
+		B42B52C61A300355002CBA91 /* Down.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52C51A300355002CBA91 /* Down.png */; };
+		B42B52CE1A3014A3002CBA91 /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52CD1A3014A3002CBA91 /* bg1.png */; };
+		B42B52D01A301552002CBA91 /* coinvert.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52CF1A301552002CBA91 /* coinvert.png */; };
+		B42B52E01A30288F002CBA91 /* colors.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52DF1A30288F002CBA91 /* colors.png */; };
+		B42B52E81A302B41002CBA91 /* txButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52E71A302B41002CBA91 /* txButton.png */; };
+		B42B52EA1A302BD1002CBA91 /* switch.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52E91A302BD1002CBA91 /* switch.png */; };
+		B42B52F01A3040FA002CBA91 /* qr.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52EF1A3040FA002CBA91 /* qr.png */; };
+		B42B52F21A3041E2002CBA91 /* qr1.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52F11A3041E2002CBA91 /* qr1.png */; };
+		B42B52F41A304429002CBA91 /* launchscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52F31A304429002CBA91 /* launchscreen.png */; };
 		B44E72C61A1BCBA700B3F5EC /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44E72C31A1BCBA700B3F5EC /* QRCodeReader.swift */; };
 		B44E72C71A1BCBA700B3F5EC /* ReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44E72C41A1BCBA700B3F5EC /* ReaderView.swift */; };
 		B44E72C81A1BCBA700B3F5EC /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44E72C51A1BCBA700B3F5EC /* SwitchCameraButton.swift */; };
+		B45130471A240F290014605C /* alphabg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B45130461A240F290014605C /* alphabg@2x.png */; };
+		B45130571A2464C90014605C /* Alphasendbg.png in Resources */ = {isa = PBXBuildFile; fileRef = B45130561A2464C90014605C /* Alphasendbg.png */; };
 		B48DB7C91A1B8216002FBD16 /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7B91A1B8216002FBD16 /* bitstream.c */; };
 		B48DB7CA1A1B8216002FBD16 /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7BB1A1B8216002FBD16 /* mask.c */; };
 		B48DB7CB1A1B8216002FBD16 /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7BD1A1B8216002FBD16 /* qrencode.c */; };
@@ -38,7 +50,6 @@
 		B48DB7CF1A1B8216002FBD16 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7C51A1B8216002FBD16 /* split.c */; };
 		B48DB7D01A1B8216002FBD16 /* UIImage+MDQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7C81A1B8216002FBD16 /* UIImage+MDQRCode.m */; };
 		B48DB7D91A1B8401002FBD16 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7D81A1B8401002FBD16 /* SendViewController.swift */; };
-		B48DB7DB1A1B8848002FBD16 /* QR.png in Resources */ = {isa = PBXBuildFile; fileRef = B48DB7DA1A1B8848002FBD16 /* QR.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,9 +86,21 @@
 		B41CB04C1A1A5BE9004A5908 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B41CB04E1A1A9934004A5908 /* MenuViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController2.swift; sourceTree = "<group>"; };
 		B41CB0501A1A9C18004A5908 /* MenuTransitionManager2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager2.swift; sourceTree = "<group>"; };
+		B42B52B51A2FD71D002CBA91 /* RacingSansOne-Regular copy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RacingSansOne-Regular copy.otf"; path = "../RacingSansOne-Regular copy.otf"; sourceTree = "<group>"; };
+		B42B52C51A300355002CBA91 /* Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Down.png; sourceTree = "<group>"; };
+		B42B52CD1A3014A3002CBA91 /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
+		B42B52CF1A301552002CBA91 /* coinvert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coinvert.png; sourceTree = "<group>"; };
+		B42B52DF1A30288F002CBA91 /* colors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colors.png; sourceTree = "<group>"; };
+		B42B52E71A302B41002CBA91 /* txButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = txButton.png; sourceTree = "<group>"; };
+		B42B52E91A302BD1002CBA91 /* switch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch.png; sourceTree = "<group>"; };
+		B42B52EF1A3040FA002CBA91 /* qr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qr.png; sourceTree = "<group>"; };
+		B42B52F11A3041E2002CBA91 /* qr1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qr1.png; sourceTree = "<group>"; };
+		B42B52F31A304429002CBA91 /* launchscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchscreen.png; sourceTree = "<group>"; };
 		B44E72C31A1BCBA700B3F5EC /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
 		B44E72C41A1BCBA700B3F5EC /* ReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
 		B44E72C51A1BCBA700B3F5EC /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
+		B45130461A240F290014605C /* alphabg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alphabg@2x.png"; sourceTree = "<group>"; };
+		B45130561A2464C90014605C /* Alphasendbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alphasendbg.png; sourceTree = "<group>"; };
 		B48DB7B91A1B8216002FBD16 /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
 		B48DB7BA1A1B8216002FBD16 /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
 		B48DB7BB1A1B8216002FBD16 /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
@@ -96,7 +119,6 @@
 		B48DB7C81A1B8216002FBD16 /* UIImage+MDQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MDQRCode.m"; sourceTree = "<group>"; };
 		B48DB7D71A1B82D2002FBD16 /* Coinvert-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Coinvert-Bridging-Header.h"; sourceTree = "<group>"; };
 		B48DB7D81A1B8401002FBD16 /* SendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
-		B48DB7DA1A1B8848002FBD16 /* QR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QR.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +183,7 @@
 		B41CB0151A19565E004A5908 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B42B52B51A2FD71D002CBA91 /* RacingSansOne-Regular copy.otf */,
 				B41CB0161A19565E004A5908 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -186,7 +209,17 @@
 		B41CB03B1A1A5442004A5908 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				B48DB7DA1A1B8848002FBD16 /* QR.png */,
+				B42B52F31A304429002CBA91 /* launchscreen.png */,
+				B42B52F11A3041E2002CBA91 /* qr1.png */,
+				B42B52EF1A3040FA002CBA91 /* qr.png */,
+				B42B52E91A302BD1002CBA91 /* switch.png */,
+				B42B52E71A302B41002CBA91 /* txButton.png */,
+				B42B52DF1A30288F002CBA91 /* colors.png */,
+				B42B52CF1A301552002CBA91 /* coinvert.png */,
+				B42B52CD1A3014A3002CBA91 /* bg1.png */,
+				B42B52C51A300355002CBA91 /* Down.png */,
+				B45130561A2464C90014605C /* Alphasendbg.png */,
+				B45130461A240F290014605C /* alphabg@2x.png */,
 				B41CB03C1A1A5442004A5908 /* bitcoin.png */,
 				B41CB03D1A1A5442004A5908 /* blackcoin.png */,
 				B41CB03E1A1A5442004A5908 /* darkcoin.png */,
@@ -321,18 +354,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B48DB7DB1A1B8848002FBD16 /* QR.png in Resources */,
+				B45130471A240F290014605C /* alphabg@2x.png in Resources */,
+				B42B52B81A2FEDAB002CBA91 /* RacingSansOne-Regular copy.otf in Resources */,
 				B41CB0491A1A5442004A5908 /* litecoin.png in Resources */,
 				B41CB01D1A19565E004A5908 /* Main.storyboard in Resources */,
 				B41CB0221A19565E004A5908 /* LaunchScreen.xib in Resources */,
 				B41CB0481A1A5442004A5908 /* feathercoin.png in Resources */,
+				B42B52E81A302B41002CBA91 /* txButton.png in Resources */,
+				B42B52E01A30288F002CBA91 /* colors.png in Resources */,
 				B41CB0471A1A5442004A5908 /* dogecoin.png in Resources */,
+				B42B52C61A300355002CBA91 /* Down.png in Resources */,
+				B42B52F41A304429002CBA91 /* launchscreen.png in Resources */,
 				B41CB04A1A1A5442004A5908 /* namecoin.png in Resources */,
 				B41CB04B1A1A5442004A5908 /* peercoin.png in Resources */,
+				B42B52EA1A302BD1002CBA91 /* switch.png in Resources */,
 				B41CB0461A1A5442004A5908 /* darkcoin.png in Resources */,
+				B45130571A2464C90014605C /* Alphasendbg.png in Resources */,
+				B42B52F01A3040FA002CBA91 /* qr.png in Resources */,
 				B41CB0441A1A5442004A5908 /* bitcoin.png in Resources */,
+				B42B52F21A3041E2002CBA91 /* qr1.png in Resources */,
+				B42B52CE1A3014A3002CBA91 /* bg1.png in Resources */,
 				B41CB0451A1A5442004A5908 /* blackcoin.png in Resources */,
 				B41CB01F1A19565E004A5908 /* Images.xcassets in Resources */,
+				B42B52D01A301552002CBA91 /* coinvert.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

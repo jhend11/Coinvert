@@ -75,8 +75,7 @@ class QRCodeReader: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     configureDefaultComponents()
     setupUIComponentsWithCancelButtonTitle(cancelButtonTitle)
     setupAutoLayoutConstraints()
-    
-    view.backgroundColor = UIColor.blackColor()
+    view.backgroundColor = UIColor(red: 0.188, green: 0.208, blue: 0.278, alpha: 1.0)
     
     cameraView.layer.insertSublayer(previewLayer, atIndex: 0)
   }
@@ -161,7 +160,7 @@ class QRCodeReader: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     cancelButton.setTranslatesAutoresizingMaskIntoConstraints(false)
     cancelButton.setTitle(cancelButtonTitle, forState: .Normal)
-    cancelButton.setTitleColor(UIColor.grayColor(), forState: .Highlighted)
+    cancelButton.setTitleColor(UIColor(red: 0.631, green: 0.702, blue: 0.816, alpha: 1.0), forState: .Highlighted)
     cancelButton.addTarget(self, action: "cancelAction:", forControlEvents: .TouchUpInside)
     view.addSubview(cancelButton)
   }
@@ -229,7 +228,10 @@ class QRCodeReader: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
       session.stopRunning()
     }
   }
-  
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
   // MARK: - Catching Button Events
   
   func cancelAction(button: UIButton) {
