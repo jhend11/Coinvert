@@ -47,9 +47,12 @@ class SendViewController: UIViewController {
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-pendingTransaction = true
+        pendingTransaction = true
         qrCodeImageView.image = UIImage.mdQRCodeForString(depositAddressLabel.text, size: qrCodeImageView.bounds.size.width)
         self.view.addSubview(qrCodeImageView)
+        
+        copyDepositAddressButton.imageView?.image = UIImage(named: "copy")
+        copySendAmountButton.removeFromSuperview()
         
         var string = "\(fromCoinString2)_\(toCoinString2)"
         println(withdrawalAddressLabel.text)
@@ -69,12 +72,18 @@ pendingTransaction = true
         
         //MARK: JSON POST
         
+//        nc.addObserverForName("appEnteredForeground", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
+//            self.resetTimerwithSpeed(30)
+//        })
         
         if depositAmount != nil {
             let s = NSString(format: "%f", depositAmount)
             params = ["amount":s as String!, "withdrawal":s2 as String!, "pair": "\(fromCoinString2)_\(toCoinString2)"] as Dictionary
             shapeshiftURL = "http://shapeshift.io/sendamount"
             fixedAmountCover.removeFromSuperview()
+            copySendAmountButton.imageView?.image = UIImage(named: "copy")
+            view.addSubview(copySendAmountButton)
+
         } else {
             
             params = ["withdrawal":s2 as String!, "pair": "\(fromCoinString2)_\(toCoinString2)"] as Dictionary
@@ -108,13 +117,11 @@ pendingTransaction = true
             
             
             var json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableLeaves, error: &err) as NSDictionary
-//            var err = json["error"]
 
-            // json = {"response":"Success","msg":"User login successfully."}
             
-            if (json["error"] != nil) {
+            if json["error"] != nil {
                 
-                var alert = UIAlertController(title: "Uh-Oh!", message: "To many pending transactions. Try again in a few minutes.", preferredStyle: UIAlertControllerStyle.Alert)
+                var alert = UIAlertController(title: "Uh-Oh!", message: json["error"] as String + ".", preferredStyle: UIAlertControllerStyle.Alert)
                 
                 
                 alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Cancel, handler:self.handleCancel))
@@ -147,6 +154,7 @@ pendingTransaction = true
                     
                   
                 })
+                
                 
                 
                 
@@ -189,12 +197,12 @@ pendingTransaction = true
                 
                 if results == "received" {
                     
-                    self.transactionStatusLabel.text = results
+                    self.transactionStatusLabel.text = "Received"
                     
                 } else if results == "complete" {
                     
                     self.txIdForReciept = jsonResult["transaction"] as String!
-                    self.transactionStatusLabel.text = results
+                    self.transactionStatusLabel.text = "Complete"
                     
                     dispatch_async(dispatch_get_main_queue(), {
                         
@@ -215,7 +223,21 @@ pendingTransaction = true
                     
                     
                 } else if results == "failed" {
-                    self.transactionStatusLabel.text = results
+                    self.transactionStatusLabel.text = "Failed"
+                    
+                    dispatch_async(dispatch_get_main_queue(), {
+                        
+                        var alert = UIAlertController(title: "Coinversion failed", message: "Lets try again!", preferredStyle: UIAlertControllerStyle.Alert)
+                        
+                        alert.addTextFieldWithConfigurationHandler(self.configurationTextField)
+                        
+                        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Cancel, handler:self.handleCancel))
+                     
+                        self.presentViewController(alert, animated: true, completion: {
+                        })
+                        
+                    })
+
                     
                 } else if results == "no_deposits" {
                     
@@ -301,6 +323,8 @@ pendingTransaction = true
         })
         
         task.resume()
+        transactionTimeOut()
+
     }
     
     func checkTimeRemaining() {
@@ -331,8 +355,6 @@ pendingTransaction = true
                 let numberFormatter = NSNumberFormatter()
                 let number = numberFormatter.numberFromString(jsonDate)
                 
-                //                transactionTimer = NSTimer.scheduledTimerWithTimeInterval(number, target: self, selector: Selector("transactionTimeOut"), userInfo: nil, repeats: false)
-                
                 
                 dispatch_async(dispatch_get_main_queue(), {
                     self.secondsLeft = number as Int
@@ -356,20 +378,13 @@ pendingTransaction = true
         
         UIPasteboard.generalPasteboard().string = depositAddressString as String
         
-        copyDepositAddressButton.setTitle("Copied!",forState: .Normal)
-//        copyDepositAddressButton.backgroundColor = .redColor()
-//        UIView.animateWithDuration(3.0, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
-//            
-//            
-//            }) { (succeeded:Bool) -> Void in
-//                self.copyDepositAddressButton.setTitle("Copy",forState: .Normal)
-//                self.copyDepositAddressButton.backgroundColor = .greenColor()
-//        }
+        copyDepositAddressButton.imageView?.image = UIImage(named: "copied")
+
     }
     
     @IBAction func copySendAmountButtonWasPressed(sender: AnyObject) {
         copySendAmountButton.setTitle("Copied!",forState: .Normal)
-//        copySendAmountButton.backgroundColor = .redColor()
+copySendAmountButton.imageView?.image = UIImage(named: "copied")
         UIPasteboard.generalPasteboard().string = sendAmountLabel.text as String!
 
     }

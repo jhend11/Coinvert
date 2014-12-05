@@ -36,6 +36,14 @@
 		B42B52F01A3040FA002CBA91 /* qr.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52EF1A3040FA002CBA91 /* qr.png */; };
 		B42B52F21A3041E2002CBA91 /* qr1.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52F11A3041E2002CBA91 /* qr1.png */; };
 		B42B52F41A304429002CBA91 /* launchscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52F31A304429002CBA91 /* launchscreen.png */; };
+		B42B52F61A30BA89002CBA91 /* sendscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52F51A30BA89002CBA91 /* sendscreen.png */; };
+		B42B52F81A30DC10002CBA91 /* copy.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52F71A30DC10002CBA91 /* copy.png */; };
+		B42B52FA1A30DC80002CBA91 /* copied.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52F91A30DC80002CBA91 /* copied.png */; };
+		B42B52FC1A30EB7F002CBA91 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52FB1A30EB7F002CBA91 /* info.png */; };
+		B42B52FE1A30FFA3002CBA91 /* sendbg.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52FD1A30FFA3002CBA91 /* sendbg.png */; };
+		B42B53081A3114C6002CBA91 /* cover.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B53071A3114C6002CBA91 /* cover.png */; };
+		B42B530A1A3119B7002CBA91 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B53091A3119B7002CBA91 /* cancel.png */; };
+		B42B530C1A312A3E002CBA91 /* popup.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B530B1A312A3E002CBA91 /* popup.png */; };
 		B44E72C61A1BCBA700B3F5EC /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44E72C31A1BCBA700B3F5EC /* QRCodeReader.swift */; };
 		B44E72C71A1BCBA700B3F5EC /* ReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44E72C41A1BCBA700B3F5EC /* ReaderView.swift */; };
 		B44E72C81A1BCBA700B3F5EC /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44E72C51A1BCBA700B3F5EC /* SwitchCameraButton.swift */; };
@@ -96,6 +104,14 @@
 		B42B52EF1A3040FA002CBA91 /* qr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qr.png; sourceTree = "<group>"; };
 		B42B52F11A3041E2002CBA91 /* qr1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qr1.png; sourceTree = "<group>"; };
 		B42B52F31A304429002CBA91 /* launchscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchscreen.png; sourceTree = "<group>"; };
+		B42B52F51A30BA89002CBA91 /* sendscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sendscreen.png; sourceTree = "<group>"; };
+		B42B52F71A30DC10002CBA91 /* copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = copy.png; sourceTree = "<group>"; };
+		B42B52F91A30DC80002CBA91 /* copied.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = copied.png; sourceTree = "<group>"; };
+		B42B52FB1A30EB7F002CBA91 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		B42B52FD1A30FFA3002CBA91 /* sendbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sendbg.png; sourceTree = "<group>"; };
+		B42B53071A3114C6002CBA91 /* cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover.png; sourceTree = "<group>"; };
+		B42B53091A3119B7002CBA91 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		B42B530B1A312A3E002CBA91 /* popup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popup.png; sourceTree = "<group>"; };
 		B44E72C31A1BCBA700B3F5EC /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
 		B44E72C41A1BCBA700B3F5EC /* ReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
 		B44E72C51A1BCBA700B3F5EC /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
@@ -209,6 +225,14 @@
 		B41CB03B1A1A5442004A5908 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B42B530B1A312A3E002CBA91 /* popup.png */,
+				B42B53091A3119B7002CBA91 /* cancel.png */,
+				B42B53071A3114C6002CBA91 /* cover.png */,
+				B42B52FD1A30FFA3002CBA91 /* sendbg.png */,
+				B42B52FB1A30EB7F002CBA91 /* info.png */,
+				B42B52F91A30DC80002CBA91 /* copied.png */,
+				B42B52F71A30DC10002CBA91 /* copy.png */,
+				B42B52F51A30BA89002CBA91 /* sendscreen.png */,
 				B42B52F31A304429002CBA91 /* launchscreen.png */,
 				B42B52F11A3041E2002CBA91 /* qr1.png */,
 				B42B52EF1A3040FA002CBA91 /* qr.png */,
@@ -355,16 +379,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				B45130471A240F290014605C /* alphabg@2x.png in Resources */,
+				B42B52F81A30DC10002CBA91 /* copy.png in Resources */,
+				B42B52FC1A30EB7F002CBA91 /* info.png in Resources */,
+				B42B530A1A3119B7002CBA91 /* cancel.png in Resources */,
 				B42B52B81A2FEDAB002CBA91 /* RacingSansOne-Regular copy.otf in Resources */,
+				B42B52FA1A30DC80002CBA91 /* copied.png in Resources */,
 				B41CB0491A1A5442004A5908 /* litecoin.png in Resources */,
 				B41CB01D1A19565E004A5908 /* Main.storyboard in Resources */,
 				B41CB0221A19565E004A5908 /* LaunchScreen.xib in Resources */,
+				B42B52FE1A30FFA3002CBA91 /* sendbg.png in Resources */,
 				B41CB0481A1A5442004A5908 /* feathercoin.png in Resources */,
 				B42B52E81A302B41002CBA91 /* txButton.png in Resources */,
 				B42B52E01A30288F002CBA91 /* colors.png in Resources */,
 				B41CB0471A1A5442004A5908 /* dogecoin.png in Resources */,
 				B42B52C61A300355002CBA91 /* Down.png in Resources */,
 				B42B52F41A304429002CBA91 /* launchscreen.png in Resources */,
+				B42B530C1A312A3E002CBA91 /* popup.png in Resources */,
+				B42B52F61A30BA89002CBA91 /* sendscreen.png in Resources */,
 				B41CB04A1A1A5442004A5908 /* namecoin.png in Resources */,
 				B41CB04B1A1A5442004A5908 /* peercoin.png in Resources */,
 				B42B52EA1A302BD1002CBA91 /* switch.png in Resources */,
@@ -377,6 +408,7 @@
 				B41CB0451A1A5442004A5908 /* blackcoin.png in Resources */,
 				B41CB01F1A19565E004A5908 /* Images.xcassets in Resources */,
 				B42B52D01A301552002CBA91 /* coinvert.png in Resources */,
+				B42B53081A3114C6002CBA91 /* cover.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

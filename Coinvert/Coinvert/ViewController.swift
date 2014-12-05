@@ -32,12 +32,23 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
     @IBOutlet weak var toCoinLabel: UILabel!
     @IBOutlet weak var depositLimitLabel: UILabel!
     @IBOutlet weak var fixedAmountField: UITextField!
+    @IBOutlet weak var infoView: UIView!
+    @IBOutlet weak var cont: UIView!
     
     
     var nc = NSNotificationCenter.defaultCenter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        infoView.hidden = true
+        
+        yourPaymentAddress.leftView = UIView(frame: CGRectMake(0, 0, 7, 30))
+        returnCoinAddress.leftView = UIView(frame: CGRectMake(0, 0, 7, 30))
+        fixedAmountField.leftView = UIView(frame: CGRectMake(0, 0, 7, 30))
+        yourPaymentAddress.leftViewMode = UITextFieldViewMode.Always
+        returnCoinAddress.leftViewMode = UITextFieldViewMode.Always
+        fixedAmountField.leftViewMode = UITextFieldViewMode.Always
+        
         
         
         fromCoinImage.image = UIImage(named: "bitcoin")
@@ -62,10 +73,12 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
         
         
         
-        
+        nc.addObserverForName("appEnteredForeground", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
+            self.resetTimerwithSpeed(30)
+        })
         nc.addObserverForName("resetCoinvert", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
             self.resetCoinvert()
-            })
+        })
         nc.addObserverForName("bitcointo", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
             self.fromCoinChoice = 0
             self.fromCoinString = "btc"
@@ -228,7 +241,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
         
         
     }
-
+    
     @IBAction func returnAddressQRWasClicked(sender: AnyObject) {
         reader.delegate = self
         
@@ -274,24 +287,25 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             svc.toCoinSelected = toCoinChoice
             
         }
-       
+        
         if (segue.identifier == "showSendScreen") {
             var svc = segue.destinationViewController as SendViewController
             
             if (yourPaymentAddress.text != "" && fixedAmountField.text == "") {
                 
                 println(yourPaymentAddress.text)
-//                let fixedString = fixedAmountField.text as String!
-//                let numberFormatter = NSNumberFormatter()
-//                let number = numberFormatter.numberFromString(fixedString)
-//                let numberFloatValue = number!.floatValue
-//                svc.depositAmount = numberFloatValue
+           
                 svc.withDrawalString = yourPaymentAddress.text
                 svc.toCoinString2 = toCoinString
                 svc.fromCoinString2 = fromCoinString
-
-            } else if yourPaymentAddress.text == "" {
                 
+            } else if yourPaymentAddress.text == "" {
+                yourPaymentAddress.text == " "
+                println(yourPaymentAddress.text)
+
+                svc.withDrawalString = yourPaymentAddress.text
+                svc.toCoinString2 = toCoinString
+                svc.fromCoinString2 = fromCoinString
             } else {
                 
                 println(yourPaymentAddress.text)
@@ -509,7 +523,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             })
         }
         return true
-
+        
     }
     func textFieldDidEndEditing(textField: UITextField!) -> Bool {
         if textField.tag == 1 {
@@ -517,7 +531,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
                 self.view.frame.origin.y += 186
             })        }
         return true
-
+        
     }
     func textFieldShouldReturn(textField: UITextField!) -> Bool
     {
@@ -542,6 +556,14 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
         checkDepositLimit()
     }
     
+    @IBAction func infoButtonWasPressed(sender: AnyObject) {
+            self.infoView.hidden = false
+        
+    }
+    @IBAction func cancelButtonWasPressed(sender: AnyObject) {
+            self.infoView.hidden = true
+        
+    }
     
     
 }
