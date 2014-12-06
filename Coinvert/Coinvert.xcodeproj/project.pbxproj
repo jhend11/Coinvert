@@ -15,20 +15,11 @@
 		B41CB02E1A19565E004A5908 /* CoinvertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB02D1A19565E004A5908 /* CoinvertTests.swift */; };
 		B41CB0381A1A5046004A5908 /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB0371A1A5046004A5908 /* MenuTransitionManager.swift */; };
 		B41CB03A1A1A5059004A5908 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB0391A1A5059004A5908 /* TransitionManager.swift */; };
-		B41CB0441A1A5442004A5908 /* bitcoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B41CB03C1A1A5442004A5908 /* bitcoin.png */; };
-		B41CB0451A1A5442004A5908 /* blackcoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B41CB03D1A1A5442004A5908 /* blackcoin.png */; };
-		B41CB0461A1A5442004A5908 /* darkcoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B41CB03E1A1A5442004A5908 /* darkcoin.png */; };
-		B41CB0471A1A5442004A5908 /* dogecoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B41CB03F1A1A5442004A5908 /* dogecoin.png */; };
-		B41CB0481A1A5442004A5908 /* feathercoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B41CB0401A1A5442004A5908 /* feathercoin.png */; };
-		B41CB0491A1A5442004A5908 /* litecoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B41CB0411A1A5442004A5908 /* litecoin.png */; };
-		B41CB04A1A1A5442004A5908 /* namecoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B41CB0421A1A5442004A5908 /* namecoin.png */; };
-		B41CB04B1A1A5442004A5908 /* peercoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B41CB0431A1A5442004A5908 /* peercoin.png */; };
 		B41CB04D1A1A5BE9004A5908 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB04C1A1A5BE9004A5908 /* MenuViewController.swift */; };
 		B41CB04F1A1A9934004A5908 /* MenuViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB04E1A1A9934004A5908 /* MenuViewController2.swift */; };
 		B41CB0511A1A9C18004A5908 /* MenuTransitionManager2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB0501A1A9C18004A5908 /* MenuTransitionManager2.swift */; };
 		B42B52B81A2FEDAB002CBA91 /* RacingSansOne-Regular copy.otf in Resources */ = {isa = PBXBuildFile; fileRef = B42B52B51A2FD71D002CBA91 /* RacingSansOne-Regular copy.otf */; };
 		B42B52C61A300355002CBA91 /* Down.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52C51A300355002CBA91 /* Down.png */; };
-		B42B52CE1A3014A3002CBA91 /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52CD1A3014A3002CBA91 /* bg1.png */; };
 		B42B52D01A301552002CBA91 /* coinvert.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52CF1A301552002CBA91 /* coinvert.png */; };
 		B42B52E01A30288F002CBA91 /* colors.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52DF1A30288F002CBA91 /* colors.png */; };
 		B42B52E81A302B41002CBA91 /* txButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52E71A302B41002CBA91 /* txButton.png */; };
@@ -40,15 +31,25 @@
 		B42B52F81A30DC10002CBA91 /* copy.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52F71A30DC10002CBA91 /* copy.png */; };
 		B42B52FA1A30DC80002CBA91 /* copied.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52F91A30DC80002CBA91 /* copied.png */; };
 		B42B52FC1A30EB7F002CBA91 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52FB1A30EB7F002CBA91 /* info.png */; };
-		B42B52FE1A30FFA3002CBA91 /* sendbg.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52FD1A30FFA3002CBA91 /* sendbg.png */; };
-		B42B53081A3114C6002CBA91 /* cover.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B53071A3114C6002CBA91 /* cover.png */; };
 		B42B530A1A3119B7002CBA91 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B53091A3119B7002CBA91 /* cancel.png */; };
 		B42B530C1A312A3E002CBA91 /* popup.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B530B1A312A3E002CBA91 /* popup.png */; };
+		B42B530E1A31752D002CBA91 /* cxl.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B530D1A31752D002CBA91 /* cxl.png */; };
+		B42B53101A317DA9002CBA91 /* depositCopied.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B530F1A317DA9002CBA91 /* depositCopied.png */; };
+		B42B53121A317DB4002CBA91 /* depositAmountCopied.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B53111A317DB4002CBA91 /* depositAmountCopied.png */; };
 		B44E72C61A1BCBA700B3F5EC /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44E72C31A1BCBA700B3F5EC /* QRCodeReader.swift */; };
 		B44E72C71A1BCBA700B3F5EC /* ReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44E72C41A1BCBA700B3F5EC /* ReaderView.swift */; };
 		B44E72C81A1BCBA700B3F5EC /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44E72C51A1BCBA700B3F5EC /* SwitchCameraButton.swift */; };
-		B45130471A240F290014605C /* alphabg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B45130461A240F290014605C /* alphabg@2x.png */; };
-		B45130571A2464C90014605C /* Alphasendbg.png in Resources */ = {isa = PBXBuildFile; fileRef = B45130561A2464C90014605C /* Alphasendbg.png */; };
+		B45352A11A32A88200CF2A0A /* cover.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352A01A32A88200CF2A0A /* cover.png */; };
+		B45352C21A32B4AB00CF2A0A /* dogecoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352BA1A32B4AB00CF2A0A /* dogecoin.png */; };
+		B45352C31A32B4AB00CF2A0A /* litecoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352BB1A32B4AB00CF2A0A /* litecoin.png */; };
+		B45352C41A32B4AB00CF2A0A /* namecoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352BC1A32B4AB00CF2A0A /* namecoin.png */; };
+		B45352C51A32B4AB00CF2A0A /* darkcoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352BD1A32B4AB00CF2A0A /* darkcoin.png */; };
+		B45352C61A32B4AB00CF2A0A /* bitcoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352BE1A32B4AB00CF2A0A /* bitcoin.png */; };
+		B45352C71A32B4AB00CF2A0A /* blackcoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352BF1A32B4AB00CF2A0A /* blackcoin.png */; };
+		B45352C81A32B4AB00CF2A0A /* feathercoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352C01A32B4AB00CF2A0A /* feathercoin.png */; };
+		B45352CB1A32B6CF00CF2A0A /* peercoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352CA1A32B6CF00CF2A0A /* peercoin.png */; };
+		B45352CD1A32F8E000CF2A0A /* middlearrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352CC1A32F8E000CF2A0A /* middlearrow.png */; };
+		B45352CF1A32F90B00CF2A0A /* sendbg.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352CE1A32F90B00CF2A0A /* sendbg.png */; };
 		B48DB7C91A1B8216002FBD16 /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7B91A1B8216002FBD16 /* bitstream.c */; };
 		B48DB7CA1A1B8216002FBD16 /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7BB1A1B8216002FBD16 /* mask.c */; };
 		B48DB7CB1A1B8216002FBD16 /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7BD1A1B8216002FBD16 /* qrencode.c */; };
@@ -83,20 +84,11 @@
 		B41CB02D1A19565E004A5908 /* CoinvertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinvertTests.swift; sourceTree = "<group>"; };
 		B41CB0371A1A5046004A5908 /* MenuTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager.swift; sourceTree = "<group>"; };
 		B41CB0391A1A5059004A5908 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
-		B41CB03C1A1A5442004A5908 /* bitcoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitcoin.png; sourceTree = "<group>"; };
-		B41CB03D1A1A5442004A5908 /* blackcoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackcoin.png; sourceTree = "<group>"; };
-		B41CB03E1A1A5442004A5908 /* darkcoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkcoin.png; sourceTree = "<group>"; };
-		B41CB03F1A1A5442004A5908 /* dogecoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dogecoin.png; sourceTree = "<group>"; };
-		B41CB0401A1A5442004A5908 /* feathercoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feathercoin.png; sourceTree = "<group>"; };
-		B41CB0411A1A5442004A5908 /* litecoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = litecoin.png; sourceTree = "<group>"; };
-		B41CB0421A1A5442004A5908 /* namecoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = namecoin.png; sourceTree = "<group>"; };
-		B41CB0431A1A5442004A5908 /* peercoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peercoin.png; sourceTree = "<group>"; };
 		B41CB04C1A1A5BE9004A5908 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B41CB04E1A1A9934004A5908 /* MenuViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController2.swift; sourceTree = "<group>"; };
 		B41CB0501A1A9C18004A5908 /* MenuTransitionManager2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager2.swift; sourceTree = "<group>"; };
 		B42B52B51A2FD71D002CBA91 /* RacingSansOne-Regular copy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RacingSansOne-Regular copy.otf"; path = "../RacingSansOne-Regular copy.otf"; sourceTree = "<group>"; };
 		B42B52C51A300355002CBA91 /* Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Down.png; sourceTree = "<group>"; };
-		B42B52CD1A3014A3002CBA91 /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
 		B42B52CF1A301552002CBA91 /* coinvert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coinvert.png; sourceTree = "<group>"; };
 		B42B52DF1A30288F002CBA91 /* colors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colors.png; sourceTree = "<group>"; };
 		B42B52E71A302B41002CBA91 /* txButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = txButton.png; sourceTree = "<group>"; };
@@ -108,15 +100,25 @@
 		B42B52F71A30DC10002CBA91 /* copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = copy.png; sourceTree = "<group>"; };
 		B42B52F91A30DC80002CBA91 /* copied.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = copied.png; sourceTree = "<group>"; };
 		B42B52FB1A30EB7F002CBA91 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
-		B42B52FD1A30FFA3002CBA91 /* sendbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sendbg.png; sourceTree = "<group>"; };
-		B42B53071A3114C6002CBA91 /* cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover.png; sourceTree = "<group>"; };
 		B42B53091A3119B7002CBA91 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
 		B42B530B1A312A3E002CBA91 /* popup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popup.png; sourceTree = "<group>"; };
+		B42B530D1A31752D002CBA91 /* cxl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cxl.png; sourceTree = "<group>"; };
+		B42B530F1A317DA9002CBA91 /* depositCopied.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = depositCopied.png; sourceTree = "<group>"; };
+		B42B53111A317DB4002CBA91 /* depositAmountCopied.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = depositAmountCopied.png; sourceTree = "<group>"; };
 		B44E72C31A1BCBA700B3F5EC /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
 		B44E72C41A1BCBA700B3F5EC /* ReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
 		B44E72C51A1BCBA700B3F5EC /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
-		B45130461A240F290014605C /* alphabg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alphabg@2x.png"; sourceTree = "<group>"; };
-		B45130561A2464C90014605C /* Alphasendbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alphasendbg.png; sourceTree = "<group>"; };
+		B45352A01A32A88200CF2A0A /* cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover.png; sourceTree = "<group>"; };
+		B45352BA1A32B4AB00CF2A0A /* dogecoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dogecoin.png; sourceTree = "<group>"; };
+		B45352BB1A32B4AB00CF2A0A /* litecoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = litecoin.png; sourceTree = "<group>"; };
+		B45352BC1A32B4AB00CF2A0A /* namecoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = namecoin.png; sourceTree = "<group>"; };
+		B45352BD1A32B4AB00CF2A0A /* darkcoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkcoin.png; sourceTree = "<group>"; };
+		B45352BE1A32B4AB00CF2A0A /* bitcoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitcoin.png; sourceTree = "<group>"; };
+		B45352BF1A32B4AB00CF2A0A /* blackcoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackcoin.png; sourceTree = "<group>"; };
+		B45352C01A32B4AB00CF2A0A /* feathercoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feathercoin.png; sourceTree = "<group>"; };
+		B45352CA1A32B6CF00CF2A0A /* peercoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peercoin.png; sourceTree = "<group>"; };
+		B45352CC1A32F8E000CF2A0A /* middlearrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = middlearrow.png; sourceTree = "<group>"; };
+		B45352CE1A32F90B00CF2A0A /* sendbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sendbg.png; sourceTree = "<group>"; };
 		B48DB7B91A1B8216002FBD16 /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
 		B48DB7BA1A1B8216002FBD16 /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
 		B48DB7BB1A1B8216002FBD16 /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
@@ -225,10 +227,14 @@
 		B41CB03B1A1A5442004A5908 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B45352CE1A32F90B00CF2A0A /* sendbg.png */,
+				B45352CC1A32F8E000CF2A0A /* middlearrow.png */,
+				B45352A01A32A88200CF2A0A /* cover.png */,
+				B42B53111A317DB4002CBA91 /* depositAmountCopied.png */,
+				B42B530F1A317DA9002CBA91 /* depositCopied.png */,
+				B42B530D1A31752D002CBA91 /* cxl.png */,
 				B42B530B1A312A3E002CBA91 /* popup.png */,
 				B42B53091A3119B7002CBA91 /* cancel.png */,
-				B42B53071A3114C6002CBA91 /* cover.png */,
-				B42B52FD1A30FFA3002CBA91 /* sendbg.png */,
 				B42B52FB1A30EB7F002CBA91 /* info.png */,
 				B42B52F91A30DC80002CBA91 /* copied.png */,
 				B42B52F71A30DC10002CBA91 /* copy.png */,
@@ -240,18 +246,15 @@
 				B42B52E71A302B41002CBA91 /* txButton.png */,
 				B42B52DF1A30288F002CBA91 /* colors.png */,
 				B42B52CF1A301552002CBA91 /* coinvert.png */,
-				B42B52CD1A3014A3002CBA91 /* bg1.png */,
 				B42B52C51A300355002CBA91 /* Down.png */,
-				B45130561A2464C90014605C /* Alphasendbg.png */,
-				B45130461A240F290014605C /* alphabg@2x.png */,
-				B41CB03C1A1A5442004A5908 /* bitcoin.png */,
-				B41CB03D1A1A5442004A5908 /* blackcoin.png */,
-				B41CB03E1A1A5442004A5908 /* darkcoin.png */,
-				B41CB03F1A1A5442004A5908 /* dogecoin.png */,
-				B41CB0401A1A5442004A5908 /* feathercoin.png */,
-				B41CB0411A1A5442004A5908 /* litecoin.png */,
-				B41CB0421A1A5442004A5908 /* namecoin.png */,
-				B41CB0431A1A5442004A5908 /* peercoin.png */,
+				B45352BA1A32B4AB00CF2A0A /* dogecoin.png */,
+				B45352BB1A32B4AB00CF2A0A /* litecoin.png */,
+				B45352BC1A32B4AB00CF2A0A /* namecoin.png */,
+				B45352BD1A32B4AB00CF2A0A /* darkcoin.png */,
+				B45352BE1A32B4AB00CF2A0A /* bitcoin.png */,
+				B45352BF1A32B4AB00CF2A0A /* blackcoin.png */,
+				B45352C01A32B4AB00CF2A0A /* feathercoin.png */,
+				B45352CA1A32B6CF00CF2A0A /* peercoin.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -378,37 +381,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B45130471A240F290014605C /* alphabg@2x.png in Resources */,
+				B42B53101A317DA9002CBA91 /* depositCopied.png in Resources */,
+				B42B530E1A31752D002CBA91 /* cxl.png in Resources */,
 				B42B52F81A30DC10002CBA91 /* copy.png in Resources */,
+				B45352CB1A32B6CF00CF2A0A /* peercoin.png in Resources */,
 				B42B52FC1A30EB7F002CBA91 /* info.png in Resources */,
 				B42B530A1A3119B7002CBA91 /* cancel.png in Resources */,
+				B45352C71A32B4AB00CF2A0A /* blackcoin.png in Resources */,
 				B42B52B81A2FEDAB002CBA91 /* RacingSansOne-Regular copy.otf in Resources */,
 				B42B52FA1A30DC80002CBA91 /* copied.png in Resources */,
-				B41CB0491A1A5442004A5908 /* litecoin.png in Resources */,
+				B45352C21A32B4AB00CF2A0A /* dogecoin.png in Resources */,
+				B45352C31A32B4AB00CF2A0A /* litecoin.png in Resources */,
 				B41CB01D1A19565E004A5908 /* Main.storyboard in Resources */,
 				B41CB0221A19565E004A5908 /* LaunchScreen.xib in Resources */,
-				B42B52FE1A30FFA3002CBA91 /* sendbg.png in Resources */,
-				B41CB0481A1A5442004A5908 /* feathercoin.png in Resources */,
 				B42B52E81A302B41002CBA91 /* txButton.png in Resources */,
 				B42B52E01A30288F002CBA91 /* colors.png in Resources */,
-				B41CB0471A1A5442004A5908 /* dogecoin.png in Resources */,
 				B42B52C61A300355002CBA91 /* Down.png in Resources */,
+				B45352CF1A32F90B00CF2A0A /* sendbg.png in Resources */,
+				B45352C51A32B4AB00CF2A0A /* darkcoin.png in Resources */,
 				B42B52F41A304429002CBA91 /* launchscreen.png in Resources */,
 				B42B530C1A312A3E002CBA91 /* popup.png in Resources */,
+				B45352A11A32A88200CF2A0A /* cover.png in Resources */,
+				B45352C61A32B4AB00CF2A0A /* bitcoin.png in Resources */,
 				B42B52F61A30BA89002CBA91 /* sendscreen.png in Resources */,
-				B41CB04A1A1A5442004A5908 /* namecoin.png in Resources */,
-				B41CB04B1A1A5442004A5908 /* peercoin.png in Resources */,
 				B42B52EA1A302BD1002CBA91 /* switch.png in Resources */,
-				B41CB0461A1A5442004A5908 /* darkcoin.png in Resources */,
-				B45130571A2464C90014605C /* Alphasendbg.png in Resources */,
+				B42B53121A317DB4002CBA91 /* depositAmountCopied.png in Resources */,
 				B42B52F01A3040FA002CBA91 /* qr.png in Resources */,
-				B41CB0441A1A5442004A5908 /* bitcoin.png in Resources */,
 				B42B52F21A3041E2002CBA91 /* qr1.png in Resources */,
-				B42B52CE1A3014A3002CBA91 /* bg1.png in Resources */,
-				B41CB0451A1A5442004A5908 /* blackcoin.png in Resources */,
+				B45352C81A32B4AB00CF2A0A /* feathercoin.png in Resources */,
+				B45352CD1A32F8E000CF2A0A /* middlearrow.png in Resources */,
 				B41CB01F1A19565E004A5908 /* Images.xcassets in Resources */,
 				B42B52D01A301552002CBA91 /* coinvert.png in Resources */,
-				B42B53081A3114C6002CBA91 /* cover.png in Resources */,
+				B45352C41A32B4AB00CF2A0A /* namecoin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

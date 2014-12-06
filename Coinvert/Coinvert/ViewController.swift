@@ -19,6 +19,9 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
     var toSwitchNumber: Int!
     var fromSwitchString: String!
     var toSwitchString: String!
+    var currentTransactionToggle: Bool!
+    var depositLimitFloat: Float!
+    var currentRateFloat: Float!
     lazy var reader: QRCodeReader = QRCodeReader(cancelButtonTitle: "Cancel")
     
     @IBOutlet weak var coinvertButton: UIButton!
@@ -33,7 +36,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
     @IBOutlet weak var depositLimitLabel: UILabel!
     @IBOutlet weak var fixedAmountField: UITextField!
     @IBOutlet weak var infoView: UIView!
-    @IBOutlet weak var cont: UIView!
+    @IBOutlet weak var estMaxLabel: UILabel!
     
     
     var nc = NSNotificationCenter.defaultCenter()
@@ -59,22 +62,25 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
         toCoinChoice = 1
         fromCoinString = "btc"
         toCoinString = "ltc"
-        
+        currentTransactionToggle = false
         yourPaymentAddress.delegate = self
         returnCoinAddress.delegate = self
         
         yourPaymentAddress.tag = 1
         
-        
-        checkCurrentRate()
         checkDepositLimit()
+
+        checkCurrentRate()
         resetTimerwithSpeed(0)
         ///// INTO COINS  ///////
         
         
         
         nc.addObserverForName("appEnteredForeground", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
-            self.resetTimerwithSpeed(30)
+            if self.currentTransactionToggle == false {
+                self.resetTimerwithSpeed(30)
+
+            }
         })
         nc.addObserverForName("resetCoinvert", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
             self.resetCoinvert()
@@ -291,23 +297,25 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
         if (segue.identifier == "showSendScreen") {
             var svc = segue.destinationViewController as SendViewController
             
-            if (yourPaymentAddress.text != "" && fixedAmountField.text == "") {
+            if (yourPaymentAddress.text.isEmpty == false && fixedAmountField.text.isEmpty == true) {
                 
                 println(yourPaymentAddress.text)
            
                 svc.withDrawalString = yourPaymentAddress.text
                 svc.toCoinString2 = toCoinString
                 svc.fromCoinString2 = fromCoinString
-                
-            } else if yourPaymentAddress.text == "" {
+                currentTransactionToggle = true
+            } else if yourPaymentAddress.text.isEmpty == true {
                 yourPaymentAddress.text == " "
                 println(yourPaymentAddress.text)
+                currentTransactionToggle = true
 
                 svc.withDrawalString = yourPaymentAddress.text
                 svc.toCoinString2 = toCoinString
                 svc.fromCoinString2 = fromCoinString
             } else {
-                
+                currentTransactionToggle = true
+
                 println(yourPaymentAddress.text)
                 let fixedString = fixedAmountField.text as String!
                 let numberFormatter = NSNumberFormatter()
@@ -317,6 +325,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
                 svc.withDrawalString = yourPaymentAddress.text
                 svc.toCoinString2 = toCoinString
                 svc.fromCoinString2 = fromCoinString
+                println("made it")
             }
             
         }
@@ -333,9 +342,10 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
         fromCoinString = toSwitchString
         toCoinString = fromSwitchString
         
+        checkDepositLimit()
+
         checkToCoins()
         checkFromCoins()
-        checkDepositLimit()
         checkCurrentRate()
         resetTimerwithSpeed(30)
     }
@@ -363,13 +373,13 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
                 var jsonDate: String! = jsonResult["limit"] as String
                 let numberFormatter = NSNumberFormatter()
                 let number = numberFormatter.numberFromString(jsonDate)
-                let numberFloatValue = number!.floatValue
+                self.depositLimitFloat = number!.floatValue
                 
                 
                 let newFromCoinString = self.fromCoinString.uppercaseString
                 
                 dispatch_async(dispatch_get_main_queue(), {
-                    self.depositLimitLabel.text = NSString(format:"Limit: " + "%.4f" + " " + newFromCoinString, numberFloatValue)
+                    self.depositLimitLabel.text = NSString(format:"Limit: " + "%.4f" + " " + newFromCoinString, self.depositLimitFloat)
                     
                 })
             }
@@ -474,8 +484,12 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
         }
     }
     func timerDone() {
-        resetTimerwithSpeed(30)
-        checkCurrentRate()
+        if currentTransactionToggle == false {
+            resetTimerwithSpeed(30)
+            checkDepositLimit()
+            checkCurrentRate()
+        }
+        
     }
     func checkCurrentRate() {
         
@@ -500,14 +514,20 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
                 var jsonDate: String! = jsonResult["rate"] as String
                 let numberFormatter = NSNumberFormatter()
                 let number = numberFormatter.numberFromString(jsonDate)
-                let numberFloatValue = number!.floatValue
+                 self.currentRateFloat = number!.floatValue
                 
                 
                 let newFromCoinString = self.fromCoinString.uppercaseString
                 let newToCoinString = self.toCoinString.uppercaseString
                 
                 dispatch_async(dispatch_get_main_queue(), {
-                    self.currentRateLabel.text = NSString(format: "1.00 " + newFromCoinString + " = %f" + " " + newToCoinString, numberFloatValue)
+                    self.currentRateLabel.text = NSString(format: "1.00 " + newFromCoinString + " = %f" + " " + newToCoinString, self.currentRateFloat)
+                    
+                    if self.depositLimitFloat != nil {
+                        var mathNumber = self.depositLimitFloat * self.currentRateFloat
+                        self.estMaxLabel.text = "Est. max:    \(mathNumber) \(newToCoinString.uppercaseString)"
+                    }
+                    
                     
                 })
             }
@@ -518,7 +538,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
     }
     func textFieldDidBeginEditing(textField: UITextField!) -> Bool {
         if textField.tag == 1 {
-            UIView.animateWithDuration(0.3, animations: { () -> Void in
+            UIView.animateWithDuration(0.25, animations: { () -> Void in
                 self.view.frame.origin.y -= 186
             })
         }
@@ -527,7 +547,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
     }
     func textFieldDidEndEditing(textField: UITextField!) -> Bool {
         if textField.tag == 1 {
-            UIView.animateWithDuration(0.3, animations: { () -> Void in
+            UIView.animateWithDuration(0.25, animations: { () -> Void in
                 self.view.frame.origin.y += 186
             })        }
         return true
@@ -541,6 +561,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
     }
     func resetCoinvert(){
         
+        currentTransactionToggle = false
         fromCoinImage.image = UIImage(named: "bitcoin")
         fromCoinLabel.text = "Bitcoin"
         toCoinImage.image = UIImage(named: "litecoin")
@@ -549,16 +570,16 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
         toCoinChoice = 1
         fromCoinString = "btc"
         toCoinString = "ltc"
-        fixedAmountField.text = ""
-        yourPaymentAddress.text = ""
-        returnCoinAddress.text = ""
-        checkCurrentRate()
+        fixedAmountField.text = nil
+        yourPaymentAddress.text = nil
+        returnCoinAddress.text = nil
         checkDepositLimit()
+        checkCurrentRate()
     }
     
     @IBAction func infoButtonWasPressed(sender: AnyObject) {
-            self.infoView.hidden = false
-        
+        self.infoView.hidden = false
+   
     }
     @IBAction func cancelButtonWasPressed(sender: AnyObject) {
             self.infoView.hidden = true
