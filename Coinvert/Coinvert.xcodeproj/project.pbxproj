@@ -50,6 +50,7 @@
 		B45352CB1A32B6CF00CF2A0A /* peercoin.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352CA1A32B6CF00CF2A0A /* peercoin.png */; };
 		B45352CD1A32F8E000CF2A0A /* middlearrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352CC1A32F8E000CF2A0A /* middlearrow.png */; };
 		B45352CF1A32F90B00CF2A0A /* sendbg.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352CE1A32F90B00CF2A0A /* sendbg.png */; };
+		B45352D71A33B37200CF2A0A /* popupforestmax.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352D61A33B37200CF2A0A /* popupforestmax.png */; };
 		B48DB7C91A1B8216002FBD16 /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7B91A1B8216002FBD16 /* bitstream.c */; };
 		B48DB7CA1A1B8216002FBD16 /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7BB1A1B8216002FBD16 /* mask.c */; };
 		B48DB7CB1A1B8216002FBD16 /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7BD1A1B8216002FBD16 /* qrencode.c */; };
@@ -119,6 +120,7 @@
 		B45352CA1A32B6CF00CF2A0A /* peercoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peercoin.png; sourceTree = "<group>"; };
 		B45352CC1A32F8E000CF2A0A /* middlearrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = middlearrow.png; sourceTree = "<group>"; };
 		B45352CE1A32F90B00CF2A0A /* sendbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sendbg.png; sourceTree = "<group>"; };
+		B45352D61A33B37200CF2A0A /* popupforestmax.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popupforestmax.png; sourceTree = "<group>"; };
 		B48DB7B91A1B8216002FBD16 /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
 		B48DB7BA1A1B8216002FBD16 /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
 		B48DB7BB1A1B8216002FBD16 /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				B45352BF1A32B4AB00CF2A0A /* blackcoin.png */,
 				B45352C01A32B4AB00CF2A0A /* feathercoin.png */,
 				B45352CA1A32B6CF00CF2A0A /* peercoin.png */,
+				B45352D61A33B37200CF2A0A /* popupforestmax.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				B41CB01D1A19565E004A5908 /* Main.storyboard in Resources */,
 				B41CB0221A19565E004A5908 /* LaunchScreen.xib in Resources */,
 				B42B52E81A302B41002CBA91 /* txButton.png in Resources */,
+				B45352D71A33B37200CF2A0A /* popupforestmax.png in Resources */,
 				B42B52E01A30288F002CBA91 /* colors.png in Resources */,
 				B42B52C61A300355002CBA91 /* Down.png in Resources */,
 				B45352CF1A32F90B00CF2A0A /* sendbg.png in Resources */,

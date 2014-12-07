@@ -235,8 +235,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.72941176470588232" green="0.25098039215686274" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.65000000000000013" id="yFd-En-WZ4">
-                                <rect key="frame" x="169" y="107" width="160" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Limit: 0.000 LTC" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.65000000000000013" id="yFd-En-WZ4" userLabel="DepositLimitLabel">
+                                <rect key="frame" x="161" y="107" width="175" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="21"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -270,17 +270,17 @@
                                 <rect key="frame" x="124" y="149" width="213" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="36"/>
-                                <color key="textColor" red="0.38039215686274508" green="0.47058823529411764" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="toCoinLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RCf-gZ-5BF">
                                 <rect key="frame" x="124" y="426" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="36"/>
-                                <color key="textColor" red="0.38039215686274508" green="0.47058823529411764" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Return Address (optional)" minimumFontSize="17" id="ZaO-kM-OvY">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Return Address (optional)" minimumFontSize="17" clearButtonMode="whileEditing" id="ZaO-kM-OvY">
                                 <rect key="frame" x="56" y="243" width="303" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89803921568627454" green="0.82352941176470584" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
@@ -296,7 +296,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Your Payment Address" textAlignment="natural" minimumFontSize="17" id="UnG-cF-5x1">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Your Payment Address" textAlignment="natural" minimumFontSize="7" clearButtonMode="whileEditing" id="UnG-cF-5x1">
                                 <rect key="frame" x="56" y="529" width="303" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89803921568627454" green="0.82352941176470584" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
@@ -319,7 +319,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75000000000000022" id="Kmn-CY-y4o" userLabel="InstantRateLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00 LTC = 0.0000 BTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75000000000000022" id="Kmn-CY-y4o" userLabel="InstantRateLabel">
                                 <rect key="frame" x="53" y="56" width="268" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="20"/>
@@ -395,7 +395,7 @@
                                 <color key="backgroundColor" red="0.89803921568627454" green="0.82352941176470584" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="light" returnKeyType="done"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                         <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -449,12 +449,16 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Est. max:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9zU-0A-Dd3">
-                                <rect key="frame" x="124" y="402" width="162" height="21"/>
+                                <rect key="frame" x="124" y="402" width="278" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popupforestmax.png" id="8fx-M8-Qvk">
+                                <rect key="frame" x="220" y="291.00000757481655" width="152" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -464,6 +468,7 @@
                         <outlet property="currentRateLabel" destination="Kmn-CY-y4o" id="y0n-O3-fIy"/>
                         <outlet property="depositLimitLabel" destination="yFd-En-WZ4" id="Lfh-dR-t5y"/>
                         <outlet property="estMaxLabel" destination="9zU-0A-Dd3" id="Qvn-Qw-ZgQ"/>
+                        <outlet property="estMaxPopup" destination="8fx-M8-Qvk" id="NzT-Ew-O3B"/>
                         <outlet property="fixedAmountField" destination="gNm-WD-SCv" id="cX7-pm-UAu"/>
                         <outlet property="fromCoinImage" destination="hXd-I2-CLR" id="9B1-if-pyR"/>
                         <outlet property="fromCoinLabel" destination="mgr-9R-h2x" id="G5b-0d-EhR"/>
@@ -499,7 +504,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yII-rz-cgk" userLabel="TransStatusLabel">
-                                <rect key="frame" x="102" y="153" width="170" height="26"/>
+                                <rect key="frame" x="102" y="150" width="170" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="25"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -861,6 +866,7 @@
         <image name="namecoin.png" width="105" height="105"/>
         <image name="peercoin.png" width="105" height="105"/>
         <image name="popup.png" width="250" height="200"/>
+        <image name="popupforestmax.png" width="175" height="105"/>
         <image name="qr1.png" width="300" height="300"/>
         <image name="sendbg.png" width="640" height="1146"/>
         <image name="switch.png" width="65" height="65"/>

@@ -11,6 +11,7 @@ let SCREEN_WIDTH = UIScreen.mainScreen().bounds.size.width
 let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.size.height
 class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegate {
     var timer = NSTimer?()
+    var timer2 = NSTimer?()
     var fromCoinChoice: Int!
     var fromCoinString: String!
     var toCoinChoice: Int!
@@ -22,6 +23,9 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
     var currentTransactionToggle: Bool!
     var depositLimitFloat: Float!
     var currentRateFloat: Float!
+    var mathNumber: Float!
+    weak var toolBar: UIToolbar!
+    
     lazy var reader: QRCodeReader = QRCodeReader(cancelButtonTitle: "Cancel")
     
     @IBOutlet weak var coinvertButton: UIButton!
@@ -37,14 +41,19 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
     @IBOutlet weak var fixedAmountField: UITextField!
     @IBOutlet weak var infoView: UIView!
     @IBOutlet weak var estMaxLabel: UILabel!
+    @IBOutlet weak var estMaxPopup: UIImageView!
     
     
     var nc = NSNotificationCenter.defaultCenter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        infoView.hidden = true
         
+     
+
+        
+        infoView.hidden = true
+        estMaxPopup.hidden = true
         yourPaymentAddress.leftView = UIView(frame: CGRectMake(0, 0, 7, 30))
         returnCoinAddress.leftView = UIView(frame: CGRectMake(0, 0, 7, 30))
         fixedAmountField.leftView = UIView(frame: CGRectMake(0, 0, 7, 30))
@@ -52,7 +61,12 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
         returnCoinAddress.leftViewMode = UITextFieldViewMode.Always
         fixedAmountField.leftViewMode = UITextFieldViewMode.Always
         
-        
+        var toolbar = UIToolbar(frame: CGRectMake(0, 0, self.view.bounds.size.width, 50))
+        var item = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("textEnd"))
+        toolbar.setItems([item], animated: true)
+        toolbar.sizeToFit()
+        fixedAmountField.inputAccessoryView = toolbar
+        self.toolBar = toolbar
         
         fromCoinImage.image = UIImage(named: "bitcoin")
         fromCoinLabel.text = "Bitcoin"
@@ -65,13 +79,16 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
         currentTransactionToggle = false
         yourPaymentAddress.delegate = self
         returnCoinAddress.delegate = self
+        fixedAmountField.delegate = self
         
         yourPaymentAddress.tag = 1
+        fixedAmountField.tag = 2
         
-        checkDepositLimit()
 
-        checkCurrentRate()
-        resetTimerwithSpeed(0)
+        resetTimerwithSpeed(0.1)
+        
+        
+     
         ///// INTO COINS  ///////
         
         
@@ -79,7 +96,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
         nc.addObserverForName("appEnteredForeground", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
             if self.currentTransactionToggle == false {
                 self.resetTimerwithSpeed(30)
-
+                
             }
         })
         nc.addObserverForName("resetCoinvert", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
@@ -90,7 +107,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             self.fromCoinString = "btc"
             self.checkFromCoins()
             self.checkDepositLimit()
-            self.checkCurrentRate()
+            self.checkCurrentRate(1)
             self.resetTimerwithSpeed(30)
         })
         
@@ -99,7 +116,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             self.fromCoinString = "ltc"
             self.checkFromCoins()
             self.checkDepositLimit()
-            self.checkCurrentRate()
+            self.checkCurrentRate(1)
             self.resetTimerwithSpeed(30)
             
         })
@@ -109,7 +126,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             self.fromCoinString = "drk"
             self.checkFromCoins()
             self.checkDepositLimit()
-            self.checkCurrentRate()
+            self.checkCurrentRate(1)
             self.resetTimerwithSpeed(30)
             
         })
@@ -119,7 +136,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             self.fromCoinString = "doge"
             self.checkFromCoins()
             self.checkDepositLimit()
-            self.checkCurrentRate()
+            self.checkCurrentRate(1)
             self.resetTimerwithSpeed(30)
             
         })
@@ -129,7 +146,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             self.fromCoinString = "ftc"
             self.checkFromCoins()
             self.checkDepositLimit()
-            self.checkCurrentRate()
+            self.checkCurrentRate(1)
             self.resetTimerwithSpeed(30)
             
         })
@@ -139,7 +156,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             self.fromCoinString = "nmc"
             self.checkFromCoins()
             self.checkDepositLimit()
-            self.checkCurrentRate()
+            self.checkCurrentRate(1)
             self.resetTimerwithSpeed(30)
             
         })
@@ -149,7 +166,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             self.fromCoinString = "ppc"
             self.checkFromCoins()
             self.checkDepositLimit()
-            self.checkCurrentRate()
+            self.checkCurrentRate(1)
             self.resetTimerwithSpeed(30)
             
         })
@@ -159,7 +176,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             self.fromCoinString = "bc"
             self.checkFromCoins()
             self.checkDepositLimit()
-            self.checkCurrentRate()
+            self.checkCurrentRate(1)
             self.resetTimerwithSpeed(30)
             
         })
@@ -171,7 +188,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             self.toCoinString = "btc"
             self.checkToCoins()
             self.checkDepositLimit()
-            self.checkCurrentRate()
+            self.checkCurrentRate(1)
             self.resetTimerwithSpeed(30)
         })
         
@@ -180,7 +197,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             self.toCoinString = "ltc"
             self.checkToCoins()
             self.checkDepositLimit()
-            self.checkCurrentRate()
+            self.checkCurrentRate(1)
             self.resetTimerwithSpeed(30)
             
         })
@@ -190,7 +207,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             self.toCoinString = "drk"
             self.checkToCoins()
             self.checkDepositLimit()
-            self.checkCurrentRate()
+            self.checkCurrentRate(1)
             self.resetTimerwithSpeed(30)
             
         })
@@ -200,7 +217,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             self.toCoinString = "doge"
             self.checkToCoins()
             self.checkDepositLimit()
-            self.checkCurrentRate()
+            self.checkCurrentRate(1)
             self.resetTimerwithSpeed(30)
             
         })
@@ -210,7 +227,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             self.toCoinString = "ftc"
             self.checkToCoins()
             self.checkDepositLimit()
-            self.checkCurrentRate()
+            self.checkCurrentRate(1)
             self.resetTimerwithSpeed(30)
             
         })
@@ -220,7 +237,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             self.toCoinString = "nmc"
             self.checkToCoins()
             self.checkDepositLimit()
-            self.checkCurrentRate()
+            self.checkCurrentRate(1)
             self.resetTimerwithSpeed(30)
             
         })
@@ -230,7 +247,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             self.toCoinString = "ppc"
             self.checkToCoins()
             self.checkDepositLimit()
-            self.checkCurrentRate()
+            self.checkCurrentRate(1)
             self.resetTimerwithSpeed(30)
             
         })
@@ -240,13 +257,14 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             self.toCoinString = "bc"
             self.checkToCoins()
             self.checkDepositLimit()
-            self.checkCurrentRate()
+            self.checkCurrentRate(1)
             self.resetTimerwithSpeed(30)
             
         })
         
         
     }
+
     
     @IBAction func returnAddressQRWasClicked(sender: AnyObject) {
         reader.delegate = self
@@ -300,7 +318,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             if (yourPaymentAddress.text.isEmpty == false && fixedAmountField.text.isEmpty == true) {
                 
                 println(yourPaymentAddress.text)
-           
+                
                 svc.withDrawalString = yourPaymentAddress.text
                 svc.toCoinString2 = toCoinString
                 svc.fromCoinString2 = fromCoinString
@@ -309,13 +327,13 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
                 yourPaymentAddress.text == " "
                 println(yourPaymentAddress.text)
                 currentTransactionToggle = true
-
+                
                 svc.withDrawalString = yourPaymentAddress.text
                 svc.toCoinString2 = toCoinString
                 svc.fromCoinString2 = fromCoinString
             } else {
                 currentTransactionToggle = true
-
+                
                 println(yourPaymentAddress.text)
                 let fixedString = fixedAmountField.text as String!
                 let numberFormatter = NSNumberFormatter()
@@ -343,16 +361,16 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
         toCoinString = fromSwitchString
         
         checkDepositLimit()
-
+        
         checkToCoins()
         checkFromCoins()
-        checkCurrentRate()
+        checkCurrentRate(1)
         resetTimerwithSpeed(30)
     }
     
     func checkDepositLimit() {
         
-        let urlAsString = "http://shapeshift.io/limit/\(fromCoinString)_\(toCoinString)"
+        let urlAsString = "https://shapeshift.io/limit/\(fromCoinString)_\(toCoinString)"
         let url = NSURL(string: urlAsString)!
         let urlSession = NSURLSession.sharedSession()
         println(urlAsString)
@@ -368,7 +386,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             if (err != nil) {
                 println("JSON Error \(err!.localizedDescription)")
             }
-            
+
             if jsonResult["limit"] != nil {
                 var jsonDate: String! = jsonResult["limit"] as String
                 let numberFormatter = NSNumberFormatter()
@@ -379,8 +397,9 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
                 let newFromCoinString = self.fromCoinString.uppercaseString
                 
                 dispatch_async(dispatch_get_main_queue(), {
-                    self.depositLimitLabel.text = NSString(format:"Limit: " + "%.4f" + " " + newFromCoinString, self.depositLimitFloat)
+                    self.depositLimitLabel.text = NSString(format:"Limit: " + "%.4f" + " " + newFromCoinString, number!.floatValue)
                     
+
                 })
             }
         })
@@ -487,53 +506,66 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
         if currentTransactionToggle == false {
             resetTimerwithSpeed(30)
             checkDepositLimit()
-            checkCurrentRate()
+            checkCurrentRate(1)
         }
         
     }
-    func checkCurrentRate() {
+    func timerDone2() {
         
-        let urlAsString = "http://shapeshift.io/rate/\(fromCoinString)_\(toCoinString)"
-        let url = NSURL(string: urlAsString)!
-        let urlSession = NSURLSession.sharedSession()
-        println(urlAsString)
-        
-        let jsonQuery = urlSession.dataTaskWithURL(url, completionHandler: { data, response, error -> Void in
-            if (error != nil) {
-                println(error.localizedDescription)
-            }
-            var err: NSError?
+        if currentTransactionToggle == false {
             
+            let urlAsString = "https://shapeshift.io/rate/\(fromCoinString)_\(toCoinString)"
+            let url = NSURL(string: urlAsString)!
+            let urlSession = NSURLSession.sharedSession()
             
-            var jsonResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as NSDictionary
-            if (err != nil) {
-                println("JSON Error \(err!.localizedDescription)")
-            }
-            
-            if jsonResult["rate"] != nil {
-                var jsonDate: String! = jsonResult["rate"] as String
-                let numberFormatter = NSNumberFormatter()
-                let number = numberFormatter.numberFromString(jsonDate)
-                 self.currentRateFloat = number!.floatValue
+            let jsonQuery = urlSession.dataTaskWithURL(url, completionHandler: { data, response, error -> Void in
+                if (error != nil) {
+                    println(error.localizedDescription)
+                }
+                var err: NSError?
                 
                 
-                let newFromCoinString = self.fromCoinString.uppercaseString
-                let newToCoinString = self.toCoinString.uppercaseString
-                
-                dispatch_async(dispatch_get_main_queue(), {
-                    self.currentRateLabel.text = NSString(format: "1.00 " + newFromCoinString + " = %f" + " " + newToCoinString, self.currentRateFloat)
+                var jsonResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as NSDictionary
+                if (err != nil) {
+                    println("JSON Error \(err!.localizedDescription)")
+                }
+                if jsonResult["rate"] != nil {
+                    var jsonDate: String! = jsonResult["rate"] as String
+                    let numberFormatter = NSNumberFormatter()
+                    let number = numberFormatter.numberFromString(jsonDate)
+                    self.currentRateFloat = number!.floatValue
                     
-                    if self.depositLimitFloat != nil {
-                        var mathNumber = self.depositLimitFloat * self.currentRateFloat
-                        self.estMaxLabel.text = "Est. max:    \(mathNumber) \(newToCoinString.uppercaseString)"
-                    }
                     
+                    let newFromCoinString = self.fromCoinString.uppercaseString
+                    let newToCoinString = self.toCoinString.uppercaseString
                     
-                })
-            }
-        })
+                    dispatch_async(dispatch_get_main_queue(), {
+                        self.currentRateLabel.text = NSString(format: "1.00 " + newFromCoinString + " = %f" + " " + newToCoinString, number!.floatValue)
+                        
+                        if self.depositLimitFloat != nil {
+                            self.mathNumber = self.depositLimitFloat * self.currentRateFloat
+                            self.estMaxLabel.text = String(format: "Est. max:    %f \(newToCoinString.uppercaseString)", self.mathNumber)
+                            self.textEnd()
+                        } else if self.depositLimitFloat == nil {
+                            self.checkCurrentRate(1)
+                        }
+                        
+                        
+                    })
+                }
+            })
+            
+            jsonQuery.resume()
+
+        }
+    }
+    func checkCurrentRate(speed: Double) {
         
-        jsonQuery.resume()
+        if timer2 != nil { timer2!.invalidate() }
+        
+        
+        timer2 = NSTimer.scheduledTimerWithTimeInterval(speed, target: self, selector: Selector("timerDone2"), userInfo: nil, repeats: false)
+        
         
     }
     func textFieldDidBeginEditing(textField: UITextField!) -> Bool {
@@ -541,15 +573,29 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
             UIView.animateWithDuration(0.25, animations: { () -> Void in
                 self.view.frame.origin.y -= 186
             })
+        } else if textField.tag == 2 {
+            
         }
         return true
         
     }
     func textFieldDidEndEditing(textField: UITextField!) -> Bool {
+        
         if textField.tag == 1 {
             UIView.animateWithDuration(0.25, animations: { () -> Void in
                 self.view.frame.origin.y += 186
-            })        }
+            })
+        } else if fixedAmountField.text.isEmpty == false  {
+          var fixedAMT = fixedAmountField.text
+            let numberFormatter = NSNumberFormatter()
+            let number = numberFormatter.numberFromString(fixedAMT)
+            
+            if number?.floatValue > mathNumber {
+                estMaxPopup.hidden = false
+            } else if number?.floatValue < mathNumber {
+                estMaxPopup.hidden = true
+            }
+        }
         return true
         
     }
@@ -573,19 +619,38 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
         fixedAmountField.text = nil
         yourPaymentAddress.text = nil
         returnCoinAddress.text = nil
+        estMaxPopup.hidden = true
         checkDepositLimit()
-        checkCurrentRate()
+        checkCurrentRate(1)
     }
     
     @IBAction func infoButtonWasPressed(sender: AnyObject) {
         self.infoView.hidden = false
-   
-    }
-    @IBAction func cancelButtonWasPressed(sender: AnyObject) {
-            self.infoView.hidden = true
         
     }
-    
+    @IBAction func cancelButtonWasPressed(sender: AnyObject) {
+        self.infoView.hidden = true
+        
+    }
+    func textEnd() {
+        
+        if fixedAmountField.text.isEmpty == false  {
+            var fixedAMT = fixedAmountField.text
+            let numberFormatter = NSNumberFormatter()
+            let number = numberFormatter.numberFromString(fixedAMT)
+            
+            if number?.floatValue > mathNumber {
+                estMaxPopup.hidden = false
+            } else if number?.floatValue < mathNumber {
+                estMaxPopup.hidden = true
+            }
+        } else if fixedAmountField.text.isEmpty == true {
+            estMaxPopup.hidden = true
+
+        }
+        fixedAmountField.resignFirstResponder()
+
+    }
     
 }
 
