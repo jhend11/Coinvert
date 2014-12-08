@@ -27,7 +27,7 @@ class SendViewController: UIViewController {
     var emailAddressForReciept: String!
     
     var nc = NSNotificationCenter.defaultCenter()
-    
+    let view2 = UIImageView()
     
     @IBOutlet weak var fixedAmountCover: UIImageView!
     @IBOutlet weak var timeLabel: UILabel!
@@ -50,6 +50,7 @@ class SendViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+     
         depositAmountPopup.hidden = true
         depositAddressPopup.hidden = true
         copySendAmountButton.hidden = true
@@ -145,15 +146,21 @@ sendStringLabel.text = fromCoinString2.uppercaseString
             
             
             if json["error"] != nil {
-                
+                dispatch_sync(dispatch_get_main_queue(), {
+                    self.view2.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
+                    self.view2.image = UIImage(named: "launchscreen")
+                    self.view.addSubview(self.view2)
+                    
+                })
+
                 var alert = UIAlertController(title: "Uh-Oh!", message: json["error"] as String + ".", preferredStyle: UIAlertControllerStyle.Alert)
                 
                 
                 alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Cancel, handler:self.handleCancel))
                 
                 self.presentViewController(alert, animated: true, completion: {
+                    self.pendingTransaction = false
                 })
-                
             }
                 
             else {

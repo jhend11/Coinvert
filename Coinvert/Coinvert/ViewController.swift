@@ -7,8 +7,7 @@
 //
 
 import UIKit
-let SCREEN_WIDTH = UIScreen.mainScreen().bounds.size.width
-let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.size.height
+
 class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegate {
     var timer = NSTimer?()
     var timer2 = NSTimer?()
@@ -42,6 +41,9 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
     @IBOutlet weak var infoView: UIView!
     @IBOutlet weak var estMaxLabel: UILabel!
     @IBOutlet weak var estMaxPopup: UIImageView!
+    @IBOutlet weak var donationView: UIView!
+    @IBOutlet weak var donatePopupImageView: UIImageView!
+    
     
     
     var nc = NSNotificationCenter.defaultCenter()
@@ -50,8 +52,8 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
         super.viewDidLoad()
         
      
-
-        
+donatePopupImageView.hidden = true
+        donationView.hidden = true
         infoView.hidden = true
         estMaxPopup.hidden = true
         yourPaymentAddress.leftView = UIView(frame: CGRectMake(0, 0, 7, 30))
@@ -492,7 +494,22 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
         
         
         timerBar.layer.removeAllAnimations()
-        timerBar.frame.size.width = 287
+        
+        if IS_IPHONE5 {
+            
+            timerBar.frame.size.width = 287
+            
+        } else if IS_IPHONE6 {
+            timerBar.frame.size.width = 287
+            
+        } else if IS_IPHONE6PLUS {
+            timerBar.frame.size.width = 326
+        } else if IS_IPAD {
+            timerBar.frame.size.width = 287
+        } else {
+            timerBar.frame.size.width = 287
+            
+        }
         
         UIView.animateWithDuration(speed, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
             
@@ -652,5 +669,24 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
 
     }
     
+    @IBAction func donationButtonWasPressed(sender: AnyObject) {
+        donationView.hidden = false
+    }
+    @IBAction func donationCancel(sender: AnyObject) {
+        donationView.hidden = true
+    }
+    @IBAction func copyDonationAddressButtonWasPressed(sender: AnyObject) {
+        UIPasteboard.generalPasteboard().string = "LMwz3FV1zhGLhPfD6mDsqtg3eTeHSksk9W"
+        donatePopupImageView.hidden = false
+        donatePopupImageView.alpha = 1
+        
+        UIView.animateWithDuration(0.75, delay: 1, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { () -> Void in
+            self.donatePopupImageView.alpha = 0.0
+            }) { (Bool) -> Void in
+                
+                self.donatePopupImageView.hidden = true
+                
+        }
+    }
 }
 

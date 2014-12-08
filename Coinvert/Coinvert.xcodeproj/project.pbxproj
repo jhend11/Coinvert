@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B41CB0181A19565E004A5908 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB0171A19565E004A5908 /* AppDelegate.swift */; };
 		B41CB01A1A19565E004A5908 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB0191A19565E004A5908 /* ViewController.swift */; };
-		B41CB01D1A19565E004A5908 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41CB01B1A19565E004A5908 /* Main.storyboard */; };
+		B41CB01D1A19565E004A5908 /* iPhone4.7.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41CB01B1A19565E004A5908 /* iPhone4.7.storyboard */; };
 		B41CB01F1A19565E004A5908 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B41CB01E1A19565E004A5908 /* Images.xcassets */; };
 		B41CB0221A19565E004A5908 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B41CB0201A19565E004A5908 /* LaunchScreen.xib */; };
 		B41CB02E1A19565E004A5908 /* CoinvertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CB02D1A19565E004A5908 /* CoinvertTests.swift */; };
@@ -24,7 +24,6 @@
 		B42B52E01A30288F002CBA91 /* colors.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52DF1A30288F002CBA91 /* colors.png */; };
 		B42B52E81A302B41002CBA91 /* txButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52E71A302B41002CBA91 /* txButton.png */; };
 		B42B52EA1A302BD1002CBA91 /* switch.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52E91A302BD1002CBA91 /* switch.png */; };
-		B42B52F01A3040FA002CBA91 /* qr.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52EF1A3040FA002CBA91 /* qr.png */; };
 		B42B52F21A3041E2002CBA91 /* qr1.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52F11A3041E2002CBA91 /* qr1.png */; };
 		B42B52F41A304429002CBA91 /* launchscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52F31A304429002CBA91 /* launchscreen.png */; };
 		B42B52F61A30BA89002CBA91 /* sendscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B42B52F51A30BA89002CBA91 /* sendscreen.png */; };
@@ -51,6 +50,13 @@
 		B45352CD1A32F8E000CF2A0A /* middlearrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352CC1A32F8E000CF2A0A /* middlearrow.png */; };
 		B45352CF1A32F90B00CF2A0A /* sendbg.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352CE1A32F90B00CF2A0A /* sendbg.png */; };
 		B45352D71A33B37200CF2A0A /* popupforestmax.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352D61A33B37200CF2A0A /* popupforestmax.png */; };
+		B45352DC1A34E21900CF2A0A /* iPhone5.5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45352DB1A34E21900CF2A0A /* iPhone5.5.storyboard */; };
+		B45352DE1A34E2A600CF2A0A /* iPhone4.0.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45352DD1A34E2A600CF2A0A /* iPhone4.0.storyboard */; };
+		B45352E01A34E2C100CF2A0A /* iPhone3.5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45352DF1A34E2C100CF2A0A /* iPhone3.5.storyboard */; };
+		B45352E21A34E3D000CF2A0A /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45352E11A34E3D000CF2A0A /* iPad.storyboard */; };
+		B45352E51A35459800CF2A0A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45352E41A35459800CF2A0A /* Crashlytics.framework */; };
+		B45352E91A354E6700CF2A0A /* donationpopup.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352E81A354E6700CF2A0A /* donationpopup.png */; };
+		B45352ED1A35548A00CF2A0A /* donatepopup.png in Resources */ = {isa = PBXBuildFile; fileRef = B45352EC1A35548A00CF2A0A /* donatepopup.png */; };
 		B48DB7C91A1B8216002FBD16 /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7B91A1B8216002FBD16 /* bitstream.c */; };
 		B48DB7CA1A1B8216002FBD16 /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7BB1A1B8216002FBD16 /* mask.c */; };
 		B48DB7CB1A1B8216002FBD16 /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = B48DB7BD1A1B8216002FBD16 /* qrencode.c */; };
@@ -77,7 +83,7 @@
 		B41CB0161A19565E004A5908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B41CB0171A19565E004A5908 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B41CB0191A19565E004A5908 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B41CB01C1A19565E004A5908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B41CB01C1A19565E004A5908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPhone4.7.storyboard; sourceTree = "<group>"; };
 		B41CB01E1A19565E004A5908 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B41CB0211A19565E004A5908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B41CB0271A19565E004A5908 /* CoinvertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinvertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,7 +100,6 @@
 		B42B52DF1A30288F002CBA91 /* colors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colors.png; sourceTree = "<group>"; };
 		B42B52E71A302B41002CBA91 /* txButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = txButton.png; sourceTree = "<group>"; };
 		B42B52E91A302BD1002CBA91 /* switch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch.png; sourceTree = "<group>"; };
-		B42B52EF1A3040FA002CBA91 /* qr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qr.png; sourceTree = "<group>"; };
 		B42B52F11A3041E2002CBA91 /* qr1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qr1.png; sourceTree = "<group>"; };
 		B42B52F31A304429002CBA91 /* launchscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchscreen.png; sourceTree = "<group>"; };
 		B42B52F51A30BA89002CBA91 /* sendscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sendscreen.png; sourceTree = "<group>"; };
@@ -121,6 +126,13 @@
 		B45352CC1A32F8E000CF2A0A /* middlearrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = middlearrow.png; sourceTree = "<group>"; };
 		B45352CE1A32F90B00CF2A0A /* sendbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sendbg.png; sourceTree = "<group>"; };
 		B45352D61A33B37200CF2A0A /* popupforestmax.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popupforestmax.png; sourceTree = "<group>"; };
+		B45352DB1A34E21900CF2A0A /* iPhone5.5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone5.5.storyboard; sourceTree = "<group>"; };
+		B45352DD1A34E2A600CF2A0A /* iPhone4.0.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone4.0.storyboard; sourceTree = "<group>"; };
+		B45352DF1A34E2C100CF2A0A /* iPhone3.5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone3.5.storyboard; sourceTree = "<group>"; };
+		B45352E11A34E3D000CF2A0A /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
+		B45352E41A35459800CF2A0A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		B45352E81A354E6700CF2A0A /* donationpopup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donationpopup.png; sourceTree = "<group>"; };
+		B45352EC1A35548A00CF2A0A /* donatepopup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donatepopup.png; sourceTree = "<group>"; };
 		B48DB7B91A1B8216002FBD16 /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
 		B48DB7BA1A1B8216002FBD16 /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
 		B48DB7BB1A1B8216002FBD16 /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
@@ -146,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45352E51A35459800CF2A0A /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,7 +205,11 @@
 				B41CB0501A1A9C18004A5908 /* MenuTransitionManager2.swift */,
 				B41CB0191A19565E004A5908 /* ViewController.swift */,
 				B48DB7D81A1B8401002FBD16 /* SendViewController.swift */,
-				B41CB01B1A19565E004A5908 /* Main.storyboard */,
+				B45352DF1A34E2C100CF2A0A /* iPhone3.5.storyboard */,
+				B45352DD1A34E2A600CF2A0A /* iPhone4.0.storyboard */,
+				B41CB01B1A19565E004A5908 /* iPhone4.7.storyboard */,
+				B45352DB1A34E21900CF2A0A /* iPhone5.5.storyboard */,
+				B45352E11A34E3D000CF2A0A /* iPad.storyboard */,
 				B41CB01E1A19565E004A5908 /* Images.xcassets */,
 				B41CB0201A19565E004A5908 /* LaunchScreen.xib */,
 				B41CB0151A19565E004A5908 /* Supporting Files */,
@@ -203,6 +220,7 @@
 		B41CB0151A19565E004A5908 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B45352E41A35459800CF2A0A /* Crashlytics.framework */,
 				B42B52B51A2FD71D002CBA91 /* RacingSansOne-Regular copy.otf */,
 				B41CB0161A19565E004A5908 /* Info.plist */,
 			);
@@ -243,7 +261,6 @@
 				B42B52F51A30BA89002CBA91 /* sendscreen.png */,
 				B42B52F31A304429002CBA91 /* launchscreen.png */,
 				B42B52F11A3041E2002CBA91 /* qr1.png */,
-				B42B52EF1A3040FA002CBA91 /* qr.png */,
 				B42B52E91A302BD1002CBA91 /* switch.png */,
 				B42B52E71A302B41002CBA91 /* txButton.png */,
 				B42B52DF1A30288F002CBA91 /* colors.png */,
@@ -258,6 +275,8 @@
 				B45352C01A32B4AB00CF2A0A /* feathercoin.png */,
 				B45352CA1A32B6CF00CF2A0A /* peercoin.png */,
 				B45352D61A33B37200CF2A0A /* popupforestmax.png */,
+				B45352E81A354E6700CF2A0A /* donationpopup.png */,
+				B45352EC1A35548A00CF2A0A /* donatepopup.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -313,6 +332,7 @@
 				B41CB00E1A19565E004A5908 /* Sources */,
 				B41CB00F1A19565E004A5908 /* Frameworks */,
 				B41CB0101A19565E004A5908 /* Resources */,
+				B45352E31A35457700CF2A0A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -391,11 +411,13 @@
 				B42B52FC1A30EB7F002CBA91 /* info.png in Resources */,
 				B42B530A1A3119B7002CBA91 /* cancel.png in Resources */,
 				B45352C71A32B4AB00CF2A0A /* blackcoin.png in Resources */,
+				B45352E01A34E2C100CF2A0A /* iPhone3.5.storyboard in Resources */,
 				B42B52B81A2FEDAB002CBA91 /* RacingSansOne-Regular copy.otf in Resources */,
 				B42B52FA1A30DC80002CBA91 /* copied.png in Resources */,
 				B45352C21A32B4AB00CF2A0A /* dogecoin.png in Resources */,
+				B45352DE1A34E2A600CF2A0A /* iPhone4.0.storyboard in Resources */,
 				B45352C31A32B4AB00CF2A0A /* litecoin.png in Resources */,
-				B41CB01D1A19565E004A5908 /* Main.storyboard in Resources */,
+				B41CB01D1A19565E004A5908 /* iPhone4.7.storyboard in Resources */,
 				B41CB0221A19565E004A5908 /* LaunchScreen.xib in Resources */,
 				B42B52E81A302B41002CBA91 /* txButton.png in Resources */,
 				B45352D71A33B37200CF2A0A /* popupforestmax.png in Resources */,
@@ -407,15 +429,18 @@
 				B42B530C1A312A3E002CBA91 /* popup.png in Resources */,
 				B45352A11A32A88200CF2A0A /* cover.png in Resources */,
 				B45352C61A32B4AB00CF2A0A /* bitcoin.png in Resources */,
+				B45352E91A354E6700CF2A0A /* donationpopup.png in Resources */,
 				B42B52F61A30BA89002CBA91 /* sendscreen.png in Resources */,
 				B42B52EA1A302BD1002CBA91 /* switch.png in Resources */,
 				B42B53121A317DB4002CBA91 /* depositAmountCopied.png in Resources */,
-				B42B52F01A3040FA002CBA91 /* qr.png in Resources */,
+				B45352E21A34E3D000CF2A0A /* iPad.storyboard in Resources */,
 				B42B52F21A3041E2002CBA91 /* qr1.png in Resources */,
+				B45352ED1A35548A00CF2A0A /* donatepopup.png in Resources */,
 				B45352C81A32B4AB00CF2A0A /* feathercoin.png in Resources */,
 				B45352CD1A32F8E000CF2A0A /* middlearrow.png in Resources */,
 				B41CB01F1A19565E004A5908 /* Images.xcassets in Resources */,
 				B42B52D01A301552002CBA91 /* coinvert.png in Resources */,
+				B45352DC1A34E21900CF2A0A /* iPhone5.5.storyboard in Resources */,
 				B45352C41A32B4AB00CF2A0A /* namecoin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +453,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B45352E31A35457700CF2A0A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 8ef04d6ce4e7a8d7079296fd9227b7d3e87ec366 f99f8b9bd84615af3a76f4e97026fdb9dd62979bc82453ebd6fd9a280b7f26fe";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B41CB00E1A19565E004A5908 /* Sources */ = {
@@ -475,12 +516,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B41CB01B1A19565E004A5908 /* Main.storyboard */ = {
+		B41CB01B1A19565E004A5908 /* iPhone4.7.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B41CB01C1A19565E004A5908 /* Base */,
 			);
-			name = Main.storyboard;
+			name = iPhone4.7.storyboard;
 			sourceTree = "<group>";
 		};
 		B41CB0201A19565E004A5908 /* LaunchScreen.xib */ = {
@@ -576,6 +617,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Coinvert",
+				);
 				INFOPLIST_FILE = Coinvert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -588,6 +633,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Coinvert",
+				);
 				INFOPLIST_FILE = Coinvert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
