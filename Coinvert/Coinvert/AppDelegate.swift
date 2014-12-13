@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         Crashlytics.startWithAPIKey("8ef04d6ce4e7a8d7079296fd9227b7d3e87ec366")
-        
+
         if IS_IPHONE5 {
             var storyboard = UIStoryboard(name: "iPhone4.0", bundle: nil)
             var rootVC = storyboard.instantiateInitialViewController() as ViewController

@@ -12,7 +12,7 @@ class SendViewController: UIViewController {
     var pendingTransaction: Bool!
     var coinsReceived: Bool!
     var secondsLeft: Int!
-    var minutes, seconds: Int!
+//    var minutes, seconds: Int!
     var textField: UITextField!
     var fromCoinString2: String!
     var toCoinString2: String!
@@ -25,10 +25,20 @@ class SendViewController: UIViewController {
     var timer2 = NSTimer?()
     var timer3 = NSTimer?()
     var emailAddressForReciept: String!
+    var toDate: NSDate!
+    var params: [String:String]!
+    var shapeshiftURL: String!
     
     var nc = NSNotificationCenter.defaultCenter()
     let view2 = UIImageView()
+    let currentTimeIntVale = Int()
+    //    var toCoinImageView1 = UIImageView()
+    //    var fromCoinImageView1 = UIImageView()
     
+    
+    
+    @IBOutlet weak var fromCoinImageView1: UIImageView!
+    @IBOutlet weak var toCoinImageView1: UIImageView!
     @IBOutlet weak var fixedAmountCover: UIImageView!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var transactionStatusLabel: UILabel!
@@ -42,55 +52,44 @@ class SendViewController: UIViewController {
     @IBOutlet weak var copySendAmountButton: UIButton!
     @IBOutlet weak var depositAddressPopup: UIView!
     
-    @IBOutlet weak var toCoinImageView: UIImageView!
-    @IBOutlet weak var fromCoinImageView: UIImageView!
+    //    @IBOutlet weak var toCoinImageView: UIImageView!
+    //    @IBOutlet weak var fromCoinImageView: UIImageView!
     @IBOutlet weak var depositAmountPopup: UIView!
     @IBOutlet weak var sendStringLabel: UILabel!
     @IBOutlet weak var sendCoinsToLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+
+       
+//        fromCoinImageView1.hidden = true
+//        toCoinImageView1.hidden = true
+
         depositAmountPopup.hidden = true
         depositAddressPopup.hidden = true
         copySendAmountButton.hidden = true
-        fromCoinImageView.hidden = true
-        toCoinImageView.hidden = true
+        
         coinsReceived = false
         checkCoinViews()
         sendCoinsToLabel.text = "Send \(fromCoinString2.uppercaseString) to:"
         resetTimerwithSpeed(6)
-
-    }
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        
-  
-        
         pendingTransaction = true
-        animateCoins()
-
-        qrCodeImageView.image = UIImage.mdQRCodeForString(depositAddressLabel.text, size: qrCodeImageView.bounds.size.width)
-        self.view.addSubview(qrCodeImageView)
+//        animateCoins()
         
-        
-        
+        self.view2.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
+        self.view2.image = UIImage(named: "launchscreen")
+        self.view.addSubview(self.view2)
+    
         var string = "\(fromCoinString2)_\(toCoinString2)"
-        println(withdrawalAddressLabel.text!)
-        println(fromCoinString2)
-        println(toCoinString2)
-        println(string)
         
-        println(depositAmount)
         withdrawalAddressLabel.text = withDrawalString
         var stringy = "\(depositAmount)"
         let s2 = withdrawalAddressLabel.text!
         
-        var params: [String:String]
-        var shapeshiftURL: String!
         
         
-        //MARK: JSON POST
+        
+        //MARK: JSON POST SETUP
         
         nc.addObserverForName("appEnteredForeground", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification:NSNotification!) -> Void in
             
@@ -101,14 +100,13 @@ class SendViewController: UIViewController {
                 println("this just might work")
             }
         })
-        
         if depositAmount != nil {
             let s = NSString(format: "%f", depositAmount)
             params = ["amount":s as String!, "withdrawal":s2 as String!, "pair": "\(fromCoinString2)_\(toCoinString2)"] as Dictionary
             shapeshiftURL = "https://shapeshift.io/sendamount"
             fixedAmountCover.removeFromSuperview()
             copySendAmountButton.hidden = false
-sendStringLabel.text = fromCoinString2.uppercaseString
+            sendStringLabel.text = fromCoinString2.uppercaseString
             
         } else {
             
@@ -116,6 +114,18 @@ sendStringLabel.text = fromCoinString2.uppercaseString
             shapeshiftURL = "https://shapeshift.io/shift"
             
         }
+        jsonPOST()
+        
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
+    // MARK: JSON REQUESTS
+    
+    func jsonPOST() {
+        
         
         var request = NSMutableURLRequest(URL: NSURL(string: shapeshiftURL)!)
         
@@ -146,13 +156,10 @@ sendStringLabel.text = fromCoinString2.uppercaseString
             
             
             if json["error"] != nil {
-                dispatch_sync(dispatch_get_main_queue(), {
-                    self.view2.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
-                    self.view2.image = UIImage(named: "launchscreen")
-                    self.view.addSubview(self.view2)
-                    
-                })
-
+                
+                
+                
+                
                 var alert = UIAlertController(title: "Uh-Oh!", message: json["error"] as String + ".", preferredStyle: UIAlertControllerStyle.Alert)
                 
                 
@@ -166,12 +173,16 @@ sendStringLabel.text = fromCoinString2.uppercaseString
             else {
                 
                 
+                
+                
+                
                 dispatch_async(dispatch_get_main_queue(), {
                     
                     if self.depositAmount != nil {
                         self.depositAddressString = json["success"]!["deposit"] as String!
                         self.sendAmountLabel.text = json["success"]!["depositAmount"] as String!
                         self.checkTimeRemaining()
+                        println(json["success"]!["deposit"] as String!)
                         
                     }
                     else  {
@@ -181,13 +192,20 @@ sendStringLabel.text = fromCoinString2.uppercaseString
                     println(self.depositAddressString)
                     
                     self.depositAddressLabel.text = self.depositAddressString
-                    self.qrCodeImageView.image = UIImage.mdQRCodeForString(self.depositAddressLabel.text, size: self.qrCodeImageView.bounds.size.width)
-                    self.view.addSubview(self.qrCodeImageView)
+                    
                     
                     
                 })
                 
-                
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    UIView.animateWithDuration(1.5, animations: { () -> Void in
+                        self.view2.frame.size.height = 0
+                        
+                        }, completion: { (Bool) -> Void in
+                            self.view2.removeFromSuperview()
+                            self.qrCodeImageView.image = UIImage.mdQRCodeForString(self.depositAddressLabel.text, size: self.qrCodeImageView.bounds.size.width)
+                    })
+                })
                 
                 
             }
@@ -196,7 +214,6 @@ sendStringLabel.text = fromCoinString2.uppercaseString
         
         task.resume()
         checkTransactionStatus()
-        
     }
     
     func checkTransactionStatus() {
@@ -263,7 +280,7 @@ sendStringLabel.text = fromCoinString2.uppercaseString
                             alert.addAction(UIAlertAction(title: "Send", style: UIAlertActionStyle.Default, handler:{ (UIAlertAction)in
                                 
                                 self.emailAddressForReciept = ((alert.textFields![0] as UITextField).text)
-
+                                
                                 self.sendEmailReceipt(3)
                             }))
                             self.presentViewController(alert, animated: true, completion: {
@@ -294,19 +311,19 @@ sendStringLabel.text = fromCoinString2.uppercaseString
                         
                         dispatch_async(dispatch_get_main_queue(), {
                             self.transactionStatusLabel.layer.removeAllAnimations()
-
-                        self.transactionStatusLabel.text = "Waiting"
-                        self.transactionStatusLabel.textColor = UIColor.whiteColor()
                             
-                        UIView.animateWithDuration(3, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
-                            self.transactionStatusLabel.alpha = 1
+                            self.transactionStatusLabel.text = "Waiting"
+                            self.transactionStatusLabel.textColor = UIColor.whiteColor()
                             
-                            }) { (Bool) -> Void in
-                                UIView.animateWithDuration(3, animations: { () -> Void in
-                                    self.transactionStatusLabel.alpha = 0
-
-                                })
-                        }
+                            UIView.animateWithDuration(3, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
+                                self.transactionStatusLabel.alpha = 1
+                                
+                                }) { (Bool) -> Void in
+                                    UIView.animateWithDuration(3, animations: { () -> Void in
+                                        self.transactionStatusLabel.alpha = 0
+                                        
+                                    })
+                            }
                         })
                         
                     }
@@ -318,18 +335,7 @@ sendStringLabel.text = fromCoinString2.uppercaseString
             jsonQuery.resume()
         }
     }
-    
-    func resetTimerwithSpeed(speed: Double) {
-        
-        if timer1 != nil { timer1!.invalidate() }
-        
-        timer1 = NSTimer.scheduledTimerWithTimeInterval(speed, target: self, selector: Selector("timerDone"), userInfo: nil, repeats: false)
-    }
-    
-    func timerDone() {
-        resetTimerwithSpeed(6)
-        checkTransactionStatus()
-    }
+  
     func timerDone2() {
         
         var  params = ["email":emailAddressForReciept, "txid": txIdForReciept] as Dictionary
@@ -372,33 +378,8 @@ sendStringLabel.text = fromCoinString2.uppercaseString
         
         task.resume()
         transactionTimeOut()
-
-    }
-    
-    func configurationTextField(textField: UITextField!)
-    {
         
-        if let tField = textField {
-            textField.keyboardType = UIKeyboardType.EmailAddress
-            
-            self.textField = textField!
-        }
     }
-    
-    
-    func handleCancel(alertView: UIAlertAction!)
-    {
-        transactionTimeOut()
-    }
-    
-    func sendEmailReceipt(speed: Double) {
-        if timer3 != nil { timer3!.invalidate() }
-        
-        timer3 = NSTimer.scheduledTimerWithTimeInterval(speed, target: self, selector: Selector("timerDone2"), userInfo: nil, repeats: false)
-        println(self.emailAddressForReciept)
-
-    }
-    
     func checkTimeRemaining() {
         
         let urlAsString = "https://shapeshift.io/timeremaining/\(depositAddressString)"
@@ -440,12 +421,10 @@ sendStringLabel.text = fromCoinString2.uppercaseString
                 println("right before everything breaks")
                 
                 dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), {
-                    println("right before everything breaks1")
-
-                    println("right before everything breaks2")
+                    
                     self.timeLabel.text = "N/A"
                     if self.timer2 != nil { self.timer2!.invalidate() }
-
+                    
                     var alert = UIAlertController(title: "Coinversion Expired", message: "Your current Coinversion has expired. If you still wish you exchange coins, you must begin a new Coinversion.", preferredStyle: UIAlertControllerStyle.Alert)
                     
                     
@@ -465,12 +444,68 @@ sendStringLabel.text = fromCoinString2.uppercaseString
         jsonQuery.resume()
         
     }
+    // MARK: TIMERS & RELATED
+    
+    func resetTimerwithSpeed(speed: Double) {
+        
+        if timer1 != nil { timer1!.invalidate() }
+        
+        timer1 = NSTimer.scheduledTimerWithTimeInterval(speed, target: self, selector: Selector("timerDone"), userInfo: nil, repeats: false)
+    }
+    
+    func timerDone() {
+        resetTimerwithSpeed(6)
+        checkTransactionStatus()
+    }
+    func updateTime() {
+        
+        if secondsLeft > 1 {
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), { () -> Void in
+                self.secondsLeft!--
+                let minutes = (self.secondsLeft % 3600) / 60
+                let seconds = (self.secondsLeft % 3600) % 60
+                
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    
+                    self.timeLabel.text = NSString(format: "%02d:%02d", minutes, seconds)
+                    self.timeLabel.textColor = UIColor.redColor()
+                    
+                })
+            })
+            
+        } else {
+            
+            transactionTimeOut()
+        }
+        
+    }
+    func countdown() {
+        
+        if timer2 != nil { timer2!.invalidate() }
+        
+        timer2 = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("updateTime"), userInfo: nil, repeats: true)
+        
+    }
+    func handleCancel(alertView: UIAlertAction!)
+    {
+        transactionTimeOut()
+    }
+    
+    // MARK: tx Over
+    func sendEmailReceipt(speed: Double) {
+        if timer3 != nil { timer3!.invalidate() }
+        
+        timer3 = NSTimer.scheduledTimerWithTimeInterval(speed, target: self, selector: Selector("timerDone2"), userInfo: nil, repeats: false)
+        println(self.emailAddressForReciept)
+        
+    }
     func transactionTimeOut() {
         pendingTransaction = false
         nc.postNotificationName("resetCoinvert", object: nil)
         self.dismissViewControllerAnimated(true, completion: nil)
         
     }
+    //MARK: Button Presses
     @IBAction func copyDepositButtonWasPressed(sender: AnyObject) {
         
         UIPasteboard.generalPasteboard().string = depositAddressString as String
@@ -513,60 +548,39 @@ sendStringLabel.text = fromCoinString2.uppercaseString
         self.presentViewController(alert, animated: true, completion: {
         })
     }
-    func updateTime() {
-        if secondsLeft > 1 {
-            secondsLeft!--
-            minutes = (secondsLeft % 3600) / 60
-            seconds = (secondsLeft % 3600) % 60
-            timeLabel.text = NSString(format: "%02d:%02d", minutes, seconds)
-            timeLabel.textColor = UIColor.redColor()
-            println("label should update")
-            
-        } else {
-            
-            transactionTimeOut()
-        }
-        
-    }
-    func countdown() {
-        
-        if timer2 != nil { timer2!.invalidate() }
-        
-        timer2 = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("updateTime"), userInfo: nil, repeats: true)
-    }
-    
+    // MARK: Animations
     func checkCoinViews() {
         
         if fromCoinString2 == "btc" {
-            fromCoinImageView.image = UIImage(named: "bitcoin")
+            fromCoinImageView1.image = UIImage(named: "bitcoin")
             
             
         } else if fromCoinString2 == "ltc" {
-            fromCoinImageView.image = UIImage(named: "litecoin")
+            fromCoinImageView1.image = UIImage(named: "litecoin")
             
             
         } else if fromCoinString2 == "drk" {
-            fromCoinImageView.image = UIImage(named: "darkcoin")
-           
+            fromCoinImageView1.image = UIImage(named: "darkcoin")
+            
             
         } else if fromCoinString2 == "doge" {
-            fromCoinImageView.image = UIImage(named: "dogecoin")
-           
+            fromCoinImageView1.image = UIImage(named: "dogecoin")
+            
             
         } else if fromCoinString2 == "ftc" {
-            fromCoinImageView.image = UIImage(named: "feathercoin")
-          
+            fromCoinImageView1.image = UIImage(named: "feathercoin")
+            
             
         } else if fromCoinString2 == "nmc" {
-            fromCoinImageView.image = UIImage(named: "namecoin")
+            fromCoinImageView1.image = UIImage(named: "namecoin")
             
             
         } else if fromCoinString2 == "ppc" {
-            fromCoinImageView.image = UIImage(named: "peercoin")
+            fromCoinImageView1.image = UIImage(named: "peercoin")
             
             
         } else if fromCoinString2 == "bc" {
-            fromCoinImageView.image = UIImage(named: "blackcoin")
+            fromCoinImageView1.image = UIImage(named: "blackcoin")
             
         }
         
@@ -574,80 +588,85 @@ sendStringLabel.text = fromCoinString2.uppercaseString
         
         
         if toCoinString2 == "btc" {
-            toCoinImageView.image = UIImage(named: "bitcoin")
+            toCoinImageView1.image = UIImage(named: "bitcoin")
             
             
         } else if toCoinString2 == "ltc" {
-            toCoinImageView.image = UIImage(named: "litecoin")
+            toCoinImageView1.image = UIImage(named: "litecoin")
             
             
         } else if toCoinString2 == "drk" {
-            toCoinImageView.image = UIImage(named: "darkcoin")
+            toCoinImageView1.image = UIImage(named: "darkcoin")
             
             
         } else if toCoinString2 == "doge" {
-            toCoinImageView.image = UIImage(named: "dogecoin")
+            toCoinImageView1.image = UIImage(named: "dogecoin")
             
             
         } else if toCoinString2 == "ftc" {
-            toCoinImageView.image = UIImage(named: "feathercoin")
+            toCoinImageView1.image = UIImage(named: "feathercoin")
             
             
         } else if toCoinString2 == "nmc" {
-            toCoinImageView.image = UIImage(named: "namecoin")
+            toCoinImageView1.image = UIImage(named: "namecoin")
             
             
         } else if toCoinString2 == "ppc" {
-            toCoinImageView.image = UIImage(named: "peercoin")
+            toCoinImageView1.image = UIImage(named: "peercoin")
             
             
         } else if toCoinString2 == "bc" {
-            toCoinImageView.image = UIImage(named: "blackcoin")
+            toCoinImageView1.image = UIImage(named: "blackcoin")
             
         }
-
-    }
-    func animateCoins() {
         
-        if pendingTransaction == true {
+    }
+//    func animateCoins() {
+//        
+//        fromCoinImageView1.layer.removeAllAnimations()
+//        toCoinImageView1.layer.removeAllAnimations()
+//        if pendingTransaction == true {
+//
+//            
+//            fromCoinImageView1.hidden = false
+//            
+//            UIView.animateWithDuration(3, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+//                self.fromCoinImageView1.alpha = 0
+//
+//
+//                }) { (Bool) -> Void in
+//                 
+//                    self.animateCoins2()
+//            }
+//            
+//        }
+//    }
+//    func animateCoins2() {
+//        
+//        self.toCoinImageView1.alpha = 0
+//        self.toCoinImageView1.hidden = false
+//        UIView.animateWithDuration(3, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+//            self.toCoinImageView1.alpha = 1
+//            
+//            }) { (Bool) -> Void in
+//                self.toCoinImageView1.hidden = true
+//                self.animateCoins()
+//                
+//                
+//        }
+//    }
+    // MARK: CONFIGURATION
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
+    func configurationTextField(textField: UITextField!)
+    {
+        
+        if let tField = textField {
+            textField.keyboardType = UIKeyboardType.EmailAddress
             
-            fromCoinImageView.frame = CGRectMake(-50, 272, 50, 50)
-            fromCoinImageView.alpha = 1
-fromCoinImageView.hidden = false
-            
-            UIView.animateWithDuration(4, delay: 0, options: UIViewAnimationOptions.AllowAnimatedContent, animations: { () -> Void in
-                self.fromCoinImageView.frame = CGRectMake(162, 272, 50, 50)
-                }) { (Bool) -> Void in
-                    
-                    self.toCoinImageView.frame = CGRectMake(162, 272, 50, 50)
-                    self.toCoinImageView.alpha = 0
-                    self.toCoinImageView.hidden = false
-                    
-                    UIView.animateWithDuration(0.75, delay: 0, options: UIViewAnimationOptions.AllowAnimatedContent, animations: { () -> Void in
-                        self.toCoinImageView.alpha = 1
-                        self.fromCoinImageView.alpha = 0
-                        }) { (Bool) -> Void in
-                            
-                            
-                            
-                            
-                            UIView.animateWithDuration(4, delay: 0, options: UIViewAnimationOptions.AllowAnimatedContent, animations: { () -> Void in
-                                self.toCoinImageView.frame = CGRectMake(376, 272, 50, 50)
-
-                                }) { (Bool) -> Void in
-                                    
-                                    self.animateCoins()
-                                    
-                                    
-                            }
-                            
-                    }
-                    
-                    
-            }
-            
-        } else {
-            
+            self.textField = textField!
         }
     }
+    
 }

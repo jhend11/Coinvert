@@ -51,11 +51,12 @@ class ViewController: UIViewController, QRCodeReaderDelegate, UITextFieldDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-     
+
 donatePopupImageView.hidden = true
         donationView.hidden = true
         infoView.hidden = true
         estMaxPopup.hidden = true
+    
         yourPaymentAddress.leftView = UIView(frame: CGRectMake(0, 0, 7, 30))
         returnCoinAddress.leftView = UIView(frame: CGRectMake(0, 0, 7, 30))
         fixedAmountField.leftView = UIView(frame: CGRectMake(0, 0, 7, 30))
@@ -387,6 +388,7 @@ donatePopupImageView.hidden = true
             var jsonResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as NSDictionary
             if (err != nil) {
                 println("JSON Error \(err!.localizedDescription)")
+                self.checkDepositLimit()
             }
 
             if jsonResult["limit"] != nil {
@@ -497,7 +499,7 @@ donatePopupImageView.hidden = true
         
         if IS_IPHONE5 {
             
-            timerBar.frame.size.width = 287
+            timerBar.frame.size.width = 260
             
         } else if IS_IPHONE6 {
             timerBar.frame.size.width = 287
@@ -591,7 +593,15 @@ donatePopupImageView.hidden = true
                 self.view.frame.origin.y -= 186
             })
         } else if textField.tag == 2 {
-            
+            UIView.animateWithDuration(0.25, animations: { () -> Void in
+                if IS_IPHONE5 {
+                    self.view.frame.origin.y -= 80
+                    
+                } else if IS_IPHONE4 {
+                    self.view.frame.origin.y -= 110
+
+                }
+            })
         }
         return true
         
@@ -600,9 +610,20 @@ donatePopupImageView.hidden = true
         
         if textField.tag == 1 {
             UIView.animateWithDuration(0.25, animations: { () -> Void in
-                self.view.frame.origin.y += 186
+                    self.view.frame.origin.y += 186
+
+                
             })
-        } else if fixedAmountField.text.isEmpty == false  {
+        } else if textField.tag == 2 {
+            UIView.animateWithDuration(0.25, animations: { () -> Void in
+                if IS_IPHONE5 {
+                    self.view.frame.origin.y += 80
+                    
+                }else if IS_IPHONE4 {
+                    self.view.frame.origin.y += 110
+                    
+                }
+            }) } else if fixedAmountField.text.isEmpty == false  {
           var fixedAMT = fixedAmountField.text
             let numberFormatter = NSNumberFormatter()
             let number = numberFormatter.numberFromString(fixedAMT)
@@ -687,6 +708,9 @@ donatePopupImageView.hidden = true
                 self.donatePopupImageView.hidden = true
                 
         }
+    }
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
 }
 

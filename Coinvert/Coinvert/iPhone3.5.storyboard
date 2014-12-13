@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gpZ-01-0hx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4SE-Yb-s8D">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -40,237 +40,240 @@
             <string>RacingSansOne-Regular</string>
             <string>RacingSansOne-Regular</string>
             <string>RacingSansOne-Regular</string>
-            <string>RacingSansOne-Regular</string>
-            <string>RacingSansOne-Regular</string>
-            <string>RacingSansOne-Regular</string>
-            <string>RacingSansOne-Regular</string>
-            <string>RacingSansOne-Regular</string>
-            <string>RacingSansOne-Regular</string>
-            <string>RacingSansOne-Regular</string>
+        </mutableArray>
+        <mutableArray key="airstrike.ttf">
+            <string>Airstrike</string>
+            <string>Airstrike</string>
+            <string>Airstrike</string>
+            <string>Airstrike</string>
+            <string>Airstrike</string>
+            <string>Airstrike</string>
+            <string>Airstrike</string>
         </mutableArray>
     </customFonts>
     <scenes>
         <!--Menu View Controller-->
-        <scene sceneID="fa8-yR-00j">
+        <scene sceneID="r59-lb-tar">
             <objects>
-                <viewController id="h7E-Zr-4Xp" customClass="MenuViewController" customModule="Coinvert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ckt-nN-HSr" customClass="MenuViewController" customModule="Coinvert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Rrb-Jk-QvE"/>
-                        <viewControllerLayoutGuide type="bottom" id="UHG-Ih-AQc"/>
+                        <viewControllerLayoutGuide type="top" id="uB8-WM-ogp"/>
+                        <viewControllerLayoutGuide type="bottom" id="eWI-2i-ofP"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4Gj-jd-AZn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="M1t-BO-3cA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHS-t7-KgE">
-                                <rect key="frame" x="99" y="155" width="34" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k18-zg-c2X">
+                                <rect key="frame" x="75" y="107" width="34" height="21"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="17"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUM-xO-wVt">
-                                <rect key="frame" x="247" y="155" width="31" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcB-MD-CK1">
+                                <rect key="frame" x="207" y="107" width="31" height="21"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="17"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DKC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55n-9O-W1e">
-                                <rect key="frame" x="97" y="305" width="36" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DKC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHl-VQ-4eD">
+                                <rect key="frame" x="73" y="215" width="36" height="21"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="17"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUx-5R-XLd">
-                                <rect key="frame" x="238" y="304" width="49" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qg9-AM-QOh">
+                                <rect key="frame" x="198" y="215" width="49" height="21"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="17"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rj2-QL-tBH">
-                                <rect key="frame" x="66" y="54" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3C-b0-Y6Y">
+                                <rect key="frame" x="55" y="28" width="80" height="80"/>
                                 <state key="normal" image="bitcoin.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="bitcoinWasClicked:" destination="h7E-Zr-4Xp" eventType="touchUpInside" id="7c4-iF-koM"/>
+                                    <action selector="bitcoinWasClicked:" destination="ckt-nN-HSr" eventType="touchUpInside" id="gep-Sy-uKj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1UP-Ud-qEm">
-                                <rect key="frame" x="212" y="54" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWR-aM-um4">
+                                <rect key="frame" x="185" y="28" width="80" height="80"/>
                                 <state key="normal" image="litecoin.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="litecoinWasClicked:" destination="h7E-Zr-4Xp" eventType="touchUpInside" id="y1v-7h-yAM"/>
+                                    <action selector="litecoinWasClicked:" destination="ckt-nN-HSr" eventType="touchUpInside" id="dY1-IC-haG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEy-Td-D0D">
-                                <rect key="frame" x="212" y="204" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmS-pQ-sPN">
+                                <rect key="frame" x="185" y="136" width="80" height="80"/>
                                 <state key="normal" image="dogecoin.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="dogecoinWasClicked:" destination="h7E-Zr-4Xp" eventType="touchUpInside" id="kgk-pb-geK"/>
+                                    <action selector="dogecoinWasClicked:" destination="ckt-nN-HSr" eventType="touchUpInside" id="ocR-6t-QxR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71A-pk-7Yx">
-                                <rect key="frame" x="100" y="456" width="32" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2J9-H8-xBw">
+                                <rect key="frame" x="76" y="323" width="32" height="21"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="17"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NMC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3V-g6-FQf">
-                                <rect key="frame" x="242" y="456" width="40" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NMC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6y-AU-Xm5">
+                                <rect key="frame" x="202" y="323" width="40" height="21"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="17"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PPC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gee-pl-UaJ">
-                                <rect key="frame" x="96" y="593" width="35" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PPC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h92-zb-1iw">
+                                <rect key="frame" x="75" y="429" width="35" height="21"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="17"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5F-TY-smj">
-                                <rect key="frame" x="237" y="593" width="45" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oma-EB-Cfc">
+                                <rect key="frame" x="200" y="429" width="45" height="21"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="17"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGv-VM-Vje">
-                                <rect key="frame" x="66" y="354" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pp-er-eCA">
+                                <rect key="frame" x="55" y="244" width="80" height="80"/>
                                 <state key="normal" image="feathercoin.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="feathercoinWasClicked:" destination="h7E-Zr-4Xp" eventType="touchUpInside" id="eTG-g2-vtT"/>
+                                    <action selector="feathercoinWasClicked:" destination="ckt-nN-HSr" eventType="touchUpInside" id="sFj-2E-eXQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ta-5Y-gse">
-                                <rect key="frame" x="212" y="354" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kun-br-Pap">
+                                <rect key="frame" x="185" y="244" width="80" height="80"/>
                                 <state key="normal" image="namecoin.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="namecoinWasClicked:" destination="h7E-Zr-4Xp" eventType="touchUpInside" id="KF7-nN-qYn"/>
+                                    <action selector="namecoinWasClicked:" destination="ckt-nN-HSr" eventType="touchUpInside" id="E5T-yS-0pT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6z-7N-7To">
-                                <rect key="frame" x="63" y="485" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwY-HV-4LZ">
+                                <rect key="frame" x="55" y="352" width="80" height="80"/>
                                 <state key="normal" image="peercoin.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="peercoinWasClicked:" destination="h7E-Zr-4Xp" eventType="touchUpInside" id="y9x-X8-iZc"/>
+                                    <action selector="peercoinWasClicked:" destination="ckt-nN-HSr" eventType="touchUpInside" id="D53-zN-4PZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zv-Li-j3y">
-                                <rect key="frame" x="209" y="485" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1X-lG-mIn">
+                                <rect key="frame" x="185" y="352" width="80" height="80"/>
                                 <state key="normal" image="blackcoin.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="blackcoinWasClicked:" destination="h7E-Zr-4Xp" eventType="touchUpInside" id="xCL-q4-BNc"/>
+                                    <action selector="blackcoinWasClicked:" destination="ckt-nN-HSr" eventType="touchUpInside" id="ilD-wv-SMW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUP-b7-8Dg">
-                                <rect key="frame" x="66" y="204" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HY9-Zu-jUq">
+                                <rect key="frame" x="55" y="136" width="80" height="80"/>
                                 <state key="normal" image="darkcoin.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="darkcoinWasClicked:" destination="h7E-Zr-4Xp" eventType="touchUpInside" id="2gj-wV-pZe"/>
+                                    <action selector="darkcoinWasClicked:" destination="ckt-nN-HSr" eventType="touchUpInside" id="heP-rE-sic"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.0" alpha="0.95999999999999996" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="bitcoinIcon" destination="rj2-QL-tBH" id="lZd-OB-Sl6"/>
-                        <outlet property="bitcoinLabel" destination="bHS-t7-KgE" id="dMV-Pd-88a"/>
-                        <outlet property="blackcoinIcon" destination="2zv-Li-j3y" id="h1Q-Ub-UhW"/>
-                        <outlet property="blackcoinLabel" destination="h5F-TY-smj" id="f2s-rz-w7y"/>
-                        <outlet property="darcoinIcon" destination="MUP-b7-8Dg" id="dhw-gM-sJk"/>
-                        <outlet property="darkcoinLabel" destination="55n-9O-W1e" id="VHd-cH-sQa"/>
-                        <outlet property="dogecoinIcon" destination="UEy-Td-D0D" id="Llf-XA-iQg"/>
-                        <outlet property="dogecoinLabel" destination="DUx-5R-XLd" id="fUG-GS-dMF"/>
-                        <outlet property="feathercoinIcon" destination="xGv-VM-Vje" id="5wk-u5-8OK"/>
-                        <outlet property="feathercoinLabel" destination="71A-pk-7Yx" id="Une-Od-TUR"/>
-                        <outlet property="litecoinIcon" destination="1UP-Ud-qEm" id="r2C-kA-BHw"/>
-                        <outlet property="litecoinLabel" destination="sUM-xO-wVt" id="71s-Y0-2jz"/>
-                        <outlet property="namecoinIcon" destination="7ta-5Y-gse" id="UdU-HV-LsE"/>
-                        <outlet property="namecoinLabel" destination="y3V-g6-FQf" id="P7a-pR-Pbv"/>
-                        <outlet property="peercoinIcon" destination="z6z-7N-7To" id="0ux-g3-6Es"/>
-                        <outlet property="peercoinLabel" destination="Gee-pl-UaJ" id="Fiv-EM-5kt"/>
+                        <outlet property="bitcoinIcon" destination="D3C-b0-Y6Y" id="f1D-ua-smM"/>
+                        <outlet property="bitcoinLabel" destination="k18-zg-c2X" id="aEz-Fw-a4S"/>
+                        <outlet property="blackcoinIcon" destination="T1X-lG-mIn" id="6zH-MT-dVc"/>
+                        <outlet property="blackcoinLabel" destination="Oma-EB-Cfc" id="rHB-IX-r6g"/>
+                        <outlet property="darcoinIcon" destination="HY9-Zu-jUq" id="iv9-Zm-3YS"/>
+                        <outlet property="darkcoinLabel" destination="iHl-VQ-4eD" id="gtZ-80-0vX"/>
+                        <outlet property="dogecoinIcon" destination="EmS-pQ-sPN" id="81b-Mf-171"/>
+                        <outlet property="dogecoinLabel" destination="qg9-AM-QOh" id="iqI-3l-aEp"/>
+                        <outlet property="feathercoinIcon" destination="5pp-er-eCA" id="DPj-G7-mND"/>
+                        <outlet property="feathercoinLabel" destination="2J9-H8-xBw" id="AWP-7C-NUR"/>
+                        <outlet property="litecoinIcon" destination="ZWR-aM-um4" id="fYO-GR-zn3"/>
+                        <outlet property="litecoinLabel" destination="BcB-MD-CK1" id="zpi-2s-D3a"/>
+                        <outlet property="namecoinIcon" destination="kun-br-Pap" id="ezd-CW-Iqy"/>
+                        <outlet property="namecoinLabel" destination="X6y-AU-Xm5" id="gH6-4i-nFU"/>
+                        <outlet property="peercoinIcon" destination="SwY-HV-4LZ" id="Ifm-Np-fPH"/>
+                        <outlet property="peercoinLabel" destination="h92-zb-1iw" id="uqe-Bx-AX0"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="q5Z-ta-N3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k3O-q7-cdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="222.66666666666666" y="-433.10000000000002"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="nA9-xU-4PF">
+        <scene sceneID="Kmd-5H-BeJ">
             <objects>
-                <viewController id="gpZ-01-0hx" customClass="ViewController" customModule="Coinvert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4SE-Yb-s8D" customClass="ViewController" customModule="Coinvert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ixe-2R-0Hw"/>
-                        <viewControllerLayoutGuide type="bottom" id="Rq2-p2-Tj5"/>
+                        <viewControllerLayoutGuide type="top" id="WiX-6w-qDW"/>
+                        <viewControllerLayoutGuide type="bottom" id="pDy-ov-ty7"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MxT-Vy-aLb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="99N-nO-8q4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="colors.png" translatesAutoresizingMaskIntoConstraints="NO" id="eGU-ay-Anc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="colors.png" translatesAutoresizingMaskIntoConstraints="NO" id="7od-95-fce">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             </imageView>
-                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eG3-G4-8pv" userLabel="TimerBar">
-                                <rect key="frame" x="44" y="48" width="1" height="3"/>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rjk-Ah-amD" userLabel="TimerBar">
+                                <rect key="frame" x="30" y="35" width="1" height="3"/>
                                 <color key="backgroundColor" red="0.72941176470000002" green="0.25098039220000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Limit: 0.000 LTC" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.64999997615814209" translatesAutoresizingMaskIntoConstraints="NO" id="QY9-xp-JtP" userLabel="DepositLimitLabel">
-                                <rect key="frame" x="161" y="107" width="175" height="21"/>
-                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Limit: 0.000 LTC" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.64999997615814209" translatesAutoresizingMaskIntoConstraints="NO" id="Cpj-Ax-AIX" userLabel="DepositLimitLabel">
+                                <rect key="frame" x="118" y="72" width="169" height="21"/>
+                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0mS-XD-huV" userLabel="DepositCoinImage">
-                                <rect key="frame" x="36" y="136" width="75" height="75"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hbT-Hb-8IF" userLabel="DepositCoinImage">
+                                <rect key="frame" x="25" y="102" width="50" height="50"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFj-Vp-2GH">
-                                <rect key="frame" x="31" y="131" width="85" height="103"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kl9-tt-SGd">
+                                <rect key="frame" x="18" y="102" width="65" height="63"/>
                                 <state key="normal" title="Change coin" image="Down.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="h7E-Zr-4Xp" kind="modal" identifier="showFromCoin" modalPresentationStyle="overFullScreen" id="TZm-NE-SIf"/>
+                                    <segue destination="ckt-nN-HSr" kind="presentation" identifier="showFromCoin" modalPresentationStyle="overFullScreen" id="d76-fv-DLB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84O-ze-rhB">
-                                <rect key="frame" x="162" y="291" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xri-Z5-SnP">
+                                <rect key="frame" x="143" y="210" width="35" height="35"/>
                                 <state key="normal" image="switch.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="switchButtonWasClicked:" destination="gpZ-01-0hx" eventType="touchUpInside" id="5NJ-wZ-kmz"/>
+                                    <action selector="switchButtonWasClicked:" destination="4SE-Yb-s8D" eventType="touchUpInside" id="cGJ-yC-xZf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="depositLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8j2-la-IsO" userLabel="DepositLabel">
-                                <rect key="frame" x="124" y="149" width="213" height="50"/>
-                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="36"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="depositLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RpY-OZ-Uxe" userLabel="DepositLabel">
+                                <rect key="frame" x="83" y="102" width="213" height="50"/>
+                                <fontDescription key="fontDescription" name="Airstrike" family="Airstrike" pointSize="34"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="toCoinLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaH-sK-O3s">
-                                <rect key="frame" x="124" y="426" width="200" height="50"/>
-                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="36"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="toCoinLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9f-pQ-TOc">
+                                <rect key="frame" x="83" y="304" width="200" height="50"/>
+                                <fontDescription key="fontDescription" name="Airstrike" family="Airstrike" pointSize="34"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Return Address (optional)" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YSN-0N-HLf">
-                                <rect key="frame" x="56" y="243" width="303" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Return Address (optional)" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bQ7-y4-014">
+                                <rect key="frame" x="14" y="175" width="292" height="27"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.82352941180000006" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
@@ -281,11 +284,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Your Payment Address" textAlignment="natural" minimumFontSize="7" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7gH-4m-buC">
-                                <rect key="frame" x="56" y="529" width="303" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Your Payment Address" textAlignment="natural" minimumFontSize="7" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="edR-2Q-PFu">
+                                <rect key="frame" x="16" y="381" width="292" height="27"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.82352941180000006" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
@@ -296,78 +299,71 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Specific Amount:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dX-sH-EtQ">
-                                <rect key="frame" x="23" y="378" width="164" height="27"/>
-                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Specific Amount:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QA1-E5-WVH">
+                                <rect key="frame" x="13" y="269" width="164" height="27"/>
+                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.00 LTC = 0.0000 BTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="rel-jd-MhM" userLabel="InstantRateLabel">
-                                <rect key="frame" x="53" y="56" width="268" height="23"/>
-                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.00 LTC = 0.0000 BTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="zfb-cX-5u1" userLabel="InstantRateLabel">
+                                <rect key="frame" x="31" y="41" width="268" height="23"/>
+                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EGb-up-8Rn" userLabel="RCVCoinImage">
-                                <rect key="frame" x="36" y="413" width="75" height="75"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KsQ-j1-yeN" userLabel="RCVCoinImage">
+                                <rect key="frame" x="25" y="304" width="50" height="50"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYj-fn-q0B">
-                                <rect key="frame" x="16" y="528" width="38" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzh-ym-kae" userLabel="RCVqrButton">
+                                <rect key="frame" x="274" y="348" width="30" height="30"/>
                                 <state key="normal" title="Button" image="qr1.png"/>
                                 <connections>
-                                    <action selector="qrCameraWasClicked:" destination="gpZ-01-0hx" eventType="touchUpInside" id="cyU-cY-JKy"/>
+                                    <action selector="qrCameraWasClicked:" destination="4SE-Yb-s8D" eventType="touchUpInside" id="PqA-Dt-GWc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZ5-Kj-olx">
-                                <rect key="frame" x="31" y="408" width="85" height="106"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oW5-ce-G2a">
+                                <rect key="frame" x="18" y="304" width="65" height="63"/>
                                 <state key="normal" title="Change coin" image="Down.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Th7-zg-X2B" kind="modal" identifier="showToCoin" modalPresentationStyle="overFullScreen" id="iK2-gx-wcj"/>
+                                    <segue destination="0xz-nv-C1J" kind="presentation" identifier="showToCoin" modalPresentationStyle="overFullScreen" id="LGd-AO-iVz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLl-NF-61c">
-                                <rect key="frame" x="16" y="242" width="38" height="38"/>
-                                <state key="normal" title="Button" image="qr1.png"/>
-                                <connections>
-                                    <action selector="returnAddressQRWasClicked:" destination="gpZ-01-0hx" eventType="touchUpInside" id="rMA-VM-5Gb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51Y-Sl-JD9">
-                                <rect key="frame" x="87" y="587" width="200" height="60"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y29-pr-iot" userLabel="CoinvertButton">
+                                <rect key="frame" x="85" y="421" width="150" height="40"/>
                                 <state key="normal" image="txButton.png">
                                     <color key="titleColor" red="0.72941176470000002" green="0.25098039220000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="startButtonWasClicked:" destination="gpZ-01-0hx" eventType="touchUpInside" id="Suk-9v-4qo"/>
-                                    <segue destination="r5A-sF-mr3" kind="modal" identifier="showSendScreen" id="Afv-nb-c5L"/>
+                                    <action selector="startButtonWasClicked:" destination="4SE-Yb-s8D" eventType="touchUpInside" id="4pJ-ua-chq"/>
+                                    <segue destination="Gi8-ZT-d60" kind="show" identifier="showSendScreen" id="Bfq-2z-uWX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Deposit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woi-VC-1iy">
-                                <rect key="frame" x="23" y="93" width="110" height="40"/>
-                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="31"/>
-                                <color key="textColor" red="0.65098039220000004" green="0.23137254900000001" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Deposit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyS-jA-C5R">
+                                <rect key="frame" x="16" y="70" width="118" height="25"/>
+                                <fontDescription key="fontDescription" name="Airstrike" family="Airstrike" pointSize="28"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instant Rate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpW-Fo-FcW">
-                                <rect key="frame" x="117" y="20" width="140" height="32"/>
-                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="25"/>
-                                <color key="textColor" red="0.65098039220000004" green="0.23137254900000001" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instant Rate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umB-DX-ITd">
+                                <rect key="frame" x="92" y="15" width="153" height="19"/>
+                                <fontDescription key="fontDescription" name="Airstrike" family="Airstrike" pointSize="21"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Receive" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVU-dw-46h">
-                                <rect key="frame" x="23" y="347" width="111" height="40"/>
-                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="31"/>
-                                <color key="textColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Receive" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9Z-fE-XqS">
+                                <rect key="frame" x="16" y="250" width="130" height="27"/>
+                                <fontDescription key="fontDescription" name="Airstrike" family="Airstrike" pointSize="31"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" (optional)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vQX-gU-1fp">
-                                <rect key="frame" x="195" y="375" width="104" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" (optional)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mxy-Uy-bqJ">
+                                <rect key="frame" x="169" y="261" width="104" height="30"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.82352941180000006" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="light" returnKeyType="done"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
@@ -378,31 +374,37 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOd-CD-q7A">
-                                <rect key="frame" x="337" y="107" width="20" height="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWk-L6-M3t">
+                                <rect key="frame" x="291" y="72" width="20" height="20"/>
                                 <state key="normal" image="info.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="infoButtonWasPressed:" destination="gpZ-01-0hx" eventType="touchUpInside" id="Xs9-Pq-5IM"/>
+                                    <action selector="infoButtonWasPressed:" destination="4SE-Yb-s8D" eventType="touchUpInside" id="UXN-ot-Gfb"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HaQ-jm-fWB">
-                                <rect key="frame" x="107" y="74" width="230" height="200"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Est. max:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="KpN-WR-O1N">
+                                <rect key="frame" x="98" y="289" width="210" height="21"/>
+                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="85v-1s-EM8">
+                                <rect key="frame" x="57" y="35" width="230" height="200"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="popup.png" translatesAutoresizingMaskIntoConstraints="NO" id="zd3-Zq-JGG">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="popup.png" translatesAutoresizingMaskIntoConstraints="NO" id="2J1-6b-9JC">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="200"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHb-Ab-xfZ">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTP-Lb-UGy">
                                         <rect key="frame" x="145" y="165" width="20" height="20"/>
                                         <state key="normal" image="cancel.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="cancelButtonWasPressed:" destination="gpZ-01-0hx" eventType="touchUpInside" id="Vn9-B1-LXW"/>
+                                            <action selector="cancelButtonWasPressed:" destination="4SE-Yb-s8D" eventType="touchUpInside" id="Z9Q-Rb-WkW"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofN-vr-BwY">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJo-Y5-ZN9">
                                         <rect key="frame" x="45" y="0.0" width="151" height="200"/>
                                         <string key="text">Any deposit greater than this amount will be returned only if a return address has been entered. Otherwise you must contact shapeshift.io support for any returns.</string>
                                         <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="14"/>
@@ -416,418 +418,419 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Est. max:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpK-GH-oYK">
-                                <rect key="frame" x="124" y="402" width="278" height="21"/>
-                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="popupforestmax.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vm7-kC-vRu">
-                                <rect key="frame" x="220" y="291" width="152" height="83"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="popuptest.png" translatesAutoresizingMaskIntoConstraints="NO" id="q8u-K5-cVq">
+                                <rect key="frame" x="182" y="173" width="138" height="85"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If you enjoy this app, consider tipping me here:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWv-fM-gef">
-                                <rect key="frame" x="69" y="641" width="213" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If you enjoy this app, consider tipping me here:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20D-Os-Dws">
+                                <rect key="frame" x="41" y="459" width="213" height="21"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="10"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dew-5S-ekv">
-                                <rect key="frame" x="296" y="637" width="25" height="25"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVu-QH-4Dr">
+                                <rect key="frame" x="262" y="450" width="25" height="25"/>
                                 <state key="normal" image="litecoin.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="donationButtonWasPressed:" destination="gpZ-01-0hx" eventType="touchUpInside" id="c3N-4c-5UP"/>
+                                    <action selector="donationButtonWasPressed:" destination="4SE-Yb-s8D" eventType="touchUpInside" id="cM6-C2-Dfs"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IFl-8R-jjk" userLabel="DonationView">
-                                <rect key="frame" x="9" y="233" width="300" height="400"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8H-fH-Wxb" userLabel="DepositQRButton">
+                                <rect key="frame" x="274" y="142" width="30" height="30"/>
+                                <state key="normal" title="Button" image="qr1.png"/>
+                                <connections>
+                                    <action selector="returnAddressQRWasClicked:" destination="4SE-Yb-s8D" eventType="touchUpInside" id="n1L-nH-FES"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zjv-u6-PLp" userLabel="DonationView">
+                                <rect key="frame" x="7" y="112" width="288" height="348"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="donationpopup.png" translatesAutoresizingMaskIntoConstraints="NO" id="zO3-YS-3LD">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="donationpopup.png" translatesAutoresizingMaskIntoConstraints="NO" id="7jj-YH-Pcw">
+                                        <rect key="frame" x="23" y="19" width="242" height="321"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgT-Bd-VI4">
-                                        <rect key="frame" x="125" y="284" width="50" height="50"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LMwz3FV1zhGLhPfD6mDsqtg3eTeHSksk9W" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahE-c5-Qr2">
+                                        <rect key="frame" x="53" y="210" width="339" height="22"/>
+                                        <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="9"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0x-yX-PIb">
+                                        <rect key="frame" x="117" y="253" width="50" height="50"/>
                                         <state key="normal" image="copy.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="highlighted" image="copied.png"/>
                                         <connections>
-                                            <action selector="copyDonationAddressButtonWasPressed:" destination="gpZ-01-0hx" eventType="touchUpInside" id="IdE-qE-BGb"/>
+                                            <action selector="copyDonationAddressButtonWasPressed:" destination="4SE-Yb-s8D" eventType="touchUpInside" id="0bB-CT-H1D"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LMwz3FV1zhGLhPfD6mDsqtg3eTeHSksk9W" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1h-gD-imw">
-                                        <rect key="frame" x="33" y="249" width="339" height="22"/>
-                                        <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="12"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ft-Ru-UsS">
-                                        <rect key="frame" x="247" y="328" width="20" height="20"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uV-JJ-sVz">
+                                        <rect key="frame" x="212" y="276" width="20" height="20"/>
                                         <state key="normal" image="cancel.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="donationCancel:" destination="gpZ-01-0hx" eventType="touchUpInside" id="kb9-xU-7hz"/>
+                                            <action selector="donationCancel:" destination="4SE-Yb-s8D" eventType="touchUpInside" id="J23-Qw-Dst"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="donatepopup.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rjk-ba-Ezk">
-                                        <rect key="frame" x="165" y="193" width="154" height="104"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="donatepopup.png" translatesAutoresizingMaskIntoConstraints="NO" id="RVS-wT-5tR">
+                                        <rect key="frame" x="145" y="164" width="154" height="104"/>
                                     </imageView>
                                 </subviews>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="coinvertButton" destination="51Y-Sl-JD9" id="nb6-mT-sO6"/>
-                        <outlet property="currentRateLabel" destination="rel-jd-MhM" id="zaJ-VG-pUq"/>
-                        <outlet property="depositLimitLabel" destination="QY9-xp-JtP" id="7tn-2Z-mXc"/>
-                        <outlet property="donatePopupImageView" destination="Rjk-ba-Ezk" id="ebB-be-FiY"/>
-                        <outlet property="donationView" destination="IFl-8R-jjk" id="Psz-wz-dWN"/>
-                        <outlet property="estMaxLabel" destination="CpK-GH-oYK" id="jtT-49-ItQ"/>
-                        <outlet property="estMaxPopup" destination="Vm7-kC-vRu" id="Q6p-1I-6CM"/>
-                        <outlet property="fixedAmountField" destination="vQX-gU-1fp" id="xfU-lh-fzc"/>
-                        <outlet property="fromCoinImage" destination="0mS-XD-huV" id="qNW-6Z-cCe"/>
-                        <outlet property="fromCoinLabel" destination="8j2-la-IsO" id="sLJ-eS-8nt"/>
-                        <outlet property="infoView" destination="HaQ-jm-fWB" id="Tf2-be-i3t"/>
-                        <outlet property="returnCoinAddress" destination="YSN-0N-HLf" id="WBT-Hh-3GT"/>
-                        <outlet property="timerBar" destination="eG3-G4-8pv" id="iNL-wC-kc5"/>
-                        <outlet property="toCoinImage" destination="EGb-up-8Rn" id="rlR-hv-kJQ"/>
-                        <outlet property="toCoinLabel" destination="WaH-sK-O3s" id="3PJ-dk-6me"/>
-                        <outlet property="yourPaymentAddress" destination="7gH-4m-buC" id="2yR-cN-TO3"/>
+                        <outlet property="coinvertButton" destination="y29-pr-iot" id="Cc1-dD-gH5"/>
+                        <outlet property="currentRateLabel" destination="zfb-cX-5u1" id="oL5-RA-edy"/>
+                        <outlet property="depositLimitLabel" destination="Cpj-Ax-AIX" id="yNf-LR-qfl"/>
+                        <outlet property="donatePopupImageView" destination="RVS-wT-5tR" id="eAw-st-Xxh"/>
+                        <outlet property="donationView" destination="zjv-u6-PLp" id="tdc-u8-ku1"/>
+                        <outlet property="estMaxLabel" destination="KpN-WR-O1N" id="uJy-Pi-Rm1"/>
+                        <outlet property="estMaxPopup" destination="q8u-K5-cVq" id="J8L-xc-jCd"/>
+                        <outlet property="fixedAmountField" destination="Mxy-Uy-bqJ" id="Y7X-Hn-wtP"/>
+                        <outlet property="fromCoinImage" destination="hbT-Hb-8IF" id="vcN-40-MVy"/>
+                        <outlet property="fromCoinLabel" destination="RpY-OZ-Uxe" id="ZLG-HW-lIE"/>
+                        <outlet property="infoView" destination="85v-1s-EM8" id="Oyo-1G-8eZ"/>
+                        <outlet property="returnCoinAddress" destination="bQ7-y4-014" id="ePe-OS-hCF"/>
+                        <outlet property="timerBar" destination="Rjk-Ah-amD" id="Xv3-Lh-vxs"/>
+                        <outlet property="toCoinImage" destination="KsQ-j1-yeN" id="dv0-m7-yBV"/>
+                        <outlet property="toCoinLabel" destination="W9f-pQ-TOc" id="e6n-7M-ZbJ"/>
+                        <outlet property="yourPaymentAddress" destination="edR-2Q-PFu" id="w7M-hX-jy1"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yyp-ar-nYI" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H4C-Md-flw" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="202.5" y="407.5"/>
+            <point key="canvasLocation" x="202" y="407"/>
         </scene>
         <!--Send View Controller-->
-        <scene sceneID="OUP-QC-OK1">
+        <scene sceneID="3zY-xV-CT6">
             <objects>
-                <viewController id="r5A-sF-mr3" customClass="SendViewController" customModule="Coinvert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Gi8-ZT-d60" customClass="SendViewController" customModule="Coinvert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IYR-SY-zk5"/>
-                        <viewControllerLayoutGuide type="bottom" id="CHB-Mz-iNg"/>
+                        <viewControllerLayoutGuide type="top" id="uje-ro-Jp3"/>
+                        <viewControllerLayoutGuide type="bottom" id="zHV-pv-afn"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dgs-B1-Lkd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="ODv-MW-IU1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sendbg.png" translatesAutoresizingMaskIntoConstraints="NO" id="x8H-UQ-eVO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sendbg.png" translatesAutoresizingMaskIntoConstraints="NO" id="DGu-HX-RlW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             </imageView>
-                            <label opaque="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.64999997615814209" translatesAutoresizingMaskIntoConstraints="NO" id="Ocf-GS-ewg" userLabel="DepositAddLabel">
-                                <rect key="frame" x="77" y="469" width="282" height="35"/>
-                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="20"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rHa-ED-VOa">
+                                <rect key="frame" x="257" y="190" width="50" height="50"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4j4-tX-KY7" userLabel="fromImage View">
+                                <rect key="frame" x="15" y="190" width="50" height="50"/>
+                            </imageView>
+                            <label opaque="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.64999997615814209" translatesAutoresizingMaskIntoConstraints="NO" id="eE6-KM-hux" userLabel="DepositAddLabel">
+                                <rect key="frame" x="59" y="340" width="244" height="35"/>
+                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21P-Yd-9KE" userLabel="TransStatusLabel">
-                                <rect key="frame" x="102" y="150" width="170" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghN-VS-TeE" userLabel="TransStatusLabel">
+                                <rect key="frame" x="70" y="108" width="178" height="26"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="25"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5B-ex-TjD" userLabel="CopyDepositAddButton">
-                                <rect key="frame" x="24" y="466" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHw-xK-ux3" userLabel="CopyDepositAddButton">
+                                <rect key="frame" x="16" y="335" width="40" height="40"/>
                                 <state key="normal" image="copy.png">
                                     <color key="titleColor" red="0.63137254899999995" green="0.70196078429999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="copied.png"/>
                                 <connections>
-                                    <action selector="copyDepositButtonWasPressed:" destination="r5A-sF-mr3" eventType="touchUpInside" id="Y2t-sV-SIW"/>
+                                    <action selector="copyDepositButtonWasPressed:" destination="Gi8-ZT-d60" eventType="touchUpInside" id="ZWg-ZK-mGb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nR9-kz-vLK" userLabel="CopyAmountButton">
-                                <rect key="frame" x="24" y="584" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pv-sS-NhU" userLabel="CopyAmountButton">
+                                <rect key="frame" x="16" y="415" width="40" height="40"/>
                                 <state key="normal" image="copy.png">
                                     <color key="titleColor" red="0.63137254899999995" green="0.70196078429999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="copied.png"/>
                                 <connections>
-                                    <action selector="copySendAmountButtonWasPressed:" destination="r5A-sF-mr3" eventType="touchUpInside" id="pxH-Up-ZFo"/>
+                                    <action selector="copySendAmountButtonWasPressed:" destination="Gi8-ZT-d60" eventType="touchUpInside" id="e8w-76-FvL"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h3U-sU-wL6">
-                                <rect key="frame" x="162" y="272" width="50" height="50"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="middlearrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="To8-Ct-M6s" userLabel="Arrow Image View">
+                                <rect key="frame" x="76" y="134" width="167" height="159"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Md-gN-Qv6">
-                                <rect key="frame" x="309" y="272" width="50" height="50"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dab-1J-a7x" userLabel="QRCodeView">
+                                <rect key="frame" x="90" y="144" width="140" height="140"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="middlearrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="JIS-9T-4ca" userLabel="Arrow Image View">
-                                <rect key="frame" x="67" y="174" width="240" height="244"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vy2-px-T1L" userLabel="QRCodeView">
-                                <rect key="frame" x="87" y="197" width="200" height="200"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3t-we-6yy" userLabel="TimeLabel">
-                                <rect key="frame" x="245" y="34" width="80" height="23"/>
-                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2I-4f-9h4" userLabel="TimeLabel">
+                                <rect key="frame" x="224" y="23" width="80" height="23"/>
+                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="26"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Remaining:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEV-Ck-HfO">
-                                <rect key="frame" x="30" y="28" width="207" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Remaining:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kk1-iB-7Js">
+                                <rect key="frame" x="16" y="16" width="207" height="35"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="27"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cover.png" translatesAutoresizingMaskIntoConstraints="NO" id="tar-OH-eom" userLabel="FixedAmountView">
-                                <rect key="frame" x="5" y="10" width="368" height="147"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cover.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZFB-G4-DI5" userLabel="FixedAmountView">
+                                <rect key="frame" x="6" y="10" width="307" height="113"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In the amount of:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYH-yD-817">
-                                <rect key="frame" x="24" y="531" width="249" height="40"/>
-                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="31"/>
-                                <color key="textColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In the amount of:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lE-pU-Bkj">
+                                <rect key="frame" x="16" y="373" width="249" height="40"/>
+                                <fontDescription key="fontDescription" name="Airstrike" family="Airstrike" pointSize="28"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send coins to:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ir0-ni-AMB">
-                                <rect key="frame" x="24" y="418" width="232" height="40"/>
-                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="31"/>
-                                <color key="textColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send coins to:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTa-fS-nG3">
+                                <rect key="frame" x="16" y="299" width="232" height="40"/>
+                                <fontDescription key="fontDescription" name="Airstrike" family="Airstrike" pointSize="28"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.64999997615814209" translatesAutoresizingMaskIntoConstraints="NO" id="BEn-Rm-a3b" userLabel="WithdrawalAddLabel">
-                                <rect key="frame" x="30" y="107" width="319" height="26"/>
-                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.64999997615814209" translatesAutoresizingMaskIntoConstraints="NO" id="Dxv-qn-pW8" userLabel="WithdrawalAddLabel">
+                                <rect key="frame" x="25" y="76" width="274" height="26"/>
+                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="21"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Coinversion will be sent to:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQ8-8v-ntK">
-                                <rect key="frame" x="30" y="71" width="329" height="35"/>
-                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="22"/>
-                                <color key="textColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Coinversion will be sent to:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xtb-BB-eZV">
+                                <rect key="frame" x="16" y="53" width="290" height="35"/>
+                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(if applicable)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRF-lh-XcQ">
-                                <rect key="frame" x="30" y="561" width="107" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(if applicable)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bO-rM-8gs">
+                                <rect key="frame" x="22" y="396" width="107" height="22"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="10"/>
-                                <color key="textColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kS6-Mv-eBe">
-                                <rect key="frame" x="319" y="423" width="30" height="30"/>
-                                <state key="normal" image="cxl.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="cxlButtonWasPressed:" destination="r5A-sF-mr3" eventType="touchUpInside" id="NF4-MP-Z9z"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bdf-KX-Snb">
-                                <rect key="frame" x="79" y="516" width="157" height="111"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yVY-UB-HNY">
+                                <rect key="frame" x="48" y="330" width="157" height="111"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="depositAmountCopied.png" translatesAutoresizingMaskIntoConstraints="NO" id="lQY-EY-07n">
-                                        <rect key="frame" x="0.0" y="0.0" width="157" height="90"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="depositAmountCopied.png" translatesAutoresizingMaskIntoConstraints="NO" id="HaC-Bv-Z8S">
+                                        <rect key="frame" x="0.0" y="6" width="157" height="90"/>
                                     </imageView>
                                 </subviews>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0xJ-Lc-iuR">
-                                <rect key="frame" x="80" y="405" width="157" height="111"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Ic-kq-hka">
+                                <rect key="frame" x="48" y="241" width="157" height="111"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="depositCopied.png" translatesAutoresizingMaskIntoConstraints="NO" id="l5E-or-N8O">
-                                        <rect key="frame" x="0.0" y="0.0" width="157" height="90"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="depositCopied.png" translatesAutoresizingMaskIntoConstraints="NO" id="3bj-aP-8jX">
+                                        <rect key="frame" x="0.0" y="8" width="157" height="90"/>
                                     </imageView>
                                 </subviews>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGY-MV-pZP" userLabel="FixedAmountLabel">
-                                <rect key="frame" x="82" y="591" width="141" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9r-Ih-LjW" userLabel="FixedAmountLabel">
+                                <rect key="frame" x="70" y="420" width="141" height="35"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgD-Ob-jtw">
-                                <rect key="frame" x="231" y="591" width="51" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lZ-d5-3qm">
+                                <rect key="frame" x="222" y="420" width="51" height="35"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIb-rM-YY6">
+                                <rect key="frame" x="279" y="307" width="25" height="25"/>
+                                <state key="normal" image="cxl.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cxlButtonWasPressed:" destination="Gi8-ZT-d60" eventType="touchUpInside" id="mSF-ux-c6r"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="copyDepositAddressButton" destination="W5B-ex-TjD" id="XN6-u7-6wO"/>
-                        <outlet property="copySendAmountButton" destination="nR9-kz-vLK" id="gcn-Vq-mQT"/>
-                        <outlet property="depositAddressLabel" destination="Ocf-GS-ewg" id="3nh-ga-Q0n"/>
-                        <outlet property="depositAddressPopup" destination="0xJ-Lc-iuR" id="X6X-7f-7uT"/>
-                        <outlet property="depositAmountPopup" destination="Bdf-KX-Snb" id="16S-70-BdR"/>
-                        <outlet property="fixedAmountCover" destination="tar-OH-eom" id="hLZ-VJ-ZTr"/>
-                        <outlet property="fromCoinImageView" destination="h3U-sU-wL6" id="jM3-vk-jGF"/>
-                        <outlet property="qrCodeImageView" destination="Vy2-px-T1L" id="CKY-fD-yGm"/>
-                        <outlet property="sendAmountLabel" destination="cGY-MV-pZP" id="Rmm-0G-HOh"/>
-                        <outlet property="sendCoinsToLabel" destination="ir0-ni-AMB" id="MMr-ZH-uqD"/>
-                        <outlet property="sendStringLabel" destination="HgD-Ob-jtw" id="jws-Mo-tvu"/>
-                        <outlet property="timeLabel" destination="M3t-we-6yy" id="SHa-Cu-YMT"/>
-                        <outlet property="toCoinImageView" destination="3Md-gN-Qv6" id="SR9-fM-8cV"/>
-                        <outlet property="transactionStatusLabel" destination="21P-Yd-9KE" id="oiv-nU-H0r"/>
-                        <outlet property="withdrawalAddressLabel" destination="BEn-Rm-a3b" id="ipW-f9-oYh"/>
+                        <outlet property="copyDepositAddressButton" destination="sHw-xK-ux3" id="OLu-iW-hin"/>
+                        <outlet property="copySendAmountButton" destination="9pv-sS-NhU" id="kBF-E6-U6h"/>
+                        <outlet property="depositAddressLabel" destination="eE6-KM-hux" id="AXT-97-sAg"/>
+                        <outlet property="depositAddressPopup" destination="9Ic-kq-hka" id="sVu-Ux-sTq"/>
+                        <outlet property="depositAmountPopup" destination="yVY-UB-HNY" id="7HK-wb-3XH"/>
+                        <outlet property="fixedAmountCover" destination="ZFB-G4-DI5" id="D7C-Ab-loN"/>
+                        <outlet property="fromCoinImageView1" destination="4j4-tX-KY7" id="Ift-Eb-v7F"/>
+                        <outlet property="qrCodeImageView" destination="dab-1J-a7x" id="0Bl-uh-Qj4"/>
+                        <outlet property="sendAmountLabel" destination="j9r-Ih-LjW" id="2yj-1c-qAO"/>
+                        <outlet property="sendCoinsToLabel" destination="HTa-fS-nG3" id="Mc9-Jc-3IM"/>
+                        <outlet property="sendStringLabel" destination="5lZ-d5-3qm" id="x3g-WV-423"/>
+                        <outlet property="timeLabel" destination="o2I-4f-9h4" id="bFt-kR-jvc"/>
+                        <outlet property="toCoinImageView1" destination="rHa-ED-VOa" id="mGS-mX-csM"/>
+                        <outlet property="transactionStatusLabel" destination="ghN-VS-TeE" id="KaG-vx-k0y"/>
+                        <outlet property="withdrawalAddressLabel" destination="Dxv-qn-pW8" id="gwr-JI-H7t"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8II-Fk-rio" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AOy-d0-ZeY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="729.5" y="96.5"/>
+            <point key="canvasLocation" x="729" y="96"/>
         </scene>
         <!--Menu View Controller2-->
-        <scene sceneID="8cw-1p-dXW">
+        <scene sceneID="Uph-eb-svu">
             <objects>
-                <viewController id="Th7-zg-X2B" customClass="MenuViewController2" customModule="Coinvert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0xz-nv-C1J" customClass="MenuViewController2" customModule="Coinvert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2Sf-3R-f2R"/>
-                        <viewControllerLayoutGuide type="bottom" id="rAu-po-Nwx"/>
+                        <viewControllerLayoutGuide type="top" id="bZn-1g-GOV"/>
+                        <viewControllerLayoutGuide type="bottom" id="uo1-tb-C3C"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ZXt-aF-cLZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="tzd-Ul-qd5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGg-Ab-5sa">
-                                <rect key="frame" x="92" y="158" width="34" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qh8-Oq-emi">
+                                <rect key="frame" x="79" y="107" width="34" height="21"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="17"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pap-em-tBB">
-                                <rect key="frame" x="232" y="157" width="31" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQn-nB-5pv">
+                                <rect key="frame" x="211" y="107" width="31" height="21"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="17"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DKC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aR9-TU-xM8">
-                                <rect key="frame" x="89" y="303" width="36" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DKC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfq-SV-fUO">
+                                <rect key="frame" x="76" y="215" width="36" height="21"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="17"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaR-Zd-dlE">
-                                <rect key="frame" x="232" y="302" width="49" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txk-43-8d8">
+                                <rect key="frame" x="201" y="214" width="49" height="21"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="17"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aom-UX-C09">
-                                <rect key="frame" x="64" y="50" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbQ-2E-wPz">
+                                <rect key="frame" x="56" y="28" width="80" height="80"/>
                                 <state key="normal" image="bitcoin.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="bitcoinWasClicked:" destination="Th7-zg-X2B" eventType="touchUpInside" id="sto-OL-SRg"/>
+                                    <action selector="bitcoinWasClicked:" destination="0xz-nv-C1J" eventType="touchUpInside" id="BD3-Gx-gjr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JkA-nU-woz">
-                                <rect key="frame" x="210" y="50" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MG-v5-wbr">
+                                <rect key="frame" x="186" y="28" width="80" height="80"/>
                                 <state key="normal" image="litecoin.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="litecoinWasClicked:" destination="Th7-zg-X2B" eventType="touchUpInside" id="qcc-4i-Sob"/>
+                                    <action selector="litecoinWasClicked:" destination="0xz-nv-C1J" eventType="touchUpInside" id="Ynm-kz-rSV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cw9-RB-Wtr">
-                                <rect key="frame" x="64" y="195" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYs-Lg-ZZh">
+                                <rect key="frame" x="55" y="136" width="80" height="80"/>
                                 <state key="normal" image="darkcoin.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="darkcoinWasClicked:" destination="Th7-zg-X2B" eventType="touchUpInside" id="o6t-Zo-hU0"/>
+                                    <action selector="darkcoinWasClicked:" destination="0xz-nv-C1J" eventType="touchUpInside" id="AxG-r7-TKF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbD-8u-ZTl">
-                                <rect key="frame" x="210" y="200" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PE9-af-r28">
+                                <rect key="frame" x="185" y="136" width="80" height="80"/>
                                 <state key="normal" image="dogecoin.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="dogecoinWasClicked:" destination="Th7-zg-X2B" eventType="touchUpInside" id="p7l-Lu-4Oz"/>
+                                    <action selector="dogecoinWasClicked:" destination="0xz-nv-C1J" eventType="touchUpInside" id="347-Ww-d5I"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvx-qH-hUc">
-                                <rect key="frame" x="103" y="459" width="32" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efx-Ya-DQ9">
+                                <rect key="frame" x="78" y="323" width="32" height="21"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="17"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NMC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xW-NI-CPh">
-                                <rect key="frame" x="240" y="458" width="40" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NMC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7z-xq-eQO">
+                                <rect key="frame" x="205" y="323" width="40" height="21"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="17"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PPC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFZ-Ev-Wjo">
-                                <rect key="frame" x="97" y="597" width="35" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sC2-oo-wAz">
+                                <rect key="frame" x="204" y="429" width="45" height="22"/>
                                 <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="17"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lU8-yc-S6M">
-                                <rect key="frame" x="238" y="596" width="45" height="22"/>
-                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="17"/>
-                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k13-fe-BYd">
-                                <rect key="frame" x="64" y="351" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71o-Cd-C9u">
+                                <rect key="frame" x="55" y="244" width="80" height="80"/>
                                 <state key="normal" image="feathercoin.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="feathercoinWasClicked:" destination="Th7-zg-X2B" eventType="touchUpInside" id="PJK-z0-MJE"/>
+                                    <action selector="feathercoinWasClicked:" destination="0xz-nv-C1J" eventType="touchUpInside" id="SfR-15-WuS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHq-i6-c61">
-                                <rect key="frame" x="210" y="350" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZM2-ii-cA4">
+                                <rect key="frame" x="185" y="244" width="80" height="80"/>
                                 <state key="normal" image="namecoin.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="namecoinWasClicked:" destination="Th7-zg-X2B" eventType="touchUpInside" id="oe4-7b-hsH"/>
+                                    <action selector="namecoinWasClicked:" destination="0xz-nv-C1J" eventType="touchUpInside" id="U5Z-rf-pCP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qU-M8-jML">
-                                <rect key="frame" x="64" y="489" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpG-U7-sPJ">
+                                <rect key="frame" x="55" y="352" width="80" height="80"/>
                                 <state key="normal" image="peercoin.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="peercoinWasClicked:" destination="Th7-zg-X2B" eventType="touchUpInside" id="Bj7-DE-6Na"/>
+                                    <action selector="peercoinWasClicked:" destination="0xz-nv-C1J" eventType="touchUpInside" id="clU-Wc-hvP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1y-4M-fvv">
-                                <rect key="frame" x="210" y="488" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exA-3l-xTC">
+                                <rect key="frame" x="186" y="352" width="80" height="80"/>
                                 <state key="normal" image="blackcoin.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="blackcoinWasClicked:" destination="Th7-zg-X2B" eventType="touchUpInside" id="m2v-ru-ENa"/>
+                                    <action selector="blackcoinWasClicked:" destination="0xz-nv-C1J" eventType="touchUpInside" id="vCC-Uh-4A9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PPC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ki-56-hRc">
+                                <rect key="frame" x="78" y="430" width="35" height="21"/>
+                                <fontDescription key="fontDescription" name="RacingSansOne-Regular" family="Racing Sans One" pointSize="17"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.0" alpha="0.95999999999999996" colorSpace="calibratedRGB"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="bitcoinIcon2" destination="aom-UX-C09" id="t3m-Ic-1yU"/>
-                        <outlet property="bitcoinLabel2" destination="aGg-Ab-5sa" id="8Y8-1I-5hG"/>
-                        <outlet property="blackcoinIcon2" destination="H1y-4M-fvv" id="mVJ-zW-asL"/>
-                        <outlet property="blackcoinLabel2" destination="lU8-yc-S6M" id="Hxg-6c-LaI"/>
-                        <outlet property="darcoinIcon2" destination="cw9-RB-Wtr" id="tB6-EO-Xs7"/>
-                        <outlet property="darkcoinLabel2" destination="aR9-TU-xM8" id="1Uv-LK-XPR"/>
-                        <outlet property="dogecoinIcon2" destination="AbD-8u-ZTl" id="uze-hG-CZZ"/>
-                        <outlet property="dogecoinLabel2" destination="aaR-Zd-dlE" id="5Iq-oe-uSe"/>
-                        <outlet property="feathercoinIcon2" destination="k13-fe-BYd" id="NEQ-oq-DYD"/>
-                        <outlet property="feathercoinLabel2" destination="vvx-qH-hUc" id="PuS-aw-OfL"/>
-                        <outlet property="litecoinIcon2" destination="JkA-nU-woz" id="53B-a3-as1"/>
-                        <outlet property="litecoinLabel2" destination="Pap-em-tBB" id="BBY-GU-jh3"/>
-                        <outlet property="namecoinIcon2" destination="JHq-i6-c61" id="3Uw-np-wDX"/>
-                        <outlet property="namecoinLabel2" destination="9xW-NI-CPh" id="IWu-1A-5oh"/>
-                        <outlet property="peercoinIcon2" destination="5qU-M8-jML" id="dif-lA-dWn"/>
-                        <outlet property="peercoinLabel2" destination="gFZ-Ev-Wjo" id="jIi-n3-DVY"/>
+                        <outlet property="bitcoinIcon2" destination="qbQ-2E-wPz" id="Gn4-nh-eMP"/>
+                        <outlet property="bitcoinLabel2" destination="Qh8-Oq-emi" id="3pL-CU-N4s"/>
+                        <outlet property="blackcoinIcon2" destination="exA-3l-xTC" id="Vgn-8U-7rP"/>
+                        <outlet property="blackcoinLabel2" destination="sC2-oo-wAz" id="OFE-7V-E2H"/>
+                        <outlet property="darcoinIcon2" destination="eYs-Lg-ZZh" id="q2F-1x-H9e"/>
+                        <outlet property="darkcoinLabel2" destination="Tfq-SV-fUO" id="z8g-TT-egz"/>
+                        <outlet property="dogecoinIcon2" destination="PE9-af-r28" id="YQ8-B5-iWw"/>
+                        <outlet property="dogecoinLabel2" destination="txk-43-8d8" id="eUh-yd-AVc"/>
+                        <outlet property="feathercoinIcon2" destination="71o-Cd-C9u" id="jp4-pP-P9O"/>
+                        <outlet property="feathercoinLabel2" destination="efx-Ya-DQ9" id="9c4-1m-mwt"/>
+                        <outlet property="litecoinIcon2" destination="0MG-v5-wbr" id="Miz-Hu-cxb"/>
+                        <outlet property="litecoinLabel2" destination="jQn-nB-5pv" id="6cQ-08-MtN"/>
+                        <outlet property="namecoinIcon2" destination="ZM2-ii-cA4" id="1xx-no-ds7"/>
+                        <outlet property="namecoinLabel2" destination="C7z-xq-eQO" id="3wv-wD-xnj"/>
+                        <outlet property="peercoinIcon2" destination="vpG-U7-sPJ" id="cjV-Gf-1nw"/>
+                        <outlet property="peercoinLabel2" destination="7ki-56-hRc" id="dbg-nF-YOl"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M3T-NV-5R7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTy-Eb-o8W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="198.66666666666666" y="1229.2466666666667"/>
         </scene>
@@ -836,29 +839,29 @@
         <image name="Down.png" width="85" height="115"/>
         <image name="bitcoin.png" width="105" height="105"/>
         <image name="blackcoin.png" width="105" height="105"/>
-        <image name="cancel.png" width="50" height="50"/>
+        <image name="cancel.png" width="30" height="30"/>
         <image name="colors.png" width="640" height="1146"/>
         <image name="copied.png" width="50" height="50"/>
         <image name="copy.png" width="50" height="50"/>
-        <image name="cover.png" width="390" height="170"/>
-        <image name="cxl.png" width="50" height="50"/>
+        <image name="cover.png" width="368" height="147"/>
+        <image name="cxl.png" width="30" height="30"/>
         <image name="darkcoin.png" width="105" height="105"/>
-        <image name="depositAmountCopied.png" width="201" height="115"/>
-        <image name="depositCopied.png" width="201" height="115"/>
+        <image name="depositAmountCopied.png" width="185" height="115"/>
+        <image name="depositCopied.png" width="185" height="115"/>
         <image name="dogecoin.png" width="105" height="105"/>
-        <image name="donatepopup.png" width="150" height="100"/>
+        <image name="donatepopup.png" width="185" height="115"/>
         <image name="donationpopup.png" width="350" height="500"/>
         <image name="feathercoin.png" width="105" height="105"/>
-        <image name="info.png" width="50" height="50"/>
+        <image name="info.png" width="30" height="30"/>
         <image name="litecoin.png" width="105" height="105"/>
         <image name="middlearrow.png" width="390" height="390"/>
         <image name="namecoin.png" width="105" height="105"/>
         <image name="peercoin.png" width="105" height="105"/>
         <image name="popup.png" width="250" height="200"/>
-        <image name="popupforestmax.png" width="175" height="105"/>
-        <image name="qr1.png" width="300" height="300"/>
+        <image name="popuptest.png" width="200" height="115"/>
+        <image name="qr1.png" width="50" height="50"/>
         <image name="sendbg.png" width="640" height="1146"/>
-        <image name="switch.png" width="65" height="65"/>
-        <image name="txButton.png" width="200" height="60"/>
+        <image name="switch.png" width="255" height="255"/>
+        <image name="txButton.png" width="185" height="55"/>
     </resources>
 </document>
