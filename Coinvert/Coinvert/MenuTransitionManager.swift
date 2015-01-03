@@ -80,29 +80,30 @@ class MenuTransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UI
         let bottomRowOffset  :CGFloat = 446
         
         
-        menuViewController.bitcoinIcon.transform = self.offStage(-topRowOffset)
-        menuViewController.bitcoinLabel.transform = self.offStage(-topRowOffset)
+        menuViewController.bitcoinIcon.transform = self.offStage(topRowOffset)
+        menuViewController.bitcoinLabel.transform = self.offStage(topRowOffset)
         
         menuViewController.litecoinIcon.transform = self.offStage(topRowOffset)
         menuViewController.litecoinLabel.transform = self.offStage(topRowOffset)
         
-        menuViewController.darcoinIcon.transform = self.offStage(-middle1RowOffset)
-        menuViewController.darkcoinLabel.transform = self.offStage(-middle1RowOffset)
-        
         menuViewController.dogecoinIcon.transform = self.offStage(middle1RowOffset)
         menuViewController.dogecoinLabel.transform = self.offStage(middle1RowOffset)
-       
-        menuViewController.feathercoinIcon.transform = self.offStage(-middle2RowOffset)
-        menuViewController.feathercoinLabel.transform = self.offStage(-middle2RowOffset)
         
-        menuViewController.namecoinIcon.transform = self.offStage(middle2RowOffset)
-        menuViewController.namecoinLabel.transform = self.offStage(middle2RowOffset)
-        
-        menuViewController.peercoinIcon.transform = self.offStage(-bottomRowOffset)
-        menuViewController.peercoinLabel.transform = self.offStage(-bottomRowOffset)
-        
-        menuViewController.blackcoinIcon.transform = self.offStage(bottomRowOffset)
-        menuViewController.blackcoinLabel.transform = self.offStage(bottomRowOffset)
+//        menuViewController.darcoinIcon.transform = self.offStage(-middle1RowOffset)
+//        menuViewController.darkcoinLabel.transform = self.offStage(-middle1RowOffset)
+//
+//       
+//        menuViewController.feathercoinIcon.transform = self.offStage(-middle2RowOffset)
+//        menuViewController.feathercoinLabel.transform = self.offStage(-middle2RowOffset)
+//        
+//        menuViewController.namecoinIcon.transform = self.offStage(middle2RowOffset)
+//        menuViewController.namecoinLabel.transform = self.offStage(middle2RowOffset)
+//        
+//        menuViewController.peercoinIcon.transform = self.offStage(-bottomRowOffset)
+//        menuViewController.peercoinLabel.transform = self.offStage(-bottomRowOffset)
+//        
+//        menuViewController.blackcoinIcon.transform = self.offStage(bottomRowOffset)
+//        menuViewController.blackcoinLabel.transform = self.offStage(bottomRowOffset)
         
         
     }
@@ -118,23 +119,23 @@ class MenuTransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UI
         menuViewController.litecoinIcon.transform = CGAffineTransformIdentity
         menuViewController.litecoinLabel.transform = CGAffineTransformIdentity
         
-        menuViewController.darcoinIcon.transform = CGAffineTransformIdentity
-        menuViewController.darkcoinLabel.transform = CGAffineTransformIdentity
-        
         menuViewController.dogecoinIcon.transform = CGAffineTransformIdentity
         menuViewController.dogecoinLabel.transform = CGAffineTransformIdentity
-
-        menuViewController.feathercoinIcon.transform = CGAffineTransformIdentity
-        menuViewController.feathercoinLabel.transform = CGAffineTransformIdentity
         
-        menuViewController.namecoinIcon.transform = CGAffineTransformIdentity
-        menuViewController.namecoinLabel.transform = CGAffineTransformIdentity
-        
-        menuViewController.peercoinIcon.transform = CGAffineTransformIdentity
-        menuViewController.peercoinLabel.transform = CGAffineTransformIdentity
-        
-        menuViewController.blackcoinIcon.transform = CGAffineTransformIdentity
-        menuViewController.blackcoinLabel.transform = CGAffineTransformIdentity
+//        menuViewController.darcoinIcon.transform = CGAffineTransformIdentity
+//        menuViewController.darkcoinLabel.transform = CGAffineTransformIdentity
+//
+//        menuViewController.feathercoinIcon.transform = CGAffineTransformIdentity
+//        menuViewController.feathercoinLabel.transform = CGAffineTransformIdentity
+//        
+//        menuViewController.namecoinIcon.transform = CGAffineTransformIdentity
+//        menuViewController.namecoinLabel.transform = CGAffineTransformIdentity
+//        
+//        menuViewController.peercoinIcon.transform = CGAffineTransformIdentity
+//        menuViewController.peercoinLabel.transform = CGAffineTransformIdentity
+//        
+//        menuViewController.blackcoinIcon.transform = CGAffineTransformIdentity
+//        menuViewController.blackcoinLabel.transform = CGAffineTransformIdentity
         
     }
     

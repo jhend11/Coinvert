@@ -104,6 +104,7 @@
 	CGColorSpaceRelease(colorSpace);
 	QRcode_free(code);
 	return qrImage;
+    
 }
 
 @end

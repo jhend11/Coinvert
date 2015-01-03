@@ -153,6 +153,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B404CD841A3C266D00A62E90 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B42B52B51A2FD71D002CBA91 /* RacingSansOne-Regular copy.otf */,
+				B45353261A3884E600CF2A0A /* airstrike.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		B41CB0091A19565E004A5908 = {
 			isa = PBXGroup;
 			children = (
@@ -200,8 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				B45352E41A35459800CF2A0A /* Crashlytics.framework */,
-				B42B52B51A2FD71D002CBA91 /* RacingSansOne-Regular copy.otf */,
-				B45353261A3884E600CF2A0A /* airstrike.ttf */,
+				B404CD841A3C266D00A62E90 /* Fonts */,
 				B41CB0161A19565E004A5908 /* Info.plist */,
 			);
 			name = "Supporting Files";

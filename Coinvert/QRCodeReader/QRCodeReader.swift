@@ -231,7 +231,7 @@ class QRCodeReader: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
-    
+
   // MARK: - Catching Button Events
   
   func cancelAction(button: UIButton) {
