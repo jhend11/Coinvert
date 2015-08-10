@@ -39,6 +39,8 @@ The following steps are required to complete a transaction using Coinvert:
 9. Copy the deposit amount generated from Coinvert and paste in the 'Amount' field of wallet
 10. Send coins from wallet. Go back to Coinvert and watch the order show complete!
 
+![My image](http://appsmadeby.me/wp-content/uploads/2015/08/test1.gif)
+
 # Framework Dependencies 
 
 #### Third Party Frameworks Used
