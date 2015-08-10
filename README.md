@@ -21,6 +21,7 @@ Once the app is finished downloading, tap on the app icon.
 #### Quickly and easily swap coins as well as make Bitcoin payments 
 
 The following steps are required to complete a transaction using Coinvert:
+
 1. Copy address requiring payment
 2. Open Coinvert and select 'To' & 'From' coins
 3. Insert address requiring payment in the 'Your Payment Address' field
