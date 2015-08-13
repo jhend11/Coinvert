@@ -42,10 +42,6 @@ The following steps are required to complete a transaction using Coinvert:
 
  ![My image](http://appsmadeby.me/wp-content/uploads/2015/08/imageedit_5_5584854364.gif)
 
-# Framework Dependencies 
-
-#### Third Party Frameworks Used
-
 
 # Support
 
